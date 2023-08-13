@@ -8,9 +8,6 @@ import Main
 import Main as StValv
 from PIL import Image
 import altair as alt
-global weather1
-global weather2
-global weather3
 
 #im = Image.open("../favicon2.png")
 st.set_page_config(
