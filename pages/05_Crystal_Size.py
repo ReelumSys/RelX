@@ -28,7 +28,7 @@ with open('style.css') as f:
     
 st.sidebar.header('')
 
-uploaded_file = st.file_uploader('FHWMFirstSecond.csv')
+uploaded_file = ('FHWMFirstSecond.csv')
 
 data = pd.read_csv(uploaded_file, sep=" ", names=['Int','Scherrer'])
 Cryst5 = data['Scherrer'].mean()
