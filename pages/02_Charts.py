@@ -8,6 +8,7 @@ import Main
 import Main as StValv
 from PIL import Image
 import altair as alt
+import cv2
 
 global weather1
 global weather2
