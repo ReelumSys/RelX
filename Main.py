@@ -66,8 +66,6 @@ from lattpy import simple_square
 #from ... import Charts as weather2
 #from ... import Charts as weather3
 
-import main
-
 #StValv = 20
 #global StValv
 StartingValue = 10
