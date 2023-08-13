@@ -7,7 +7,6 @@ import base64
 import numpy as np
 from scipy.integrate import simpson
 from numpy import trapz
-import cv2
 from PIL import Image
 import matplotlib
 matplotlib.use('Agg')
