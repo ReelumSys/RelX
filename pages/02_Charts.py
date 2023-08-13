@@ -20,8 +20,9 @@ st.set_page_config(
     layout="wide",
 )
 
-im = Image.open("../favicon2.png")
-st.image(im)
+retval, buffer = cv2.imencode('favicon2.png', img )
+binf = base64.b64encode(buffer).decode()
+st.image("data:image/png;base64,%s"%binf, channels="BGR", use_column_width=True)
 #global StValv
 #StValv =20
 #print(StValv)
