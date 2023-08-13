@@ -8,7 +8,6 @@ import Main
 import Main as StValv
 from PIL import Image
 import altair as alt
-import cv2
 
 global weather1
 global weather2
@@ -21,9 +20,7 @@ st.set_page_config(
     layout="wide",
 )
 
-retval, buffer = cv2.imencode('favicon2.png', img )
-binf = base64.b64encode(buffer).decode()
-st.image("data:image/png;base64,%s"%binf, channels="BGR", use_column_width=True)
+st.image("../favicon2.png")
 #global StValv
 #StValv =20
 #print(StValv)
