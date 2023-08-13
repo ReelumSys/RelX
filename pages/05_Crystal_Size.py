@@ -12,6 +12,7 @@ from PIL import Image
 from WH import Ee2
 from WH import r
 import urllib
+import urllib3
 
 
 #im = Image.open("../Relx/favicon2.png")
@@ -25,7 +26,6 @@ with open('style.css') as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
     
 st.sidebar.header('')
-
 
 data = pd.read_csv('RelX/FHWMFirstSecond.csv', sep=" ", names=['Int','Scherrer'])
 Cryst5 = data['Scherrer'].mean()
