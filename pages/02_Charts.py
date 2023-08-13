@@ -13,7 +13,7 @@ global weather1
 global weather2
 global weather3
 
-im = Image.open("../RelX/favicon2.png")
+im = Image.open("../favicon2.png")
 st.set_page_config(
     page_title="RelX v0.9",
     page_icon=im,
