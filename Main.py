@@ -11,7 +11,6 @@ from PIL import Image
 import matplotlib
 matplotlib.use('Agg')
 from matplotlib import pyplot
-import cv2
 
 from PyCrystallography import unit_cell
 from PyCrystallography import lattice
