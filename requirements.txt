@@ -32,4 +32,3 @@ scikit-learn
 scikit-learn-intelex
 streamlit
 sympy
-pyxrd
