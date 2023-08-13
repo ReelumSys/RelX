@@ -3,8 +3,12 @@ plost
 base64
 numpy
 scipy
+dill
+tqdm
+xrdfit
 numpy
 cv2
+altair
 PIL
 matplotlib
 PyCrystallography
