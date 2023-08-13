@@ -16,7 +16,7 @@ global weather3
 im = Image.open("../favicon2.png")
 st.set_page_config(
     page_title="RelX v0.9",
-    page_icon=im,
+    page_icon=st.image(im),
     layout="wide",
 )
 #global StValv
