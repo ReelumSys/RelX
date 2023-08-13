@@ -12,7 +12,6 @@ from PIL import Image
 from WH import Ee2
 from WH import r
 
-
 #im = Image.open("../Relx/favicon2.png")
 st.set_page_config(
     page_title="RelX v0.9",
