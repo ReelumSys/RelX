@@ -1,6 +1,5 @@
 pandas
 plost
-base64
 numpy
 scipy
 dill
