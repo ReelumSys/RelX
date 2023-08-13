@@ -1,4 +1,57 @@
-﻿
+pandas
+plost
+base64
+numpy
+from scipy.integrate import simpson
+from numpy import trapz
+import cv2
+from PIL import Image
+import matplotlib
+matplotlib.use('Agg')
+from matplotlib import pyplot
+
+from PyCrystallography import unit_cell
+from PyCrystallography import lattice
+
+import powerxrd as xrd
+import numpy as np
+import pandas as pd
+import io
+from matplotlib import* #pylab as plt
+import matplotlib.pyplot as plt
+#import subprocess
+import sys
+sys.path.append('../powerxrd/powerxrd/powerxrd')
+import csv
+from itertools import repeat
+import os
+import time
+
+
+from numpy import*
+from scipy import*
+import urllib
+
+from scipy.optimize import fmin
+from scipy.optimize import curve_fit
+
+from powerxrd.main import scherrer as beta
+from powerxrd.main import Chart as SchPeak
+
+from powerxrd.main import*
+import contextlib
+from WH import m
+from WH import d
+#from WH import*
+
+import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
+from PyCrystallography.geometry import *
+from PyCrystallography.stereographic_projection import*
+
+import numpy as np
+from lattpy import Lattice
+from lattpy import simple_square﻿
 
 linear-tsv==1.1.0
 llvmlite
