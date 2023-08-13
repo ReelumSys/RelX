@@ -9,10 +9,10 @@ import Main as StValv
 from PIL import Image
 import altair as alt
 
-#im = Image.open("../favicon2.png")
+im = 'favicon2.png'
 st.set_page_config(
     page_title="RelX v0.9",
-   # page_icon=st.image(im),
+    page_icon=im,
     layout="wide",
 )
 
