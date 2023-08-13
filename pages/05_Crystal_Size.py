@@ -11,6 +11,8 @@ from WH import*
 from PIL import Image
 from WH import Ee2
 from WH import r
+import urllib
+
 
 #im = Image.open("../Relx/favicon2.png")
 st.set_page_config(
