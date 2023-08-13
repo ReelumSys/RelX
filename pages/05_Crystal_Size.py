@@ -25,7 +25,7 @@ with open('style.css') as f:
 st.sidebar.header('')
 
 
-data = pd.read_csv('../RelX/FHWMFirstSecond.csv', sep=" ", names=['Int','Scherrer'])
+data = pd.read_csv('RelX/FHWMFirstSecond.csv', sep=" ", names=['Int','Scherrer'])
 Cryst5 = data['Scherrer'].mean()
 
 
