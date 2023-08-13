@@ -15,6 +15,7 @@ import urllib
 import urllib3
 
 
+
 #im = Image.open("../Relx/favicon2.png")
 st.set_page_config(
     page_title="RelX v0.9",
@@ -27,7 +28,9 @@ with open('style.css') as f:
     
 st.sidebar.header('')
 
-data = pd.read_csv('/RelX/FHWMFirstSecond.csv', sep=" ", names=['Int','Scherrer'])
+uploaded_file = st.file_uploader('FHWMFirstSecond.csv')
+
+data = pd.read_csv(uploaded_file, sep=" ", names=['Int','Scherrer'])
 Cryst5 = data['Scherrer'].mean()
 
 
