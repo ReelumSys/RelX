@@ -10,7 +10,6 @@ altair
 matplotlib
 PyCrystallography
 powerxrd
-csv
 itertools
 os
 time
