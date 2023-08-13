@@ -16,7 +16,7 @@ st.set_page_config(
     layout="wide",
 )
 
-st.image("../favicon2.png")
+st.image("../RelX/favicon2.png")
 #global StValv
 #StValv =20
 #print(StValv)
