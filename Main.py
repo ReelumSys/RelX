@@ -14,6 +14,7 @@ from matplotlib import pyplot
 
 from PyCrystallography import unit_cell
 from PyCrystallography import lattice
+import WH
 
 import powerxrd as xrd
 import numpy as np
