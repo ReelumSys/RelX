@@ -30,7 +30,7 @@ def set_background(png_file):
     st.markdown(page_bg_img, unsafe_allow_html=True)
 
 
-st.markdown("## Acknowledgement")
+#st.markdown("### Acknowledgement")
 st.write("###### Thanks to PowerXRDs work by Andrew Garcia Ph.D (https://github.com/andrewrgarcia/powerxrd) a Williamson-Hall-Plot and other functions were made possible. The Williamson-Hall-Plot delivers values which number of rows are the same as in the Scherrer calculation. Furthermore a Halder and Wagner-Plot is made possible from the Literature. The plots should serve as a direct comparison between the three methods.")
 st.text("")
 st.write("First you can upload two XRD charts. They need not to have the same 2Theta values as you can set a beginning value. However the patterns have to be recorded at same diffraction settings. The main runs Crystal Size and Rietveld Refinement. After uploading, first you see a heatmap plus indentified and binned values. This should help with the data conformity. Beside the heatmaps you can find an analysis of data in the donut chart. As you loaded two charts, the backsubbed area from PowerXRD is read. Below the mapped out regions there are three plots where the last plot is a subtraction between the Main XRD and the Comparison XRD data. This should provide an easy access.")
