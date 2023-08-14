@@ -151,9 +151,9 @@ with open('style.css') as f:
     
 st.sidebar.header('')
 
-#image = Image.open('./images/favicon.png')
-#new_img = image.resize((200, 100))
-#st.image(new_img)
+image = Image.open('./images/favicon.png')
+new_img = image.resize((200, 100))
+st.image(new_img)
 
 st.sidebar.subheader('Heat map parameter')
 time_hist_color = st.sidebar.selectbox('Color by', '') 
