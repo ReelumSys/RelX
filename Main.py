@@ -79,7 +79,7 @@ st.set_page_config(
     layout="wide",
 )
 
-image = Image.open('favicon2.png')
+image = Image.open('./images/favicon.png')
 new_img = image.resize((320, 320))
 st.image(new_img)
 
