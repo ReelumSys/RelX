@@ -31,11 +31,11 @@ def set_background(png_file):
 
 
 st.markdown("## Acknowledgement")
-st.write("###### Thanks to PowerXRDs work by Andrew Garcia Ph.D (https://github.com/andrewrgarcia/powerxrd) a Williamson-Hall-Plot and other functions were made possible. The Williamson-Hall-Plot delivers values which number of rows are the same as in the Scherrer calculation. The plots should serve as a direct comparison between the two methods.")
+st.write("###### Thanks to PowerXRDs work by Andrew Garcia Ph.D (https://github.com/andrewrgarcia/powerxrd) a Williamson-Hall-Plot and other functions were made possible. The Williamson-Hall-Plot delivers values which number of rows are the same as in the Scherrer calculation. Furthermore a Halder and Wagner-Plot is made possible from the Literature. The plots should serve as a direct comparison between the three methods.")
 st.write("First you can upload two XRD charts. They need not to have the same 2Theta values as you can set a beginning value. However the patterns have to be recorded at same diffraction settings. The main runs Crystal Size and Rietveld Refinement. After uploading, first you see a heatmap plus indentified and binned values. This should help with the data conformity. Beside the heatmaps you can find an analysis of data in the donut chart. As you loaded two charts, the backsubbed area from PowerXRD is read. Below the mapped out regions there are three plots where the last plot is a subtraction between the Main XRD and the Comparison XRD data. This should provide an easy access.")
 st.write("##### Literature")
-st.write("W. H. Hall, Proc. Phys. Soc. A (London, U. K.) 62 (1949)741–743.")
-st.write("Izumi, F., Ikeda, T. - Implementation of the Williamson–Hall and Halder–Wagner Methods into RIETAN-FP")
+st.write("W. H. Hall. (1949) Proc. Phys. Soc. A (London, U. K.) 62 741–743.")
+st.write("Izumi, F., Ikeda, T. (2014) - Implementation of the Williamson–Hall and Halder–Wagner Methods into RIETAN-FP")
 
 #st.sidebar.markdown("##### vladimirvopravil@hotmail.com")
 
