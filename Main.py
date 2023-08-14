@@ -88,10 +88,13 @@ st.image(new_img)
 #st.image(new_img)
 #st.sidebar.markdown("# Main page")
 st.markdown("#### Upload XRD files and calculate")
+st.text("")
 st.write("Like this example the sample should be delimited with a space. The digits do not matter.")
+st.text("")
 image = Image.open('./images/Unbenannt.png')
 new_img = image.resize((220, 220))
 st.image(new_img)
+st.text("")
 st.markdown('###### First upload two .txt files and let them be calculated.')
 
 # Allow only .csv and .xlsx files to be uploaded
