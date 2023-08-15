@@ -22,7 +22,7 @@ def set_background(png_file):
     page_bg_img = '''
     <style>
     .stApp {
-    background-image: url("../RelX/images/favicon2.png");
+    background-image: url("../RelX/images/favicon.png");
     background-size: cover;
     }
     </style>
