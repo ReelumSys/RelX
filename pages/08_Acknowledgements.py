@@ -35,7 +35,7 @@ st.write("###### Thanks to PowerXRDs work by Andrew Garcia Ph.D (https://github.
 st.text("")
 st.write("First you can upload two XRD charts. They need not to have the same 2Theta values as you can set a beginning value. However the patterns have to be recorded at same diffraction settings. The main runs Crystal Size and Rietveld Refinement. After uploading, first you see a heatmap plus indentified and binned values. This should help with the data conformity. Beside the heatmaps you can find an analysis of data in the donut chart. As you loaded two charts, the backsubbed area from PowerXRD is read. In the Charts section there are three plots where the last plot is a subtraction between the Main XRD and the Comparison XRD data. After the three, the same procedure is done with in logarithmic scale for the intensity. This should provide an easy access.")
 st.text("")
-st.write("The Rietveld equation and the parameters were modified. However lmfit does a bad job here as its purpose is to fit through multiple point close together at the x-Axis. Ongoing work is done here. Need to convert to line graph. Or you are welcome to try with very long diffraction time.")
+st.write("The Rietveld equation and the parameters were modified. However lmfit does a bad job here as its purpose is to fit through multiple point close together at the x-Axis. Ongoing work is done here. Need a conversion to a line graph and still run all parameters. Or you are welcome to try with a very long diffraction time.")
 st.text("")
 st.write("##### Literature")
 st.write("W. H. Hall. (1949) Proc. Phys. Soc. A (London, U. K.) 62 741–743.")
