@@ -13,7 +13,7 @@ from PIL import Image
 
 
 
-im = 'favicon.png'
+im = 'favicon2.png'
 st.set_page_config(
     page_title="RelX v0.9",
     page_icon=im,
