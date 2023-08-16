@@ -104,6 +104,10 @@ name = uploaded_file
 if not name:
   st.warning('Please input a .txt file.')
   st.stop()
+  df = pd.read_fwf(name)
+  df.to_csv('ksev1.csv', index=False)
+  np.savetxt('ksev1.xy', df, fmt='%f', delimiter='\t')
+
 st.success('Done.')
 
 
@@ -115,14 +119,12 @@ if not name2:
   st.warning('Please input a .txt file.')
 
   st.stop()
+  
+  df = pd.read_fwf(name2)
+  df.to_csv('ksev1rand.csv', index=False)
 st.success('Done.')
 
-df = pd.read_fwf(name)
-df.to_csv('ksev1.csv', index=False)
-np.savetxt('ksev1.xy', df, fmt='%f', delimiter='\t')
 
-df = pd.read_fwf(name2)
-df.to_csv('ksev1rand.csv', index=False)
 
 
 os.system("WH.py")
