@@ -33,4 +33,4 @@ def set_background(png_file):
 #st.markdown("### Acknowledgement")
 st.write("###### With this app it is possible to do some work on XRD Charts with only a very few amount of data. Since for Rietveld Refinement only atomic parameters and HKL-values are needed. Same for the Bravais crystal structure.")
 st.text("")
-st.write("####### The Charts section is also for comparing data. The Main gets subtracted by the Comparing.")
+st.write("###### The Charts section is also for comparing data. The Main gets subtracted by the Comparing.")
