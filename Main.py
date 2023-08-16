@@ -119,6 +119,7 @@ st.success('Done.')
 
 df = pd.read_fwf(name)
 df.to_csv('ksev1.csv', index=False)
+np.savetxt('ksev1.xy', df, fmt='%f', delimiter='\t')
 
 df = pd.read_fwf(name2)
 df.to_csv('ksev1rand.csv', index=False)
