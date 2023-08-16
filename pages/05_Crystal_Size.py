@@ -13,11 +13,7 @@ from WH import Ee2
 from WH import r
 import urllib
 import urllib3
-import pyautogui
-try:
-    st.success("welcome to streamlit community!")
-except:
-   pyautogui.hotkey("ctrl","F5")
+
 
 
 im = 'favicon2.png'
