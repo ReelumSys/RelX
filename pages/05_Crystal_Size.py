@@ -33,16 +33,16 @@ uploaded_file = ('FHWMFirstSecond.csv')
 data = pd.read_csv(uploaded_file, sep=" ", names=['Int','Scherrer'])
 Cryst5 = data['Scherrer'].mean()
 
-
+st.write("Crystal Size and Strain are all calculated with a gaussian refinement")
 
 Cryst = pd.DataFrame({
                       
                       'Scherrer Size [nm]': [Cryst5],
                       'W-H Size [nm]': [d],
-                      'W-H Strain with Gauss [%%]': [m],
+                      'W-H Strain [%%]': [m],
                       
                       'H-W Size [nm]': [Ee2],
-                      'H-W Strain with Gauss [%%]': [r],
+                      'H-W Strain [%%]': [r],
                     })
 
 hide_table_row_index = """
