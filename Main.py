@@ -167,6 +167,7 @@ donut_theta = st.sidebar.selectbox('Select data', ('', ''))
 st.sidebar.subheader('Line chart parameters')
 plot_height = st.sidebar.slider('Specify plot height', 200, 1000, 250)
 
+
 st.sidebar.markdown('''
 ---
 
