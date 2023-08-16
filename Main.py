@@ -81,7 +81,7 @@ image = Image.open('./images/favicon.png')
 new_img = image.resize((180, 100))
 st.image(new_img)
 
-st.set_page_config(initial_sidebar_state="collapsed")
+
 
 #image = Image.open('./images/favicon.png')
 #new_img = image.resize((200, 100))
@@ -166,7 +166,6 @@ donut_theta = st.sidebar.selectbox('Select data', ('', ''))
 
 st.sidebar.subheader('Line chart parameters')
 plot_height = st.sidebar.slider('Specify plot height', 200, 1000, 250)
-
 
 st.sidebar.markdown('''
 ---
