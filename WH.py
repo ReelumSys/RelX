@@ -36,8 +36,8 @@ global d
 def myfiledel():
     #filename0 = 'myfilesize.txt'
     #if os.path.exists(filename0): os.remove(filename0)
-    filename = 'myfile.txt'
-    if os.path.exists(filename): os.remove(filename)
+    #filename = 'myfile.txt'
+    #if os.path.exists(filename): os.remove(filename)
     filename2 = 'myfile2.txt'
     if os.path.exists(filename2): os.remove(filename2)
 
