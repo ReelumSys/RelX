@@ -125,7 +125,7 @@ df = pd.read_fwf(name2)
 df.to_csv('ksev1rand.csv', index=False)
 
 
-os.system("WH.py 1")
+os.system("WH.py")
 
 
 
