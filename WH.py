@@ -187,7 +187,7 @@ def reel_Halder_Wagner():
     #y13 = y11.transpose()
     #print(y13)
     y14 = pd.DataFrame(y11)
-    print(y14)
+    #print(y14)
 
 
     frames = [x13,y14]
