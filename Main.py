@@ -55,17 +55,6 @@ import numpy as np
 from lattpy import Lattice
 from lattpy import simple_square
 
-
-import pyautogui
-try:
-    st.success("welcome to streamlit community!")
-except:
-   pyautogui.hotkey("ctrl","F5")
-
-
-
-
-
 #from ... import Charts as weather1
 #from ... import Charts as weather2
 #from ... import Charts as weather3
