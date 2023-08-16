@@ -63,7 +63,6 @@ from lattpy import simple_square
 #global StValv
 StartingValue = 10
 
-Jo
 
 
 im = Image.open("favicon2.png")
