@@ -105,7 +105,7 @@ uploaded_file2 = st.file_uploader("Upload Compairing XRD", type=["txt"])
 
 name2 = uploaded_file2
 if not name2:
-  st.warning('Please input a .csv .txt file.')
+  st.warning('Please input a .txt file.')
 
   st.stop()
 st.success('Done.')
