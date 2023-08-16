@@ -23,7 +23,8 @@ from scipy.optimize import curve_fit
 from powerxrd.main import scherrer as beta
 from powerxrd.main import Chart as SchPeak
 import contextlib
-import Charts
+import sys
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 global ksev1
 ksev1 = 'ksev1.csv'
@@ -66,7 +67,7 @@ def test_allpeaks():
     #Wurst = pd.read_csv('ksev1.xy', names=['Theta','Int'])    
     #np.savetxt('ksev1.xy', Wurst, fmt='%s', delimiter='\t')
     
-    data = xrd.Data('ksev1.xy').importfile()
+    data = xrd.Data(dfSize).importfile()
     chart = xrd.Chart(*data)
 
     chart.backsub(tol=1,show=False)
