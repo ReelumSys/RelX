@@ -146,8 +146,8 @@ def reel_Williamson_Hall():
     
 
 
-    plt.xlabel(r'sin ($\theta$)',fontsize = 14)
-    plt.ylabel(r'$\beta$ cos($\theta$)',fontsize = 14)
+    plt.xlabel(r'sin $\theta$',fontsize = 14)
+    plt.ylabel(r'$\beta$ cos $\theta$',fontsize = 14)
     plt.grid(True)
     plt.savefig('WH-PLOT.png')
     #plt.show()
@@ -223,8 +223,8 @@ def reel_Halder_Wagner():
     plt.plot(x13,y14, '.')
     plt.plot(xx,yy,'b--')
     
-    plt.ylabel(r'1000($\beta$ / tan$\theta$)$^2$',fontsize = 14)
-    plt.xlabel(r'$\beta$ (tan$\theta$ * sin$\theta$)',fontsize = 14)
+    plt.ylabel(r'1000*($\beta$ / tan $\theta$)$^2$',fontsize = 14)
+    plt.xlabel(r'$\beta$ (tan $\theta$ * sin $\theta$)',fontsize = 14)
     plt.grid(True)
     plt.savefig('HW-PLOT.png')
 
