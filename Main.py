@@ -88,7 +88,7 @@ image = Image.open('./images/Unbenannt.png')
 new_img = image.resize((220, 220))
 st.image(new_img)
 st.text("")
-st.markdown('###### First upload two .txt files and let them be calculated.')
+st.markdown('###### First upload two .txt files separetely and let them be calculated.')
 
 # Allow only .csv and .xlsx files to be uploaded
 uploaded_file = st.file_uploader("Upload Main XRD", type=["txt"])
