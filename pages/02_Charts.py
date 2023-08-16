@@ -34,7 +34,7 @@ st.sidebar.markdown('''
 
 ''')
 #st.markdown('### XRD Charts')
-user_input = st.number_input("Please enter a starting number for 2Theta. Minimun should be at least the first higher number 2Theta data point of the two diffraction patterns, so they can adjust.")
+user_input = st.number_input("Please enter a starting number for 2Theta. Minimun should be at least the first higher number °2Theta data point of the two diffraction patterns, so they can adjust.")
 
 
 df1 = pd.read_csv('ksev1.csv', names=['Theta','Int'])#, skiprows = 80
