@@ -102,6 +102,8 @@ np.savetxt('testTheta10.txt', df_merged, fmt='%f', delimiter=',')
 df_merged.dropna(how='any', inplace=True)
 np.savetxt('testTheta2.txt', df_merged, fmt='%f', delimiter=',')
 
+
+global weather1
 weather1 = pd.read_csv('ksev1.csv', names=['2Theta','Int'], skiprows=failure_count)
 weather2 = pd.read_csv('ksev1rand.csv', names=['2Theta','Int2'], skiprows=failure_count2)
 weather3 = pd.read_csv('testTheta2.txt', names=['2Theta','Diff'])
