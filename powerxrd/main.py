@@ -623,7 +623,7 @@ class Chart:
                
          
         #with open('myfile.txt') as sorting
-        np.sort(max_x, axis=None)
+        #np.sort(max_x, axis=None)
         
 
         print('\nFWHM == ln(2)): {} degrees'.\
