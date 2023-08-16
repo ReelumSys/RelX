@@ -56,7 +56,11 @@ from lattpy import Lattice
 from lattpy import simple_square
 
 
-
+import pyautogui
+try:
+    st.success("welcome to streamlit community!")
+except:
+   pyautogui.hotkey("ctrl","F5")
 
 
 
