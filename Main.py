@@ -58,7 +58,7 @@ from lattpy import simple_square
 
     # Clear values from *all* all in-memory and on-disk data caches:
     # i.e. clear values from both square and cube
-st.cache_data.clear()
+#st.cache_data.clear()
 
 #from ... import Charts as weather1
 #from ... import Charts as weather2
