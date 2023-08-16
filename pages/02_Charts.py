@@ -63,13 +63,13 @@ print(failure_count2)
 
 
 df1 = pd.read_csv('ksev1.csv', names=['Theta','Int'], skiprows = failure_count)
-
-
+np.savetxt('ksev1.csv', df1, fmt='%f', delimiter=',')
 
 #global dfSize
 #df1 = dfSize
 
 df2 = pd.read_csv('ksev1rand.csv', names=['Theta2','Int2'], skiprows = failure_count2)
+np.savetxt('ksev1rand.csv', df2, fmt='%f', delimiter=',')
 
 #print(df1)
 
@@ -112,7 +112,6 @@ np.savetxt('testTheta2.txt', df_merged, fmt='%f', delimiter=',')
 
 global weather1
 weather1 = pd.read_csv('ksev1.csv', names=['2Theta','Int'], skiprows=failure_count)
-np.savetxt('ksev1.csv', weather1, fmt='%f', delimiter=',')
 weather2 = pd.read_csv('ksev1rand.csv', names=['2Theta','Int2'], skiprows=failure_count2)
 weather3 = pd.read_csv('testTheta2.txt', names=['2Theta','Diff'])
 
