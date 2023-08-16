@@ -65,7 +65,7 @@ print(failure_count2)
 df1 = pd.read_csv('ksev1.csv', names=['Theta','Int'], skiprows = failure_count)
 
 global dfSize
-df1 = dfSize
+#df1 = dfSize
 
 df2 = pd.read_csv('ksev1rand.csv', names=['Theta2','Int2'], skiprows = failure_count2)
 #print(df1)
