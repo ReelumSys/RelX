@@ -45,15 +45,15 @@ myfiledel()
 
 def test_sch():
     
-    Wurst = pd.read_csv('ksev1.txt, names=['Theta','Int'])  
+    #Wurst = pd.read_csv(ksev1, names=['Theta','Int'])  
     #np.savetxt('ksev1.xy', Wurst, fmt='%s', delimiter='\t')
     #data = xrd.Data('ksev1.xy').importfile()
     #chart = xrd.Chart(*data)
 
     #chart.backsub(tol=1.0,show=True)
     #chart.SchPeak(xrange=[10,50],verbose=True,show=True)
-    #plt.xlabel('2 $\\theta$')
-    #plt.title('backsub and Scherrer width calculation')
+    plt.xlabel('2 $\\theta$')
+    plt.title('backsub and Scherrer width calculation')
     #plt.show()
 
 test_sch()
