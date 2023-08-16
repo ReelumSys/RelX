@@ -62,8 +62,8 @@ test_sch()
 
 
 def test_allpeaks():
-    Wurst = pd.read_csv(ksev1, names=['Theta','Int'])    
-    np.savetxt('ksev1.xy', Wurst, fmt='%s', delimiter='\t')
+    #Wurst = pd.read_csv('ksev1.xy', names=['Theta','Int'])    
+    #np.savetxt('ksev1.xy', Wurst, fmt='%s', delimiter='\t')
 
     data = xrd.Data('ksev1.xy').importfile()
     chart = xrd.Chart(*data)
