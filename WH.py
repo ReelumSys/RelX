@@ -23,6 +23,7 @@ from scipy.optimize import curve_fit
 from powerxrd.main import scherrer as beta
 from powerxrd.main import Chart as SchPeak
 import contextlib
+import Charts
 
 global ksev1
 ksev1 = 'ksev1.csv'
