@@ -81,6 +81,8 @@ image = Image.open('./images/favicon.png')
 new_img = image.resize((180, 100))
 st.image(new_img)
 
+
+
 #image = Image.open('./images/favicon.png')
 #new_img = image.resize((200, 100))
 #st.image(new_img)
@@ -121,23 +123,6 @@ df.to_csv('ksev1.csv', index=False)
 df = pd.read_fwf(name2)
 df.to_csv('ksev1rand.csv', index=False)
 
-# set sidebar collapsed before login
-if 'sidebar_state' not in st.session_state:
-    st.session_state.sidebar_state = 'collapsed'
-
-# hide collapsed control button
-hide_bar = """
-           <style>
-           [data-testid='collapsedControl"] {visibility:hidden;}
-           </style>
-           """
-
-# set sidebar expanded after login
-if login_after:
-    st.session_state.sidebar_state = 'expanded'
-else:
-    st.session_state.sidebar_state = 'collapsed'
-    st.markdown(hide_bar, unsafe_allow_html=True)
 
 os.system("WH.py 1")
 
@@ -167,6 +152,25 @@ with open('style.css') as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
     
 st.sidebar.header('')
+
+# set sidebar collapsed before login
+if 'sidebar_state' not in st.session_state:
+    st.session_state.sidebar_state = 'collapsed'
+
+# hide collapsed control button
+hide_bar = """
+           <style>
+           [data-testid='collapsedControl"] {visibility:hidden;}
+           </style>
+           """
+
+# set sidebar expanded after login
+if login_after:
+    st.session_state.sidebar_state = 'expanded'
+else:
+    st.session_state.sidebar_state = 'collapsed'
+    st.markdown(hide_bar, unsafe_allow_html=True)
+
 
 image = Image.open('./images/favicon.png')
 new_img = image.resize((200, 100))
