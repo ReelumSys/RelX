@@ -9,6 +9,7 @@ from PIL import Image
 import streamlit as st
 import random
 import time
+from streamlit_chat import message
 
 im = 'favicon2.png'
 st.set_page_config(
@@ -77,3 +78,13 @@ if prompt := st.chat_input("What is up?"):
         message_placeholder.markdown(full_response)
     # Add assistant response to chat history
     st.session_state.messages.append({"role": "assistant", "content": full_response})
+
+
+
+    placeholder = st.empty()
+input_ = st.text_input("you:")
+message_history.append(input_)
+
+with placeholder.container():
+    for message_ in message_history:
+        message(message_)
