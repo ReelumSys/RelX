@@ -81,7 +81,7 @@ if prompt := st.chat_input("What is up?"):
 
 
 
-    placeholder = st.empty()
+placeholder = st.empty()
 input_ = st.text_input("you:")
 message_history.append(input_)
 
