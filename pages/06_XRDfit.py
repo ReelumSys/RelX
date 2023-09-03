@@ -116,5 +116,8 @@ spectral_data.plot_peak_params(peak_params, 1, show_points=True, label_angle=60)
 #spectral_data.plot_fit('(10-10)')
 #spectral_data.plot_fit('(0002)')
 
+st.markdown('###### W-H Plot')
+uploaded_file = st.image("favicon2.png")
+
 
 
