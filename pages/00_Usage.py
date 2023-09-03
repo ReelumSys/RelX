@@ -47,7 +47,7 @@ st.write("Below is an XRD Chatbot, where you can post a lot of questions about X
 
 
 
-st.write("XRDGPT")
+st.title("XRDGPT")
 #OPENAI_API_KEY = "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"
 #openai.api_key = st.secrets["OPENAI_API_KEY"]
 openai.api_key = st.secrets["OPENAI_API_KEY"]
