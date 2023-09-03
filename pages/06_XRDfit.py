@@ -97,7 +97,7 @@ peak_params = [PeakParams((3.02, 30.27), '(10-10)'),
 
 spectral_data.plot_peak_params(peak_params, 1, show_points=True, label_angle=60)
 
-spectral_data.fit_peaks(peak_params, 1)
+#spectral_data.fit_peaks(peak_params, 1)
 spectral_data.plot_fit('(10-10)')
 spectral_data.plot_fit('(0002)')
 
