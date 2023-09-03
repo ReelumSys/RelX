@@ -7,6 +7,9 @@ import streamlit as st
 # Set the matplotlib backend and make the plots a bit bigger
 
 import matplotlib
+matplotlib.rcParams['figure.figsize'] = [8, 6]
+
+
 im = 'favicon2.png'
 st.set_page_config(
     page_title="RelX v0.9",
@@ -20,8 +23,6 @@ with open('style.css') as f:
 st.sidebar.header('')
 
 
-
-matplotlib.rcParams['figure.figsize'] = [8, 6]
 
 from xrdfit.spectrum_fitting import PeakParams, FitSpectrum
 
