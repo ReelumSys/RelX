@@ -46,8 +46,8 @@ st.write("###### The Charts section is also for comparing data. The Main gets su
 
 
 st.title("ChatGPT-like clone")
-#OPENAI_API_KEY = "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"
-#openai.api_key = st.secrets["OPENAI_API_KEY"]
+#OPENAI_API_KEYsk-pD8zQdAbXjCaaES2ApVRT3BlbkFJxHFc6Z5nAqDRSTy7KzLo"
+#openai.api_keyst.secrets["OPENAI_API_KEY"]
 
 openai.api_key = os.getenv("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")
 
