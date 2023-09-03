@@ -7,7 +7,6 @@ import base64
 import numpy as np
 from PIL import Image
 import streamlit as st
-
 import random
 import time
 import openai
