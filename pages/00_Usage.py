@@ -45,7 +45,7 @@ st.write("###### The Charts section is also for comparing data. The Main gets su
 
 
 
-st.title("ChatGPT-like clone")
+st.title("XRDGPT")
 
 
 openai.api_key = os.getenv("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")
