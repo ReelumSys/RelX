@@ -6,6 +6,20 @@ import numpy as np
 # Set the matplotlib backend and make the plots a bit bigger
 
 import matplotlib
+im = 'favicon2.png'
+st.set_page_config(
+    page_title="RelX v0.9",
+    page_icon=im,
+    layout="wide",
+)
+
+with open('style.css') as f:
+    st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
+    
+st.sidebar.header('')
+
+
+
 matplotlib.rcParams['figure.figsize'] = [8, 6]
 
 from xrdfit.spectrum_fitting import PeakParams, FitSpectrum
