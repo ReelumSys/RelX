@@ -17,8 +17,8 @@ import tqdm
 first_cake_angle = 180
 
 #file_path = pd.read_csv('../ksev1.csv', names=['Theta','Int'])
-file_path = pd.read_csv("../RelX2/ksev1.csv", sep=',')
-file_path2 = pd.read_csv("../RelX2/ksev1rand.csv", sep=',')
+file_path = pd.read_csv("ksev1.csv", sep=',')
+file_path2 = pd.read_csv("ksev1rand.csv", sep=',')
 
 
 
