@@ -46,7 +46,7 @@ st.write("###### The Charts section is also for comparing data. The Main gets su
 
 st.title("ChatGPT-like clone")
 
-openai.api_key = st.secrets[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]
+openai.api_key = st.secrets["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"]
 
 if "openai_model" not in st.session_state:
     st.session_state["openai_model"] = "gpt-3.5-turbo"
