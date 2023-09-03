@@ -10,6 +10,7 @@ import streamlit as st
 import random
 import time
 import openai
+import os
 
 
 im = 'favicon2.png'
@@ -46,7 +47,9 @@ st.write("###### The Charts section is also for comparing data. The Main gets su
 
 st.title("ChatGPT-like clone")
 OPENAI_API_KEY = "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"
-openai.api_key = st.secrets[OPENAI_API_KEY]
+#openai.api_key = st.secrets["OPENAI_API_KEY"]
+openai.api_key = os.getenv("OPENAI_API_KEY")
+
 
 if "openai_model" not in st.session_state:
     st.session_state["openai_model"] = "gpt-3.5-turbo"
