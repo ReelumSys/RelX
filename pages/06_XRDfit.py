@@ -2,6 +2,7 @@ import xrdfit
 import lmfit
 import pandas as pd
 import numpy as np
+import streamlit as st
 
 # Set the matplotlib backend and make the plots a bit bigger
 
