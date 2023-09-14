@@ -48,7 +48,16 @@ st.write("Halder, N. C., Wagner, C. N. J. (1966) Separation of particle size and
 st.write("Hall, W. H. (1949) Proc. Phys. Soc. A (London, U. K.) 62 741–743")
 st.write("Izumi, F., Ikeda, T. (2014) Implementation of the Williamson–Hall and Halder and Wagner Methods into RIETAN-FP. https://api.semanticscholar.org/CorpusID:123223412")
 st.write("Williamson, G. K., Hall, W. H. (1953) X-ray Line Broadening from Filed Aluminium and Wolfram. Acta Metall., Vol. 1, 1953, pp. 22-31.")
-st.write(st.latex("The Rietveld Refinement Method: Half of a Century Anniversary Tomče Runčevski and Craig M. Brown Crystal Growth & Design (2021) 21 (9), 4821-4822. DOI: 10.1021/acs.cgd.1c00854"))
+st.write("The Rietveld Refinement Method: Half of a Century Anniversary Tomče Runčevski and Craig M. Brown Crystal Growth & Design (2021) 21 (9), 4821-4822. DOI: 10.1021/acs.cgd.1c00854")
+st.write("""
+This is a polynomial: $x^2$
+
+And so is this:
+
+$$
+ax^2 + bx + c
+$$
+""")
 
 # bootstrap 4 collapse example
 components.html(
