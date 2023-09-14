@@ -50,9 +50,9 @@ st.write("Izumi, F., Ikeda, T. (2014) Implementation of the Williamson–Hall an
 st.write("Williamson, G. K., Hall, W. H. (1953) X-ray Line Broadening from Filed Aluminium and Wolfram. Acta Metall., Vol. 1, 1953, pp. 22-31.")
 st.write("The Rietveld Refinement Method: Half of a Century Anniversary Tomče Runčevski and Craig M. Brown Crystal Growth & Design (2021) 21 (9), 4821-4822. DOI: 10.1021/acs.cgd.1c00854")
 st.write("""
-$$
+$
 The 
-$$
+$
 """)
 
 # bootstrap 4 collapse example
