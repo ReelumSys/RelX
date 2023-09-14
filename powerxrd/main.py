@@ -274,7 +274,7 @@ class Rietveld:
         '''
 
 
-
+        # params to fix
         # params to fix
         for i in self.fixed:
             global HKL
