@@ -41,7 +41,7 @@ st.write("###### With this app it is possible to do some work on XRD Charts with
 st.text("")
 st.write("###### The Charts section is also for comparing data. The Main gets subtracted by the Comparing. The same is done with logarithmic values on the y-axis.")
 st.text("")
-st.write("Below is an XRD Chatbot, where you can post questions about XRD and life. It is based on openAI's work.")
+st.write("Below is an XRD Chatbot, where you can post questions about XRD and life. It is based on openAI's work. Soon it will have knowledge about this programm.")
 
 
 
