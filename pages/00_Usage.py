@@ -37,11 +37,11 @@ def set_background(png_file):
 
 
 #st.markdown("### Acknowledgement")
-st.write("###### With this app it is possible to do some work on XRD Charts with only minimal amounts of data needed. Since for Rietveld Refinement only atomic parameters and HKL-values are needed. Same for the Bravais crystal structure.")
+st.write("###### With this app it is possible to do some work on XRD Charts with only minimal amounts of data needed. Since for Rietveld Refinement only atomic parameters and HKL-values are required. Same for the Bravais crystal structure depiction.")
 st.text("")
 st.write("###### The Charts section is also for comparing data. The Main gets subtracted by the Comparing. The same is done with logarithmic values on the y-axis.")
 st.text("")
-st.write("Below is an XRD Chatbot, where you can post a lot of questions about XRD and life.")
+st.write("Below is an XRD Chatbot, where you can post questions about XRD and life. It is based on openAI's work.")
 
 
 
