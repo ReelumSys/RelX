@@ -39,6 +39,8 @@ def set_background(png_file):
 #st.markdown("### Acknowledgement")
 st.write("###### With this app it is possible to do some work on XRD Charts with only minimal amounts of data needed. Since for Rietveld Refinement only atomic parameters and HKL-values are required. Same for the Bravais crystal structure depiction.")
 st.text("")
+st.write("First you can upload two XRD charts. They need not to have the same °2Theta values as you can set a beginning value. However the patterns have to be recorded at same diffraction settings. The main runs Crystal Size and Rietveld Refinement. After uploading, first you see a heatmap plus identified and binned values. This should help with the data conformity. Beside the heatmaps you can find an analysis of data in the donut chart. Here is the Main vs. the Comparing diffractogramm plottet. As you loaded two charts, the backsubbed area from PowerXRD is read. In the Charts section there are three plots where the last plot is a subtraction between the Main XRD and the Comparison XRD data. After the three, the same procedure is done with in logarithmic scale for the intensity. This should provide an easy access with publication ready plots also in other functions.")
+st.text("")
 st.write("###### The Charts section is also for comparing data. The Main gets subtracted by the Comparing. The same is done with logarithmic values on the y-axis.")
 st.text("")
 st.write("Below is an XRD Chatbot, where you can post questions about XRD and life. It is based on openAI's work. Soon it will have knowledge about this programm.")
