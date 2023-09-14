@@ -277,6 +277,7 @@ class Rietveld:
 
         # params to fix
         for i in self.fixed:
+            global HKL
             HKL =              [[1,0,1],      
                                [1,1,0],         
                                [0,1,2],     
