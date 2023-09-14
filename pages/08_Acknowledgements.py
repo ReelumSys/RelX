@@ -51,7 +51,7 @@ st.write("Williamson, G. K., Hall, W. H. (1953) X-ray Line Broadening from Filed
 st.write("The Rietveld Refinement Method: Half of a Century Anniversary Tomče Runčevski and Craig M. Brown Crystal Growth & Design (2021) 21 (9), 4821-4822. DOI: 10.1021/acs.cgd.1c00854")
 st.write("""
 $$
-The Rietveld Refinement Method: Half of a Century Anniversary Tomče Runčevski and Craig M. Brown Crystal Growth & Design (2021) 21 (9), 4821-4822. DOI: 10.1021/acs.cgd.1c00854"
+ax^2 + bx + c
 $$
 """)
 
