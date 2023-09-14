@@ -64,7 +64,7 @@ components.html(
         </div>
         <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
           <div class="card-body">
-            Collapsible Group Item #1 content
+            Rietveld, H.M. (1969) A profile refinement method for nuclear and magnetic structures. J. Appl. Cryst., 2: 65-71. https://doi.org/10.1107/S0021889869006558
           </div>
         </div>
       </div>
