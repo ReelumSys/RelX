@@ -38,7 +38,7 @@ def set_background(png_file):
 
 #st.markdown("### Acknowledgement")
 st.text("")
-st.markdown('<div style="text-align: justify;"> <font size="+5"><b> With this app it is possible to do some work on XRD Charts with only minimal amounts of data needed. Since for Rietveld Refinement only atomic parameters and HKL-values are required. Same for the Bravais crystal structure depiction. <b></font> </div>', unsafe_allow_html=True)
+st.markdown('<div style="text-align: justify;"> <font size="+3"><b> With this app it is possible to do some work on XRD Charts with only minimal amounts of data needed. Since for Rietveld Refinement only atomic parameters and HKL-values are required. Same for the Bravais crystal structure depiction. <b></font> </div>', unsafe_allow_html=True)
 
 st.write("###### With this app it is possible to do some work on XRD Charts with only minimal amounts of data needed. Since for Rietveld Refinement only atomic parameters and HKL-values are required. Same for the Bravais crystal structure depiction.")
 st.text("")
