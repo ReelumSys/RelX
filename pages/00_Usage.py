@@ -51,7 +51,7 @@ st.markdown('<div style="text-align: justify;"> <font size="+3">The Rietveld equ
 
 #st.write("###### The Charts section for comparing data. The Main gets subtracted by the Comparing. The same is done with logarithmic values on the y-axis.")
 st.text("")
-st.markdown('<div style="text-align: justify;"> <font size="+3">Below is an XRD Chatbot, where you can post questions about XRD and life. It is based on openAI's work. Soon it will have knowledge about this programm. </font> </div>', unsafe_allow_html=True)
+st.markdown('<div style="text-align: justify;"> <font size="+3">Below is an XRD Chatbot, where you can post questions about XRD and life. It is based on openAIs work. Soon it will have knowledge about this programm. </font> </div>', unsafe_allow_html=True)
 st.write("")
 
 
