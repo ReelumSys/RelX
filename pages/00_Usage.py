@@ -41,8 +41,9 @@ st.write("###### With this app it is possible to do some work on XRD Charts with
 st.text("")
 st.write("First you can upload two XRD charts. They need not to have the same °2Theta values as you can set a beginning value. However the patterns have to be recorded at same diffraction settings. The main runs Crystal Size and Rietveld Refinement. After uploading, first you see a heatmap plus identified and binned values. This should help with the data conformity. Beside the heatmaps you can find an analysis of data in the donut chart. Here is the Main vs. the Comparing diffractogramm plottet. As you loaded two charts, the backsubbed area from PowerXRD is read. In the Charts section there are three plots where the last plot is a subtraction between the Main XRD and the Comparison XRD data. After the three, the same procedure is done with in logarithmic scale for the intensity. This should provide an easy access with publication ready plots also in other functions.")
 st.text("")
+st.write("The Rietveld equation and the parameters were modified and are working. However it seems that lmfit has a purpose to fit through points closer together at the x-axis. Ongoing work is done here. Needing a conversion to a line graph and still run all parameters. Or you are welcome to try with a very long diffraction time.")
 #st.write("###### The Charts section for comparing data. The Main gets subtracted by the Comparing. The same is done with logarithmic values on the y-axis.")
-#st.text("")
+st.text("")
 st.write("Below is an XRD Chatbot, where you can post questions about XRD and life. It is based on openAI's work. Soon it will have knowledge about this programm.")
 
 
