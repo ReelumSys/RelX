@@ -135,9 +135,9 @@ if not name3:
   st.stop()
 st.success('Done.')
 c = np.array(name3)
-c.reshape(name3)
+na = c.reshape(1,0,1)
 
-np.savetxt('HKL.csv', c, fmt='%f', delimiter=',')
+np.savetxt('HKL.csv', na, fmt='%f', delimiter=',')
 #print(name3)
 os.system("WH.py")
 
