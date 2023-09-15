@@ -37,4 +37,4 @@ uploaded_file5 = st.image("RietveldRef.png")
 
 
 dfHKL = pd.read_csv('HKL.csv', names=['HKL'])
-st.table(dfHKL)
+st.dataframe(dfHKL)
