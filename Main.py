@@ -134,7 +134,8 @@ if not name3:
   st.warning('Please input a .txt file.')
   st.stop()
 st.success('Done.')
-c = np.array.T(name3)
+c = np.array(name3)
+c.reshape(name3)
 
 np.savetxt('HKL.csv', c, fmt='%f', delimiter=',')
 #print(name3)
