@@ -96,4 +96,7 @@ if prompt := st.chat_input("What is up?"):
 
 
 
-    user_input = st.text_area("label goes here")
+path = st.text_input('TXT file path')
+if path:
+    df = pd.read_csv(path)
+    print(df)
