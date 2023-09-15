@@ -96,7 +96,3 @@ if prompt := st.chat_input("What is up?"):
 
 
 
-path = st.text_input('TXT file path')
-if path:
-    df = pd.read_csv(path)
-    print(df)
