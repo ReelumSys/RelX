@@ -127,7 +127,15 @@ df = pd.read_fwf(name2)
 df.to_csv('ksev1rand.csv', index=False)
 np.savetxt('ksev1rand.csv', df, fmt='%f', delimiter=',')
 
+uploaded_file3 = st.file_uploader("Upload a .txt of the HKLs'", type=["txt"])
 
+name3 = uploaded_file3
+if not name3:
+  st.warning('Please input a .txt file.')
+  st.stop()
+  df.to_csv(name3)
+st.success('Done.')
+np.savetxt('HKL.csv', name3, fmt='%f', delimiter=',')
 
 os.system("WH.py")
 
