@@ -137,7 +137,7 @@ st.success('Done.')
 c = np.array(name3)
 na = c.reshape(1)
 
-np.savetxt('HKL.csv', na, fmt='%f', delimiter=',')
+np.savetxt('HKL.csv', na, fmt='%s', delimiter=',')
 #print(name3)
 os.system("WH.py")
 
