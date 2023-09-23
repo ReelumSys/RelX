@@ -27,6 +27,15 @@ st.sidebar.header('')
 
 
 
+
+
+  
+number = st.number_input('Insert a number')
+st.write('The current number is ', number)
+st.stop()
+
+
+
 st.markdown('### Main')
 x, y = xrd.Data('ksev1.xy').importfile()
 model = xrd.Rietveld(x, y)
