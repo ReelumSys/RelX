@@ -278,7 +278,7 @@ class Rietveld:
         # params to fix
         for i in self.fixed:
             
-            dfHKL = pd.read_csv('HKL.csv', names=['H', 'K', 'L'], index_col=False)
+            dfHKL = pandas.read_csv('HKL.csv', names=['H', 'K', 'L'], index_col=False)
             #dfHKL['index1'] = dfHKL.index
             #st.dataframe(dfHKL)
         
