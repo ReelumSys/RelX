@@ -134,10 +134,16 @@ if not name3:
   st.warning('Please input a .txt file.')
   st.stop()
 st.success('Done.')
-c = np.array(name3)
-na = c.reshape(1)
 
-np.savetxt('HKL.csv', na, fmt='%s', delimiter=',')
+df = pd.read_fwf(name3)
+df.to_csv('HKL.csv', index=False)
+np.savetxt('HKL.csv', df, fmt='%f', delimiter=',')
+
+
+#c = np.array(name3)
+#na = c.reshape(1)
+
+#np.savetxt('HKL.csv', na, fmt='%s', delimiter=',')
 #print(name3)
 
 
