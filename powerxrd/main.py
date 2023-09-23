@@ -297,6 +297,7 @@ class Rietveld:
                                [2,1,3], 
                                [2,2,1], 
                                [1,1,4]] """
+
             self.pars[i].vary = False
 
         # fit this model to data array y
