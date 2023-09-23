@@ -45,5 +45,5 @@ model.refine()
 uploaded_file5 = st.image("RietveldRef.png")
 
 
-dfHKL = pd.read_csv('HKL.csv', names=['H', 'K', 'L'])
+dfHKL = pd.read_csv('HKL.csv', names=['H', 'K', 'L'], index=False)
 st.dataframe(dfHKL)
