@@ -277,8 +277,15 @@ class Rietveld:
         # params to fix
         # params to fix
         for i in self.fixed:
+            
+            dfHKL = pd.read_csv('HKL.csv')
+            #dfHKL['index1'] = dfHKL.index
+            #st.dataframe(dfHKL)
+        
             global HKL
-            HKL =              [[1,0,1],      
+            HKL =              dfHKL
+            
+                           """ [[1,0,1],      
                                [1,1,0],         
                                [0,1,2],     
                                [1,0,2],
@@ -289,7 +296,7 @@ class Rietveld:
                                [1,2,3],
                                [2,1,3], 
                                [2,2,1], 
-                               [1,1,4]]
+                               [1,1,4]] """
             self.pars[i].vary = False
 
         # fit this model to data array y
