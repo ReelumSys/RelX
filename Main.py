@@ -136,7 +136,7 @@ if not name3:
 st.success('Done.')
 
 df = pd.read_fwf(name3)
-df.to_csv('HKL.csv', index=False)
+df.to_csv('HKL.csv', index=None)
 #np.savetxt('HKL.csv', df, fmt='%s', delimiter=',')
 
 
