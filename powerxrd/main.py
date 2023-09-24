@@ -2,7 +2,7 @@ import numpy as np
 import os
 import matplotlib.pyplot as plt
 import scipy.optimize as optimize
-import pandas
+import pandas as pd
 import csv
 
 from numpy import*
