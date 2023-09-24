@@ -220,8 +220,10 @@ class Rietveld:
             list of Rietveld function parameters to fix in Rietveld refinement (default: only 's' is fixed)
         '''
         
-        
-        HKL =                  [[1,0,1],      
+        dfHKL = pd.read_csv('HKL.csv', names=['H', 'K', 'L'], index_col=False)
+        HKL =                  dfHKL
+        """
+                               [[1,0,1],      
                                [1,1,0],         
                                [0,1,2],     
                                [1,0,2],
@@ -233,7 +235,7 @@ class Rietveld:
                                [2,1,3], 
                                [2,2,1], 
                                [1,1,4]]
-        
+        """
 
         atompos = [[0.48764,0.00000,0.33330],[0.43868,0.31187,0.14752]]                       
         Mj = [[0.5],[0.1]]  
