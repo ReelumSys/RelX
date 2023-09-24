@@ -48,8 +48,6 @@ uploaded_file5 = st.image("RietveldRef.png")
 
 #dfHKL = pd.read_fwf('HKL.csv', header=False)
 dfHKL = pd.read_csv('HKL.csv', names=['H','K','L'], sep=',', index_col=None)
-with open("HKL.csv", "r") as txt_file:
-    input_data = [list(map(int, line.split())) for line in txt_file]
 
 #dfHKL['index1'] = dfHKL.index
 st.dataframe(input_data)
