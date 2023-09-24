@@ -50,4 +50,6 @@ uploaded_file5 = st.image("RietveldRef.png")
 dfHKL = pd.read_csv('HKL.csv', names=['H','K','L'], sep=',', index_col=None)
 
 #dfHKL['index1'] = dfHKL.index
+ 
+global dfHKL
 st.dataframe(dfHKL)
