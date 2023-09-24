@@ -104,7 +104,7 @@ def Rietveld_func(x, HKL, atomic_positions, s, m_K, TwoTheta_M, K, N_j, f_j, M_j
         
         #h,k,l =                [1,1,0,1,1,0,3,2,1,2,2,1],[0,1,1,0,0,3,0,2,2,1,2,1],[1,0,2,2,4,2,2,0,3,3,1,4],      
 
-        HKL = dfHKL = pd.read_csv('HKL.csv', names=['H', 'K', 'L'], index_col=False)
+        HKL = pd.read_csv('HKL.csv', names=['H', 'K', 'L'], index_col=False)
         """
         HKL =                  [[1,0,1],      
                                [1,1,0],         
