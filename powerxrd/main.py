@@ -226,7 +226,7 @@ class Rietveld:
             list of Rietveld function parameters to fix in Rietveld refinement (default: only 's' is fixed)
         '''
         
-        #dfHKL = pd.read_csv('HKL.csv', names=['H', 'K', 'L'], index_col=False)
+        dfHKL = pd.read_csv('HKL.csv', names=['H', 'K', 'L'], index_col=False)
         HKL =                  dfHKL
         """
                                [[1,0,1],      
