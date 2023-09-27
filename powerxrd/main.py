@@ -227,7 +227,7 @@ class Rietveld:
         '''
         
         #dfHKL = pd.read_csv('HKL.csv', names=['H', 'K', 'L'], index_col=False)
-        #HKL =                  dfHKL
+        HKL =                  dfHKL
         """
                                [[1,0,1],      
                                [1,1,0],         
