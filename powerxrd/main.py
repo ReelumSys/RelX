@@ -113,7 +113,7 @@ def Rietveld_func(x, HKL, atomic_positions, s, m_K, TwoTheta_M, K, N_j, f_j, M_j
 
         HKL =                  dfHKL        
         """
-        
+        global HKL
         HKL =                  [[1,0,1],      
                                [1,1,0],         
                                [0,1,2],     
