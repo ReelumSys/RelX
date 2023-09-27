@@ -300,7 +300,7 @@ class Rietveld:
             #dfHKL['index1'] = dfHKL.index
             #st.dataframe(dfHKL)
         
-            global HKL
+            
             HKL =              dfHKL
                                 
 
