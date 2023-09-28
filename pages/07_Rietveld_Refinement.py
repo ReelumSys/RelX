@@ -53,4 +53,4 @@ dfHKL = pd.read_csv('HKL.csv', names=['H','K','L'], sep=',', index_col=None)
 #dfHKL['index1'] = dfHKL.index
  
 
-st.dataframe(dfHKL)
+#st.dataframe(dfHKL)
