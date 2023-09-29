@@ -112,16 +112,20 @@ def Rietveld_func(x, HKL, atomic_positions, s, m_K, TwoTheta_M, K, N_j, f_j, M_j
 
         
         #print(dfhkl)
-        dfHKL = np.loadtxt("HKL.txt")
-        dfHKL = np.array(dfHKL)
         
+        
+        
+        #dfHKL = np.loadtxt("HKL.txt")
+        #dfHKL = np.array(dfHKL)
+        
+        dfHKL = pd.read_excel("HKL.csv", dtype = {(np.float})
 
-        df1HKL = dfHKL(np.float64)
+        #df1HKL = dfHKL(np.float64)
         #dfHKL = np.asarray(dfHKL, dtype = 'int')
             
 
         #print(dfHKL)
-        HKL =                  df1HKL        
+        HKL =                  dfHKL        
         """
 
 
