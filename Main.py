@@ -138,7 +138,7 @@ st.success('Done.')
 df = pd.read_fwf(name3)
 #df.to_csv('HKL.csv', index=None)
 np.savetxt('HKL.csv', df, fmt='%i', delimiter=',')
-#np.savetxt('HKL.csv', df, fmt='%s', delimiter=',')
+np.savetxt('HKL.txt', df, fmt='%i', delimiter=' ')
 
 
 #c = np.array(name3)
