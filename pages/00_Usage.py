@@ -49,7 +49,7 @@ st.text("")
 st.markdown('<div style="text-align: justify;"> <font size="+3">The Rietveld equation and the parameters were modified and are working. However it seems that lmfit has a purpose to fit through points closer together at the x-axis. Ongoing work is done here. Needing a conversion to a line graph and still run all parameters. Or you are welcome to try with a very long diffraction time. </font> </div>', unsafe_allow_html=True)
 
 st.text("")
-st.markdown('<div style="text-align: justify;"> <font size="+3">The Rietveld equation and the parameters were modified and are working. However it seems that lmfit has a purpose to fit through points closer together at the x-axis. Ongoing work is done here. Needing a conversion to a line graph and still run all parameters. Or you are welcome to try with a very long diffraction time. </font> </div>', unsafe_allow_html=True)
+st.markdown('<div style="text-align: justify;"> <font size="+3"> A discord server has been set up for possible further development. <a href="https://discord.gg/gFjuBQd4">Click here</a> </font> </div>', unsafe_allow_html=True)
 
 
 #st.write("###### The Charts section for comparing data. The Main gets subtracted by the Comparing. The same is done with logarithmic values on the y-axis.")
