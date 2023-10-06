@@ -30,7 +30,7 @@ import dill
 import tqdm
 
 
-first_cake_angle = 180
+first_cake_angle = 90
 
 #file_path = pd.read_csv('../ksev1.csv', names=['Theta','Int'])
 file_path = "ksev1.csv"
