@@ -118,15 +118,24 @@ def Rietveld_func(x, HKL, atomic_positions, s, m_K, TwoTheta_M, K, N_j, f_j, M_j
 
         #print(dfHKL)
         #dfHKL = pd.read_excel("HKL.txt", dtype = {(np.float)}) 
-        """
-        dfHKL = np.loadtxt("HKL.txt")
-        dfHKL = np.array(dfHKL)
-        np.savetxt('HKL1.txt', dfHKL, fmt='%i', delimiter=' ')
+        
+        
+        
+        uploaded_file = ("HKL.csv")
+        data = pd.read_csv(uploaded_file, sep=" ", names=['H','K','L'])
+
+        
+        
+
+
+        #dfHKL = np.loadtxt("HKL.txt")
+        #dfHKL = np.array(dfHKL)
+        #np.savetxt('HKL1.txt', dfHKL, fmt='%i', delimiter=' ')
 
        
-        print(dfHKL)
+        #print(dfHKL)
         
-        HKL =                  dfHKL        
+        HKL =                  data        
         """
 
 
@@ -144,9 +153,10 @@ def Rietveld_func(x, HKL, atomic_positions, s, m_K, TwoTheta_M, K, N_j, f_j, M_j
                                [2,2,1], 
                                [1,1,4]]
         
-
+        """
 
         atomic_positions = [[0.48764,0.00000,0.33330],[0.43868,0.31187,0.14752]]                       
+        print(atomic_positions)
         Mj = [[0.5],[0.1]]             
 
         def LorentzPol_Factor(Theta, TwoTheta_M = 1,K=1 ):
