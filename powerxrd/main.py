@@ -182,7 +182,7 @@ def Rietveld_func(x, HKL, atomic_positions, s, m_K, TwoTheta_M, K, N_j, f_j, M_j
             'Structure Factor'
             imag_i = 1j
             u_s = 1
-            lmbda = 1
+            lmbda = 1.4
         
            
 
