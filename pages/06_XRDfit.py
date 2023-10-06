@@ -91,10 +91,10 @@ spectral_data.get_fit("(10-10)").plot()
 
 
 
-peak_params = [PeakParams((2.75, 20.95), '1'),
-               PeakParams((20.02, 30.15), '2'),
-               PeakParams((30.15, 40.35), '3'),
-               PeakParams((40.13, 50.30), '4')]
+peak_params = [#PeakParams((2.75, 20.95), '1'),
+               #PeakParams((20.02, 30.15), '2'),
+               #PeakParams((30.15, 40.35), '3'),
+               PeakParams((18, 26), '4')]
 
 spectral_data.plot_peak_params(peak_params, 1, x_range=(2.7, 60), show_points=True)
 
