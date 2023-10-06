@@ -108,9 +108,9 @@ np.savetxt('testTheta2.txt', df_merged, fmt='%f', delimiter=',')
 
 
 global weather1
-weather1 = pd.read_csv('ksev1.csv', names=['2Theta','Int'], skiprows=failure_count)
-weather2 = pd.read_csv('ksev1rand.csv', names=['2Theta','Int'], skiprows=failure_count2)
-weather3 = pd.read_csv('testTheta2.txt', names=['2Theta','Int'])
+weather1 = pd.read_csv('ksev1.csv', names=['\u00b0 2Theta','Int'], skiprows=failure_count)
+weather2 = pd.read_csv('ksev1rand.csv', names=['\u00b0 2Theta','Int'], skiprows=failure_count2)
+weather3 = pd.read_csv('testTheta2.txt', names=['\u00b0 2Theta','Int'])
 
 
 
@@ -160,11 +160,11 @@ print(weatherThetaXX)
 
 
 st.markdown('##### Main')
-st.line_chart(weather1, x = '2Theta', y = 'Int', height = plot_height)
+st.line_chart(weather1, x = '\u00b0 2Theta', y = 'Int', height = plot_height)
 st.markdown('##### Comparing')
-st.line_chart(weather2, x = '2Theta', y = 'Int', height = plot_height)
+st.line_chart(weather2, x = '\u00b0 2Theta', y = 'Int', height = plot_height)
 st.markdown('##### Main - Comparing')
-st.line_chart(weather3, x = '2Theta', y = 'Int', height = plot_height)
+st.line_chart(weather3, x = '\u00b0 2Theta', y = 'Int', height = plot_height)
 
 st.markdown('##### Main - Log Scale')
 st.line_chart(weatherMerge, x = '\u00b0 2Theta', y = 'Int', height = plot_height)
