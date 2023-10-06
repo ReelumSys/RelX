@@ -131,7 +131,7 @@ np.savetxt('testThetaLog2.txt', weatherTheta2, fmt='%f', delimiter=',')
 
 weatherLogXX = pd.read_csv('testLog.txt', names=['Int'])
 weatherLogYY = pd.read_csv('testLogComp.txt', names=['Int'])
-weatherThetaXX = pd.read_csv('testThetaLog.txt', names=['2Theta'])
+weatherThetaXX = pd.read_csv('testThetaLog.txt', names=['\u00b0 F 2Theta'])
 weatherThetaYY = pd.read_csv('testThetaLog2.txt', names=['2Theta'])
 
 
