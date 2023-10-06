@@ -159,7 +159,7 @@ def Rietveld_func(x, HKL, atomic_positions, s, m_K, TwoTheta_M, K, N_j, f_j, M_j
         print(atomic_positions)
         Mj = [[0.5],[0.1]]
         
-        phi = "voigt"
+        phi = 2
 
         def LorentzPol_Factor(Theta, TwoTheta_M = 1,K=1 ):
             'Lorentz-Polarization factor (this is complex)'
