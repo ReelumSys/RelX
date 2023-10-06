@@ -130,7 +130,7 @@ np.savetxt('testThetaLog.txt', weatherTheta, fmt='%f', delimiter=',')
 np.savetxt('testThetaLog2.txt', weatherTheta2, fmt='%f', delimiter=',')
 
 weatherLogXX = pd.read_csv('testLog.txt', names=['Int'])
-weatherLogYY = pd.read_csv('testLogComp.txt', names=['Int2'])
+weatherLogYY = pd.read_csv('testLogComp.txt', names=['Int'])
 weatherThetaXX = pd.read_csv('testThetaLog.txt', names=['2Theta'])
 weatherThetaYY = pd.read_csv('testThetaLog2.txt', names=['2Theta'])
 
@@ -143,7 +143,7 @@ df1 = pd.DataFrame(weatherLogXX)
 df2 = pd.DataFrame(weatherLogYY)
 print(weatherLogXX)
 print(weatherLogYY)
-weatherLogDiff10 = weatherLogXX['Int'] - weatherLogYY['Int2']
+weatherLogDiff10 = weatherLogXX['Int'] - weatherLogYY['Int']
 
 weatherLogDiff10.columns = ['Int']
 print(weatherLogDiff10)
@@ -169,7 +169,7 @@ st.line_chart(weather3, x = '2Theta', y = 'Int', height = plot_height)
 st.markdown('##### Main - Log Scale')
 st.line_chart(weatherMerge, x = '2Theta', y = 'Int', height = plot_height)
 st.markdown('##### Comp - Log Scale')
-st.line_chart(weatherMerge2, x = '2Theta', y = 'Int2', height = plot_height)
+st.line_chart(weatherMerge2, x = '2Theta', y = 'Int', height = plot_height)
 st.markdown('##### Main - Comp - Log Scale')
 st.line_chart(weatherThetaXX, x = '2Theta', y = 'Int', height = plot_height)
 
