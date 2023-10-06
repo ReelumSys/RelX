@@ -109,7 +109,7 @@ np.savetxt('testTheta2.txt', df_merged, fmt='%f', delimiter=',')
 
 global weather1
 weather1 = pd.read_csv('ksev1.csv', names=['2Theta','Int'], skiprows=failure_count)
-weather2 = pd.read_csv('ksev1rand.csv', names=['2Theta','Int2'], skiprows=failure_count2)
+weather2 = pd.read_csv('ksev1rand.csv', names=['2Theta','Int'], skiprows=failure_count2)
 weather3 = pd.read_csv('testTheta2.txt', names=['2Theta','Diff'])
 
 
@@ -118,7 +118,7 @@ weatherTheta = dfTheta['Theta']
 #weatherTheta = dfTheta['Theta']
 #print(weatherTheta)
 weahter5 = weather1['Int']
-weahter6 = weather2['Int2']
+weahter6 = weather2['Int']
 
 
 weatherlog1 = np.log(weahter5)
@@ -162,7 +162,7 @@ print(weatherThetaXX)
 st.markdown('##### Main')
 st.line_chart(weather1, x = '2Theta', y = 'Int', height = plot_height)
 st.markdown('##### Comparing')
-st.line_chart(weather2, x = '2Theta', y = 'Int2', height = plot_height)
+st.line_chart(weather2, x = '2Theta', y = 'Int', height = plot_height)
 st.markdown('##### Main - Comparing')
 st.line_chart(weather3, x = '2Theta', y = 'Diff', height = plot_height)
 
