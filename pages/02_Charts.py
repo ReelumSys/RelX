@@ -110,7 +110,7 @@ np.savetxt('testTheta2.txt', df_merged, fmt='%f', delimiter=',')
 global weather1
 weather1 = pd.read_csv('ksev1.csv', names=['2Theta','Int'], skiprows=failure_count)
 weather2 = pd.read_csv('ksev1rand.csv', names=['2Theta','Int'], skiprows=failure_count2)
-weather3 = pd.read_csv('testTheta2.txt', names=['2Theta','Diff'])
+weather3 = pd.read_csv('testTheta2.txt', names=['2Theta','Int'])
 
 
 
@@ -130,7 +130,7 @@ np.savetxt('testThetaLog.txt', weatherTheta, fmt='%f', delimiter=',')
 np.savetxt('testThetaLog2.txt', weatherTheta2, fmt='%f', delimiter=',')
 
 weatherLogXX = pd.read_csv('testLog.txt', names=['Int'])
-weatherLogYY = pd.read_csv('testLogComp.txt', names=['Diff'])
+weatherLogYY = pd.read_csv('testLogComp.txt', names=['Int2'])
 weatherThetaXX = pd.read_csv('testThetaLog.txt', names=['2Theta'])
 weatherThetaYY = pd.read_csv('testThetaLog2.txt', names=['2Theta'])
 
@@ -143,7 +143,7 @@ df1 = pd.DataFrame(weatherLogXX)
 df2 = pd.DataFrame(weatherLogYY)
 print(weatherLogXX)
 print(weatherLogYY)
-weatherLogDiff10 = weatherLogXX['Int'] - weatherLogYY['Diff']
+weatherLogDiff10 = weatherLogXX['Int'] - weatherLogYY['Int2']
 
 weatherLogDiff10.columns = ['Int']
 print(weatherLogDiff10)
@@ -164,14 +164,14 @@ st.line_chart(weather1, x = '2Theta', y = 'Int', height = plot_height)
 st.markdown('##### Comparing')
 st.line_chart(weather2, x = '2Theta', y = 'Int', height = plot_height)
 st.markdown('##### Main - Comparing')
-st.line_chart(weather3, x = '2Theta', y = 'Diff', height = plot_height)
+st.line_chart(weather3, x = '2Theta', y = 'Int', height = plot_height)
 
 st.markdown('##### Main - Log Scale')
 st.line_chart(weatherMerge, x = '2Theta', y = 'Int', height = plot_height)
 st.markdown('##### Comp - Log Scale')
 st.line_chart(weatherMerge2, x = '2Theta', y = 'Int2', height = plot_height)
 st.markdown('##### Main - Comp - Log Scale')
-st.line_chart(weatherThetaXX, x = '2Theta', y = 'Diff', height = plot_height)
+st.line_chart(weatherThetaXX, x = '2Theta', y = 'Int', height = plot_height)
 
 chart_data = pd.DataFrame(
     weatherThetaXX,
