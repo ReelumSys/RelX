@@ -28,7 +28,7 @@ import csv
 from itertools import repeat
 import os
 import time
-sys.path.append("path to the xrayutilities package")
+#sys.path.append("path to the xrayutilities package")
 import xrayutilities as xu
 
 import utils as ut
