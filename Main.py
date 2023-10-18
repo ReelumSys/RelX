@@ -29,6 +29,11 @@ from itertools import repeat
 import os
 import time
 
+import utils as ut
+
+
+
+
 
 from numpy import*
 from scipy import*
@@ -69,13 +74,15 @@ from lattpy import simple_square
 StartingValue = 10
 
 
-
+ut.draw_something_on_top_of_page_navigation()
 im = Image.open("favicon2.png")
 st.set_page_config(
     page_title="RelX v0.9",
     page_icon=im,
     layout="wide",
 )
+
+
 
 image = Image.open('./images/favicon.png')
 new_img = image.resize((180, 100))
