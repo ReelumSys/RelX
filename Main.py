@@ -184,7 +184,7 @@ with open('style.css') as f:
     st.sidebar.title("Explore")
 st.sidebar.header('')
 
-ut.draw_something_on_top_of_page_navigation()
+#ut.draw_something_on_top_of_page_navigation()
 
 image = Image.open('./images/favicon.png')
 new_img = image.resize((200, 100))
