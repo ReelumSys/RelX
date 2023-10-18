@@ -5,6 +5,7 @@ scipy
 dill
 tqdm
 xrdfit
+xrayutilities
 numpy
 altair
 openai
