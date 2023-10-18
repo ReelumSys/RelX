@@ -28,6 +28,7 @@ import csv
 from itertools import repeat
 import os
 import time
+import xrayutilities
 
 import utils as ut
 
@@ -153,7 +154,7 @@ np.savetxt('HKL.txt', df, fmt='%i', delimiter=' ')
 
 #np.savetxt('HKL.csv', na, fmt='%s', delimiter=',')
 #print(name3)
-ut.draw_something_on_top_of_page_navigation()
+#ut.draw_something_on_top_of_page_navigation()
 
 os.system("WH.py")
 
