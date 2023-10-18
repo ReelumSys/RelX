@@ -4,6 +4,9 @@ import pandas as pd
 import numpy as np
 import streamlit as st
 
+
+import xrayutilities as xu
+
 # Set the matplotlib backend and make the plots a bit bigger
 
 import matplotlib
@@ -24,6 +27,23 @@ st.sidebar.header('')
 
 
 
+
+
+
+
+
+
+#xf = xu.io.XRDMLFile('data/rsm_1.xrdml.bz2')
+
+
+
+
+
+
+
+
+
+"""
 from xrdfit.spectrum_fitting import PeakParams, FitSpectrum
 
 import dill
@@ -120,5 +140,5 @@ spectral_data.plot_peak_params(peak_params, 1, show_points=True, label_angle=60)
 #st.markdown('###### W-H Plot')
 #uploaded_file = st.image("favicon2.png")
 
-
+"""
 
