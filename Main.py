@@ -183,7 +183,9 @@ with open('style.css') as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
     st.sidebar.title("Explore")
 st.sidebar.header('')
+
 ut.draw_something_on_top_of_page_navigation()
+
 image = Image.open('./images/favicon.png')
 new_img = image.resize((200, 100))
 st.image(new_img)
