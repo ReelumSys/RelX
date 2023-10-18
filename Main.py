@@ -74,7 +74,7 @@ from lattpy import simple_square
 StartingValue = 10
 
 
-ut.draw_something_on_top_of_page_navigation()
+
 im = Image.open("favicon2.png")
 st.set_page_config(
     page_title="RelX v0.9",
@@ -183,7 +183,7 @@ with open('style.css') as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
     st.sidebar.title("Explore")
 st.sidebar.header('')
-
+ut.draw_something_on_top_of_page_navigation()
 image = Image.open('./images/favicon.png')
 new_img = image.resize((200, 100))
 st.image(new_img)
