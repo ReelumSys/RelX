@@ -1,4 +1,4 @@
-Muttimport xrdfit
+import xrdfit
 import lmfit
 import pandas as pd
 import numpy as np
