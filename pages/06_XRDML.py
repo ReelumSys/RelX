@@ -39,7 +39,7 @@ st.sidebar.header('')
 
 
 
-om, tt, psd = xu.io.getxrdml_map('rsm_%d.xrdml.bz2', [1], path='data')
+om, tt, psd = xu.io.getxrdml_map('KSeV1Rand.xrdml', [1], path='data')
 
 #tt, om, psd = xu.io.getxrdml_scan('rsm_%d.xrdml.bz2', 'Omega', scannrs=[1, 2, 3, 4, 5], path='data')
 
