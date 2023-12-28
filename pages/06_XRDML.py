@@ -46,7 +46,7 @@ chpdeg = 340.0002
 nchannel = 3000
 datapath = os.path.join("KSeV1Rand")
 
-nor
+
 
 om, tt, psd = xu.io.getxrdml_map('KSeV1Rand.xrdml', path='data')
 
