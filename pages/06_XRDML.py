@@ -42,7 +42,7 @@ st.sidebar.header('')
 #mpl.rcParams['font.size'] = 16.0
 #mpl.rcParams['lines.linewidth'] = 2.0
 
-tt, det, sig = numpy.loadtxt(os.path.join('data', 'KSeV1Rand.xrdml.bz2'), unpack=True)
+tt, det, sig = numpy.loadtxt(os.path.join('data', 'KSeV1Rand.xrdml'), unpack=True)
 
 
 sample = "KSeV1Rand"
