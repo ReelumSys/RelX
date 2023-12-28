@@ -39,6 +39,13 @@ with open('style.css') as f:
 st.sidebar.header('')
 
 
+mpl.rcParams['font.size'] = 16.0
+mpl.rcParams['lines.linewidth'] = 2.0
+
+ tt, det, sig = numpy.loadtxt(
+        os.path.join('data', 'KSeV1Rand.xrdml.bz2'), unpack=True)
+
+
 sample = "KSeV1Rand"
 energy = 50000
 center_ch = 700.0002
@@ -48,7 +55,7 @@ datapath = os.path.join("KSeV1Rand")
 
 
 
-om, tt, psd = xu.io.getxrdml_map('KSeV1Rand.xrdml', path='data')
+#om, tt, psd = xu.io.getxrdml_map('KSeV1Rand.xrdml', path='data')
 
 #tt, om, psd = xu.io.getxrdml_scan('rsm_%d.xrdml.bz2', 'Omega', scannrs=[1, 2, 3, 4, 5], path='data')
 
