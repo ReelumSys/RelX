@@ -3,7 +3,8 @@ import lmfit
 import pandas as pd
 import numpy as np
 import streamlit as st
-
+import os
+import matplotlib.pyplot as plt
 
 import dill
 import tqdm
@@ -38,6 +39,14 @@ with open('style.css') as f:
 st.sidebar.header('')
 
 
+sample = "KSeV1Rand"
+energy = 50000
+center_ch = 700.0002
+chpdeg = 340.0002
+nchannel = 3000
+datapath = os.path.join("KSeV1Rand")
+
+nor
 
 om, tt, psd = xu.io.getxrdml_map('KSeV1Rand.xrdml', path='data')
 
