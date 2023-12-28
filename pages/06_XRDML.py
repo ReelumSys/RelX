@@ -1,11 +1,15 @@
-import xrdfit
+Muttimport xrdfit
 import lmfit
 import pandas as pd
 import numpy as np
 import streamlit as st
 
 
+import dill
+import tqdm
 import xrayutilities as xu
+from xrdfit.spectrum_fitting import PeakParams, FitSpectrum
+
 
 # Set the matplotlib backend and make the plots a bit bigger
 
@@ -27,7 +31,10 @@ st.sidebar.header('')
 
 
 
+first_cake_angle = 90
 
+file_path = pd.read_csv('../ksev1.csv', names=['Theta','Int'])
+spectral_data = FitSpectrum(file_path, first_cake_angle, delimiter=',')
 
 
 
@@ -43,11 +50,11 @@ st.sidebar.header('')
 
 
 
-"""
-from xrdfit.spectrum_fitting import PeakParams, FitSpectrum
 
-import dill
-import tqdm
+
+"""
+
+
 
 
 first_cake_angle = 90
