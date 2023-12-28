@@ -7,7 +7,15 @@ import streamlit as st
 
 import dill
 import tqdm
+#import xrayutilities as xu
+import time
+
+from numpy import arange, inf
+from matplotlib.pylab import (figure, legend, semilogy, tight_layout, xlabel,
+                              ylabel)
+
 import xrayutilities as xu
+
 from xrdfit.spectrum_fitting import PeakParams, FitSpectrum
 
 
@@ -31,10 +39,14 @@ st.sidebar.header('')
 
 
 
-first_cake_angle = 90
+om, tt, psd = xu.io.getxrdml_map('rsm_%d.xrdml.bz2', [1], path='data')
 
-file_path = pd.read_csv('../ksev1.csv', names=['Theta','Int'])
-spectral_data = FitSpectrum(file_path, first_cake_angle, delimiter=',')
+#tt, om, psd = xu.io.getxrdml_scan('rsm_%d.xrdml.bz2', 'Omega', scannrs=[1, 2, 3, 4, 5], path='data')
+
+#first_cake_angle = 90
+
+#file_path = pd.read_csv('../ksev1.csv', names=['Theta','Int'])
+#spectral_data = FitSpectrum(file_path, first_cake_angle, delimiter=',')
 
 
 
