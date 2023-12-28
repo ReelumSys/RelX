@@ -42,15 +42,15 @@ st.sidebar.header('')
 #mpl.rcParams['font.size'] = 16.0
 #mpl.rcParams['lines.linewidth'] = 2.0
 
-tt, det, sig = numpy.loadtxt(os.path.join('data', 'KSeV1Rand.xrdml.bz2'), unpack=True)
+xf = xu.io.XRDMLFile('pages/KSeV1Rand.xrdml.bz2')
 
 
-sample = "KSeV1Rand"
-energy = 50000
-center_ch = 700.0002
-chpdeg = 340.0002
-nchannel = 3000
-datapath = os.path.join("KSeV1Rand")
+#sample = "KSeV1Rand"
+#energy = 50000
+#center_ch = 700.0002
+#chpdeg = 340.0002
+#nchannel = 3000
+#datapath = os.path.join("KSeV1Rand")
 
 
 
