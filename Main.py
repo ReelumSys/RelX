@@ -111,18 +111,19 @@ df.to_csv('ksev1rand.csv', index=False)
 np.savetxt('ksev1rand.xy', df, fmt='%f', delimiter='\t')
 np.savetxt('ksev1rand.csv', df, fmt='%f', delimiter=',')
 
-uploaded_file3 = st.file_uploader("Upload a .txt of the HKLs for Rietveld Refinement and Bravais calculations", type=["txt"])
 
-name3 = uploaded_file3
-if not name3:
-  st.warning('Please input a .txt file.')
-  st.stop()
-st.success('Done.')
+#uploaded_file3 = st.file_uploader("Upload a .txt of the HKLs for Rietveld Refinement and Bravais calculations", type=["txt"])
 
-df = pd.read_fwf(name3)
+#name3 = uploaded_file3
+#if not name3:
+#  st.warning('Please input a .txt file.')
+#  st.stop()
+#st.success('Done.')
+
+#df = pd.read_fwf(name3)
 #df.to_csv('HKL.csv', index=None)
-np.savetxt('HKL.csv', df, fmt='%i', delimiter=',')
-np.savetxt('HKL.txt', df, fmt='%i', delimiter=' ')
+#np.savetxt('HKL.csv', df, fmt='%i', delimiter=',')
+#np.savetxt('HKL.txt', df, fmt='%i', delimiter=' ')
 
 
 #c = np.array(name3)
