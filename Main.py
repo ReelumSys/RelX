@@ -81,7 +81,7 @@ for uploaded_file in uploaded_files:
 """
 
 # Allow only .csv and .xlsx files to be uploaded
-uploaded_file = st.file_uploader("Upload Main XRD", accept_multiple_files=True, type=["txt"])
+uploaded_file = st.file_uploader("Upload Main XRD", type=["txt"])
 
 name = uploaded_file
 if not name:
@@ -108,6 +108,7 @@ np.savetxt('ksev1.csv', df, fmt='%f', delimiter=',')
 
 df = pd.read_fwf(name2)
 df.to_csv('ksev1rand.csv', index=False)
+np.savetxt('ksev1rand.xy', df, fmt='%f', delimiter='\t')
 np.savetxt('ksev1rand.csv', df, fmt='%f', delimiter=',')
 
 uploaded_file3 = st.file_uploader("Upload a .txt of the HKLs for Rietveld Refinement and Bravais calculations", type=["txt"])
