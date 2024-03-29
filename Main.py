@@ -1,6 +1,4 @@
-﻿# Contents of ~/my_app/main_page.py
-
-import streamlit as st
+﻿import streamlit as st
 import pandas as pd
 import plost
 import base64
@@ -14,36 +12,24 @@ from matplotlib import pyplot
 from PyCrystallography import unit_cell
 from PyCrystallography import lattice
 import WH
-
 import powerxrd as xrd
 import numpy as np
 import pandas as pd
 import io
 from matplotlib import* #pylab as plt
 import matplotlib.pyplot as plt
-#import subprocess
 import sys
 sys.path.append('../powerxrd/powerxrd/powerxrd')
 import csv
 from itertools import repeat
 import os
 import time
-#sys.path.append("path to the xrayutilities package")
 import xrayutilities as xu
-
 import utils as ut
-
-
-
-
-
-from numpy import*
-from scipy import*
 import urllib
 
 from scipy.optimize import fmin
 from scipy.optimize import curve_fit
-
 from powerxrd.main import scherrer as beta
 from powerxrd.main import Chart as SchPeak
 
@@ -51,7 +37,6 @@ from powerxrd.main import*
 import contextlib
 from WH import m
 from WH import d
-#from WH import*
 
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
@@ -62,18 +47,7 @@ import numpy as np
 from lattpy import Lattice
 from lattpy import simple_square
 
-
-    # Clear values from *all* all in-memory and on-disk data caches:
-    # i.e. clear values from both square and cube
 #st.cache_data.clear()
-
-#from ... import Charts as weather1
-#from ... import Charts as weather2
-#from ... import Charts as weather3
-
-#StValv = 20
-#global StValv
-StartingValue = 10
 
 
 
