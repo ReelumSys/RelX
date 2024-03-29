@@ -33,7 +33,6 @@ from scipy.optimize import curve_fit
 from powerxrd.main import scherrer as beta
 from powerxrd.main import Chart as SchPeak
 
-from powerxrd.main import*
 import contextlib
 from WH import m
 from WH import d
@@ -43,13 +42,8 @@ from mpl_toolkits.mplot3d import Axes3D
 from PyCrystallography.geometry import *
 from PyCrystallography.stereographic_projection import*
 
-import numpy as np
 from lattpy import Lattice
 from lattpy import simple_square
-
-#st.cache_data.clear()
-
-
 
 im = Image.open("favicon2.png")
 st.set_page_config(
@@ -57,8 +51,6 @@ st.set_page_config(
     page_icon=im,
     layout="wide",
 )
-
-
 
 image = Image.open('./images/favicon.png')
 new_img = image.resize((180, 100))
@@ -80,8 +72,16 @@ st.image(new_img)
 st.text("")
 st.markdown('###### First upload two .txt files separately and let them be calculated.')
 
+"""
+uploaded_files = st.file_uploader("Choose a CSV file", accept_multiple_files=True)
+for uploaded_file in uploaded_files:
+    bytes_data = uploaded_file.read()
+    st.write("filename:", uploaded_file.name)
+    st.write(bytes_data)
+"""
+
 # Allow only .csv and .xlsx files to be uploaded
-uploaded_file = st.file_uploader("Upload Main XRD", type=["txt"])
+uploaded_file = st.file_uploader("Upload Main XRD", accept_multiple_files=True, type=["txt"])
 
 name = uploaded_file
 if not name:
