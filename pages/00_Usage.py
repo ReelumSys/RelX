@@ -1,5 +1,4 @@
 ﻿import streamlit as st
-import streamlit as st
 import pandas as pd
 import plost
 import base64
@@ -10,7 +9,6 @@ import random
 import time
 import openai
 import os
-import streamlit as st
 from langchain.llms.openai import OpenAI
 
 
