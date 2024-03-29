@@ -1,4 +1,6 @@
-﻿import streamlit as st
+﻿# Contents of ~/my_app/main_page.py
+
+import streamlit as st
 import pandas as pd
 import plost
 import base64
@@ -12,38 +14,68 @@ from matplotlib import pyplot
 from PyCrystallography import unit_cell
 from PyCrystallography import lattice
 import WH
+
 import powerxrd as xrd
 import numpy as np
 import pandas as pd
 import io
 from matplotlib import* #pylab as plt
 import matplotlib.pyplot as plt
+#import subprocess
 import sys
 sys.path.append('../powerxrd/powerxrd/powerxrd')
 import csv
 from itertools import repeat
 import os
 import time
+#sys.path.append("path to the xrayutilities package")
 import xrayutilities as xu
+
 import utils as ut
+
+
+
+
+
+from numpy import*
+from scipy import*
 import urllib
 
 from scipy.optimize import fmin
 from scipy.optimize import curve_fit
+
 from powerxrd.main import scherrer as beta
 from powerxrd.main import Chart as SchPeak
 
+from powerxrd.main import*
 import contextlib
 from WH import m
 from WH import d
+#from WH import*
 
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 from PyCrystallography.geometry import *
 from PyCrystallography.stereographic_projection import*
 
+import numpy as np
 from lattpy import Lattice
 from lattpy import simple_square
+
+
+    # Clear values from *all* all in-memory and on-disk data caches:
+    # i.e. clear values from both square and cube
+#st.cache_data.clear()
+
+#from ... import Charts as weather1
+#from ... import Charts as weather2
+#from ... import Charts as weather3
+
+#StValv = 20
+#global StValv
+StartingValue = 10
+
+
 
 im = Image.open("favicon2.png")
 st.set_page_config(
@@ -51,6 +83,8 @@ st.set_page_config(
     page_icon=im,
     layout="wide",
 )
+
+
 
 image = Image.open('./images/favicon.png')
 new_img = image.resize((180, 100))
@@ -71,14 +105,6 @@ new_img = image.resize((220, 220))
 st.image(new_img)
 st.text("")
 st.markdown('###### First upload two .txt files separately and let them be calculated.')
-
-
-#uploaded_files = st.file_uploader("Choose a CSV file", accept_multiple_files=True)
-#for uploaded_file in uploaded_files:
-#    bytes_data = uploaded_file.read()
-#    st.write("filename:", uploaded_file.name)
-#    st.write(bytes_data)
-
 
 # Allow only .csv and .xlsx files to be uploaded
 uploaded_file = st.file_uploader("Upload Main XRD", type=["txt"])
@@ -108,22 +134,20 @@ np.savetxt('ksev1.csv', df, fmt='%f', delimiter=',')
 
 df = pd.read_fwf(name2)
 df.to_csv('ksev1rand.csv', index=False)
-np.savetxt('ksev1rand.xy', df, fmt='%f', delimiter='\t')
 np.savetxt('ksev1rand.csv', df, fmt='%f', delimiter=',')
 
+uploaded_file3 = st.file_uploader("Upload a .txt of the HKLs for Rietveld Refinement and Bravais calculations", type=["txt"])
 
-#uploaded_file3 = st.file_uploader("Upload a .txt of the HKLs for Rietveld Refinement and Bravais calculations", type=["txt"])
+name3 = uploaded_file3
+if not name3:
+  st.warning('Please input a .txt file.')
+  st.stop()
+st.success('Done.')
 
-#name3 = uploaded_file3
-#if not name3:
-#  st.warning('Please input a .txt file.')
-#  st.stop()
-#st.success('Done.')
-
-#df = pd.read_fwf(name3)
+df = pd.read_fwf(name3)
 #df.to_csv('HKL.csv', index=None)
-#np.savetxt('HKL.csv', df, fmt='%i', delimiter=',')
-#np.savetxt('HKL.txt', df, fmt='%i', delimiter=' ')
+np.savetxt('HKL.csv', df, fmt='%i', delimiter=',')
+np.savetxt('HKL.txt', df, fmt='%i', delimiter=' ')
 
 
 #c = np.array(name3)
