@@ -423,24 +423,27 @@ class Rietveld:
         my_int_list2 = [float(i) for i in lines2]
 
        
-        #a = ''.join(str(my_int_list).split(','))
+         #a = ''.join(str(my_int_list).split(','))
         #b = ''.join(str(my_int_list2).split(','))
 
         list_1 = selfxtrans.tolist()
         
-
+ 
         #print(list_1)
         #print(my_int_list)
 
         axes[1].plot(self.x_exp, self.y_exp, 'bo', label='bo', )
+        plt.xlabel('2Theta', fontsize = 14)
+        plt.ylabel('Int', fontsize = 14)
+
         axes[0].plot(self.x_exp, self.y_exp, 'bo', label='bo', )
 
         #print(self.x_exp)
         axes[0].plot(list_1, my_int_list, 'k', label='initial fit')
         axes[0].plot(list_1, my_int_list2, 'r', label='best fit')
         axes[0].legend()
-        plt.xlabel(r'$2Theta$',fontsize = 14)
-        plt.ylabel(r'$Int$',fontsize = 14)
+        plt.xlabel('2Theta', fontsize = 14)
+        plt.ylabel('Int', fontsize = 14)
         #plt.show()
         plt.savefig('RietveldRef.png')
         #plt.show()

@@ -34,3 +34,4 @@ scikit-learn
 scikit-learn-intelex
 streamlit
 sympy
+langchain[all]

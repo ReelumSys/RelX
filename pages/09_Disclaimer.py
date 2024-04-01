@@ -30,7 +30,7 @@ def set_background(png_file):
     ''' % bin_str
     st.markdown(page_bg_img, unsafe_allow_html=True)
 
-st.markdown("## Imprint")
+#st.markdown("## Imprint")
 st.sidebar.markdown("# ")
 st.write("###### \n Impressum (Legal Notice) ff") 
 st.write('''"Information according to § 5 TMG: "''') 
