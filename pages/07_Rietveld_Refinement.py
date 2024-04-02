@@ -9,6 +9,7 @@ from WH import m
 from WH import d
 from WH import*
 from PIL import Image
+from powerxrd import AP1
 
 
 im = 'favicon2.png'
@@ -32,7 +33,8 @@ st.sidebar.header('')
   
 #number = st.number_input('Enter HKL')
 #st.write('The current number is ', number)
-st.stop()
+number = st.number_input("Insert a number", value=None, placeholder="A number between 0 and 1", min_value=0, max_value=1)
+st.write('The current number is ', number)
 
 
 
