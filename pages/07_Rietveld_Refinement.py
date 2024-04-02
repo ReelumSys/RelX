@@ -1,5 +1,4 @@
 import streamlit as st
-import streamlit as st
 import pandas as pd
 import plost
 import base64
@@ -9,7 +8,7 @@ from WH import m
 from WH import d
 from WH import*
 from PIL import Image
-
+from powerxrd import main
 
 
 im = 'favicon2.png'
