@@ -32,7 +32,7 @@ global AP1
   
 #number = st.number_input('Enter HKL')
 #st.write('The current number is ', number)
-AP1 = st.number_input("Insert a number", value=0, placeholder="A number between 0 and 1", min_value=0, max_value=1, step=float)
+AP1 = st.number_input("Insert a number", value=0, placeholder="A number between 0 and 1", min_value=0, max_value=1, step=1, format="%.2f")
 st.write('The current number is ', AP1)
 
 
