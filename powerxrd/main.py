@@ -153,7 +153,7 @@ def Rietveld_func(x, HKL, atomic_positions, s, m_K, TwoTheta_M, K, N_j, f_j, M_j
                                [2,2,1], 
                                [1,1,4]]
         
-        global AP1
+       
 
         atomic_positions = [[AP1,0.00000,0.33330],[0.43868,0.31187,0.14752]]                       
         #atomic_positions = [[0.48764,0.00000,0.33330],[0.43868,0.31187,0.14752]]                       
