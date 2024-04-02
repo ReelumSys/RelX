@@ -35,6 +35,13 @@ AP1 = st.number_input('Enter x for Atom A',format="%f")
 #AP1 = st.number_input("Insert a number", placeholder="A number between 0 and 1", step=1, format="%f")
 st.write('The current number is ', AP1)
 
+AP2 = st.number_input('Enter y for Atom A',format="%f")
+#st.write('The current number is ', number)
+#AP1 = st.number_input("Insert a number", placeholder="A number between 0 and 1", step=1, format="%f")
+st.write('The current number is ', AP2)
+
+
+
 
 
 st.markdown('### Main')
