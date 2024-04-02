@@ -26,8 +26,6 @@ st.sidebar.header('')
 
 
 
-global AP1
-
 
   
 AP1 = st.number_input('Enter x for Atom A',format="%f")
@@ -40,6 +38,8 @@ AP2 = st.number_input('Enter y for Atom A',format="%f")
 #AP1 = st.number_input("Insert a number", placeholder="A number between 0 and 1", step=1, format="%f")
 st.write('The current number is ', AP2)
 
+global AP1
+global AP2
 
 
 
