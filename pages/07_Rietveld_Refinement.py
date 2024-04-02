@@ -33,8 +33,8 @@ st.sidebar.header('')
   
 #number = st.number_input('Enter HKL')
 #st.write('The current number is ', number)
-number = st.number_input("Insert a number", value=None, placeholder="A number between 0 and 1", min_value=0, max_value=1)
-st.write('The current number is ', number)
+#number = st.number_input("Insert a number", value=None, placeholder="A number between 0 and 1", min_value=0, max_value=1)
+#st.write('The current number is ', number)
 
 
 
