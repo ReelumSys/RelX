@@ -15,9 +15,9 @@ from scipy.optimize import curve_fit
 from lmfit import CompositeModel, Model
 from lmfit.lineshapes import gaussian, step
 #from pages import Rietveld_Refinement*
-#from pages.07_Rietveld_Refinement import AP2
+from pages.07_Rietveld_Refinement import *
 
-from pages.Rietveld_Refinement import *
+#from pages.Rietveld_Refinement import *
 
 def braggs(twotheta,lmda=1.54):
     '''interplanar spacing "d_hkl" from Braggs law'''
