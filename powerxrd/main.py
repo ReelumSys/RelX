@@ -14,7 +14,7 @@ from scipy.optimize import curve_fit
 
 from lmfit import CompositeModel, Model
 from lmfit.lineshapes import gaussian, step
-from pages import *
+from pages import AP1
 
 def braggs(twotheta,lmda=1.54):
     '''interplanar spacing "d_hkl" from Braggs law'''
