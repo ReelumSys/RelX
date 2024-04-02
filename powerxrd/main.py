@@ -153,9 +153,10 @@ def Rietveld_func(x, HKL, atomic_positions, s, m_K, TwoTheta_M, K, N_j, f_j, M_j
                                [2,2,1], 
                                [1,1,4]]
         
-        S1 = AP1
+        AP1 = S1
+        AP2 = S2
 
-        atomic_positions = [[S1,0.00000,0.33330],[0.43868,0.31187,0.14752]]                       
+        atomic_positions = [[S1,S2,0.33330],[0.43868,0.31187,0.14752]]                       
         #atomic_positions = [[0.48764,0.00000,0.33330],[0.43868,0.31187,0.14752]]                       
         print(atomic_positions)
         Mj = [[0.5],[0.1]]
