@@ -30,9 +30,9 @@ global AP1
 
 
   
-#number = st.number_input('Enter HKL')
+AP1 = st.number_input('Enter x for Atom A',format="%f")
 #st.write('The current number is ', number)
-AP1 = st.number_input("Insert a number", placeholder="A number between 0 and 1", step=1, format="%.2f")
+#AP1 = st.number_input("Insert a number", placeholder="A number between 0 and 1", step=1, format="%f")
 st.write('The current number is ', AP1)
 
 
