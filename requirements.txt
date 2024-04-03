@@ -4,14 +4,10 @@ numpy
 scipy
 dill
 tqdm
-xrdfit
-xrayutilities
 numpy
 altair
 openai
 matplotlib
-PyCrystallography
-powerxrd
 urllib3
 lattpy
 linear-tsv==1.1.0
@@ -28,7 +24,6 @@ packaging
 pandas==1.5.3
 pandocfilters 
 Pillow==9.4.0
-powerxrd==2.2.0
 scikit-image
 scikit-learn
 scikit-learn-intelex
