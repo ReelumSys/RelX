@@ -107,7 +107,7 @@ st.text("")
 st.markdown('###### First upload two .txt files separately and let them be calculated.')
 
 # Allow only .csv and .xlsx files to be uploaded
-uploaded_file = st.file_uploader("Upload Main XRD", type=["txt"])
+uploaded_file = st.file_uploader("Upload Main XRD Pattern", type=["txt"])
 
 name = uploaded_file
 if not name:
@@ -117,7 +117,7 @@ st.success('Done.')
 
 
 
-uploaded_file2 = st.file_uploader("Upload Compairing XRD", type=["txt"])
+uploaded_file2 = st.file_uploader("Upload Compairing XRD Pattern", type=["txt"])
 
 name2 = uploaded_file2
 if not name2:
