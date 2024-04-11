@@ -30,3 +30,4 @@ scikit-learn-intelex
 streamlit
 sympy
 langchain[all]
+PyCrystallography
