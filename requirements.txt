@@ -31,3 +31,4 @@ streamlit
 sympy
 langchain[all]
 PyCrystallography
+xrayutilities
