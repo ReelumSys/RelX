@@ -1,3 +1,0 @@
-from powerxrd.main import *
-
-
