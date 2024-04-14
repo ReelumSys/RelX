@@ -19,10 +19,10 @@ st.set_page_config(
     page_icon=im,
     layout="wide",
 )
-
+st.logo("favicon.png")
 with open('style.css') as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
-st.logo("favicon.png")
+
 def set_background(png_file):
     bin_str = get_base64(png_file)
     page_bg_img = '''
