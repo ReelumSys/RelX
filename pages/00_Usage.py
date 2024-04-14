@@ -98,7 +98,7 @@ def generate_response(input_text):
     st.info(llm(input_text))
 
 with st.form('my_form'):
-    text = st.text_area('Enter text:', 'What are the three key pieces of advice for learning how to do Rietveld Refinement?')
+    text = st.text_area('Enter text:', 'What are the three key pieces of advice for learning how to do a Rietveld Refinement?')
     submitted = st.form_submit_button('Submit')
     if not openai_api_key.startswith('sk-'):
         st.warning('Please enter your OpenAI API key!', icon='⚠')
