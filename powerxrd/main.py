@@ -19,7 +19,7 @@ from lmfit.lineshapes import gaussian, step
 #from Rietveld_Refinement import AtomAinY
 #from Rietveld_Refinement import AtomAinZ
 import sys
-sys.path.append('../pages/07_Rietveld_Refinement')
+sys.path.append('../pages')
 from pages.07_Rietveld_Refinement import AtomAinX
 
 #from pages.Rietveld_Refinement import *
