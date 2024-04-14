@@ -42,7 +42,7 @@ st.sidebar.header('')
 #mpl.rcParams['font.size'] = 16.0
 #mpl.rcParams['lines.linewidth'] = 2.0
 
-xf = xu.io.XRDMLFile('pages/SiGlas.xrdml')
+xf = xu.io.XRDMLFile('./pages/SiGlas.xrdml')
 
 
 #sample = "KSeV1Rand"
