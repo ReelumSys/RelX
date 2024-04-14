@@ -91,8 +91,9 @@ st.set_page_config(
 image = Image.open('./images/favicon.png')
 new_img = image.resize((180, 100))
 st.image(new_img)
-
-
+left_co, cent_co,last_co = st.columns(3)
+with cent_co:
+    st.image(new_img)
 
 #image = Image.open('./images/favicon.png')
 #new_img = image.resize((200, 100))
