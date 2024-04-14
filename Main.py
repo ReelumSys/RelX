@@ -146,6 +146,7 @@ st.image(new_img)
 st.text("")
 
 
+
 name3 = uploaded_file3
 if not name3:
   st.warning('Please input a .txt file.')
