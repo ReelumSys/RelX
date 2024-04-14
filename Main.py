@@ -85,7 +85,7 @@ st.set_page_config(
 )
 
 
-st.logo("./images/favicon.png")
+
 image = Image.open('./images/favicon.png')
 new_img = image.resize((180, 100))
 st.image(new_img)
@@ -196,7 +196,7 @@ with open('style.css') as f:
 st.sidebar.header('')
 
 #ut.draw_something_on_top_of_page_navigation()
-
+st.logo("./images/favicon.png")
 image = Image.open('./images/favicon.png')
 new_img = image.resize((200, 100))
 st.image(new_img)
