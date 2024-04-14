@@ -10,7 +10,7 @@ import time
 import openai
 import os
 from langchain.llms import OpenAI
-
+from streamlit_extras.app_logo import add_logo
 
 im = 'favicon2.png'
 st.set_page_config(
@@ -19,7 +19,10 @@ st.set_page_config(
     page_icon=im,
     layout="wide",
 )
-st.sidebar.multipage_menu("favicon.png")
+
+def logo():
+    add_logo("favicon.png", height=300)
+
 st.sidebar.image("./images/favicon.png", width=150)
 with open('style.css') as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
