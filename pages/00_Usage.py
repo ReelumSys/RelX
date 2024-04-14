@@ -20,8 +20,7 @@ st.set_page_config(
     layout="wide",
 )
 
-def logo():
-    add_logo("favicon.png", height=300)
+
 
 st.sidebar.image("./images/favicon.png", width=150)
 with open('style.css') as f:
