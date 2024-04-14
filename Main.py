@@ -201,7 +201,7 @@ image = Image.open('./images/favicon.png')
 new_img = image.resize((200, 100))
 st.image(new_img)
 
-st.sidebar.subheader('Heat map parameter')
+#st.sidebar.subheader('Heat map parameter')
 #time_hist_color = st.sidebar.selectbox('Color by', '') 
 
 #st.sidebar.subheader('Donut chart parameter')
