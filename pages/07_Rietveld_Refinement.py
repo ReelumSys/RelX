@@ -30,7 +30,7 @@ st.sidebar.markdown("# ")
 #st.sidebar.subheader('Heat map parameter')
 #time_hist_color = st.sidebar.selectbox('Color by', '')
 st.sidebar.subheader('Atom A')
-AtomA = st.sidebar.st.number_input(label='For X in Atom A',format="%.2f")
+AtomA = st.sidebar.number_input(label='For X in Atom A',format="%.2f")
 
 
 global AP1
