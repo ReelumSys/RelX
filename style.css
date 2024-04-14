@@ -1,7 +1,7 @@
 /* Logo */
 /* Adapted from Zachary Blackwood */
 [data-testid="stSidebar"] {
-    background-image: url("/images/favicon.png");
+    background-image: url("./images/favicon.png");
     background-size: 125px;
     background-repeat: no-repeat;
     background-position: 4px 20px;
