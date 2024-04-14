@@ -200,9 +200,16 @@ st.sidebar.header('')
 
 #ut.draw_something_on_top_of_page_navigation()
 
+#image = Image.open('./images/favicon.png')
+#new_img = image.resize((200, 100))
+#st.image(new_img)
 image = Image.open('./images/favicon.png')
-new_img = image.resize((200, 100))
-st.image(new_img)
+new_img = image.resize((180, 100))
+#st.image(new_img)
+left_co, cent_co,last_co = st.columns(3)
+with cent_co:
+    st.image(new_img)
+
 
 #st.sidebar.subheader('Heat map parameter')
 #time_hist_color = st.sidebar.selectbox('Color by', '') 
