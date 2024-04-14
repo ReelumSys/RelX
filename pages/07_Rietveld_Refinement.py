@@ -35,10 +35,10 @@ st.sidebar.markdown("# ")
 
 #st.sidebar.subheader('Heat map parameter')
 #time_hist_color = st.sidebar.selectbox('Color by', '')
-st.sidebar.subheader('Atom A')
-AtomAinX = st.sidebar.number_input(label='For X in Atom A',format="%.2f")
-AtomAinY = st.sidebar.number_input(label='For Y in Atom A',format="%.2f")
-AtomAinZ = st.sidebar.number_input(label='For Z in Atom A',format="%.2f")
+#st.sidebar.subheader('Atom A')
+#AtomAinX = st.sidebar.number_input(label='For X in Atom A',format="%.2f")
+#AtomAinY = st.sidebar.number_input(label='For Y in Atom A',format="%.2f")
+#AtomAinZ = st.sidebar.number_input(label='For Z in Atom A',format="%.2f")
 
 
 global AP1
