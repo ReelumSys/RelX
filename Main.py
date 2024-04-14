@@ -137,6 +137,12 @@ df.to_csv('ksev1rand.csv', index=False)
 np.savetxt('ksev1rand.csv', df, fmt='%f', delimiter=',')
 
 uploaded_file3 = st.file_uploader("Upload a .txt of the HKLs for Rietveld Refinement and Bravais calculations", type=["txt"])
+st.text("")
+image = Image.open('./images/Unbenannt.png')
+new_img = image.resize((220, 220))
+st.image(new_img)
+st.text("")
+
 
 name3 = uploaded_file3
 if not name3:
