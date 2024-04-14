@@ -196,7 +196,7 @@ with open('style.css') as f:
 st.sidebar.header('')
 
 #ut.draw_something_on_top_of_page_navigation()
-st.logo("./images/favicon.png")
+#st.logo("./images/favicon.png")
 image = Image.open('./images/favicon.png')
 new_img = image.resize((200, 100))
 st.image(new_img)
