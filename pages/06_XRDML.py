@@ -144,10 +144,10 @@ spectral_data.fitted_peaks[0].result.values
 
 
 
-peak_params = [#PeakParams((2.75, 20.95), '1'),
+#peak_params = [#PeakParams((2.75, 20.95), '1'),
                #PeakParams((20.02, 30.15), '2'),
                #PeakParams((30.15, 40.35), '3'),
-               PeakParams((18, 26), '4')]
+#               PeakParams((18, 26), '4')]
 
 spectral_data.plot_peak_params(peak_params, 1, x_range=(2.7, 60), show_points=True)
 
