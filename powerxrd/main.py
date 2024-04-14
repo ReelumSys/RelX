@@ -18,9 +18,16 @@ from lmfit.lineshapes import gaussian, step
 #rom pages.07 import AtomAinX
 #from Rietveld_Refinement import AtomAinY
 #from Rietveld_Refinement import AtomAinZ
-import sys
-sys.path.insert(0, '/pages/')
-from pages.07_Rietveld_Refinement import AtomAinX
+#import sys
+#sys.path.insert(0, '/pages/')
+#from pages.07_Rietveld_Refinement import AtomAinX
+from RelX.pages import HomeClass
+from RelX.pages import (
+    ClassRietveld,
+    
+    
+)
+
 
 #from pages.Rietveld_Refinement import *
 
