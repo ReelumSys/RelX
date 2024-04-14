@@ -10,7 +10,7 @@ import time
 import openai
 import os
 from langchain.llms import OpenAI
-from streamlit_extras.app_logo import add_logo
+#from streamlit_extras.app_logo import add_logo
 
 im = 'favicon2.png'
 st.set_page_config(
