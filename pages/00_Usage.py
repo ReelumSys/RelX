@@ -21,7 +21,7 @@ st.set_page_config(
     page_icon=im,
     layout="wide",
 )
-logo()
+#logo()
 
 add_logo("favicon.png", height=200)
 #st.sidebar.image("./images/favicon.png", width=150)
