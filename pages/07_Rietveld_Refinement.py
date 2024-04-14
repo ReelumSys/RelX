@@ -24,10 +24,18 @@ with open('style.css') as f:
     
 st.sidebar.header('')
 
+st.markdown("## ")
+st.sidebar.markdown("# ")
+
+#st.sidebar.subheader('Heat map parameter')
+#time_hist_color = st.sidebar.selectbox('Color by', '')
+st.sidebar.subheader('Atom A')
+donut_theta = st.sidebar.selectbox('Select data', ( st.number_input('Enter x for Atom A',format="%f")))
+
 
 global AP1
 global AP2
-
+global AP3
 
 
 
@@ -41,6 +49,11 @@ AP2 = st.number_input('Enter y for Atom A',format="%f")
 #st.write('The current number is ', number)
 #AP1 = st.number_input("Insert a number", placeholder="A number between 0 and 1", step=1, format="%f")
 st.write('The current number is ', AP2)
+
+AP3 = st.number_input('Enter y for Atom A',format="%f")
+#st.write('The current number is ', number)
+#AP1 = st.number_input("Insert a number", placeholder="A number between 0 and 1", step=1, format="%f")
+st.write('The current number is ', AP3)
 
 
 
