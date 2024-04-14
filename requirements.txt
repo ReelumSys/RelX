@@ -34,4 +34,3 @@ PyCrystallography
 xrayutilities
 xrdfit
 streamlit_extras
-streamlit_extras.app_logo
