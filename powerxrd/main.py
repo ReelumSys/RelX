@@ -15,7 +15,10 @@ from scipy.optimize import curve_fit
 from lmfit import CompositeModel, Model
 from lmfit.lineshapes import gaussian, step
 #from pages import Rietveld_Refinement*
-#from pages.07_Rietveld_Refinement import *
+from Rietveld_Refinement import AtomAinX
+from Rietveld_Refinement import AtomAinY
+from Rietveld_Refinement import AtomAinZ
+
 
 #from pages.Rietveld_Refinement import *
 

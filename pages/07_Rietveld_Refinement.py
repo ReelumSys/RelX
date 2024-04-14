@@ -11,6 +11,12 @@ from PIL import Image
 from powerxrd import main
 
 
+
+global AtomAinX
+global AtomAinY
+global AtomAinZ
+
+
 im = 'favicon2.png'
 st.set_page_config(
     page_title="RelX v0.9",
