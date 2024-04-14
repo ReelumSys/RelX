@@ -30,7 +30,9 @@ st.sidebar.markdown("# ")
 #st.sidebar.subheader('Heat map parameter')
 #time_hist_color = st.sidebar.selectbox('Color by', '')
 st.sidebar.subheader('Atom A')
-AtomA = st.sidebar.number_input(label='For X in Atom A',format="%.2f")
+AtomAinX = st.sidebar.number_input(label='For X in Atom A',format="%.2f")
+AtomAinY = st.sidebar.number_input(label='For Y in Atom A',format="%.2f")
+AtomAinZ = st.sidebar.number_input(label='For Z in Atom A',format="%.2f")
 
 
 global AP1
@@ -40,20 +42,20 @@ global AP3
 
 
   
-AP1 = st.number_input('Enter x for Atom A',format="%f")
+#AP1 = st.number_input('Enter x for Atom A',format="%f")
 #st.write('The current number is ', number)
 #AP1 = st.number_input("Insert a number", placeholder="A number between 0 and 1", step=1, format="%f")
-st.write('The current number is ', AP1)
+#st.write('The current number is ', AP1)
 
-AP2 = st.number_input('Enter y for Atom A',format="%f")
+#AP2 = st.number_input('Enter y for Atom A',format="%f")
 #st.write('The current number is ', number)
 #AP1 = st.number_input("Insert a number", placeholder="A number between 0 and 1", step=1, format="%f")
-st.write('The current number is ', AP2)
+#st.write('The current number is ', AP2)
 
-AP3 = st.number_input('Enter y for Atom A',format="%f")
+#AP3 = st.number_input('Enter y for Atom A',format="%f")
 #st.write('The current number is ', number)
 #AP1 = st.number_input("Insert a number", placeholder="A number between 0 and 1", step=1, format="%f")
-st.write('The current number is ', AP3)
+#st.write('The current number is ', AP3)
 
 
 
