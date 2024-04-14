@@ -30,7 +30,7 @@ st.sidebar.markdown("# ")
 #st.sidebar.subheader('Heat map parameter')
 #time_hist_color = st.sidebar.selectbox('Color by', '')
 st.sidebar.subheader('Atom A')
-donut_theta = st.sidebar.selectbox('Select data', ( st.number_input('Enter x for Atom A',format="%f")))
+AtomA = st.sidebar.st.number_input(label='For X in Atom A',format="%.2f")
 
 
 global AP1
