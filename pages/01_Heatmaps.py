@@ -36,7 +36,7 @@ stocks = pd.read_csv('Area.csv')
 
 c1, c2 = st.columns((2,1))
 with c1:
-    st.markdown('#### Main vs. Comp XRD')
+    st.markdown('#### Main XRD pattern')
     plost.scatter_hist(
         data=dfheat,
         x='\u00b0 2Theta',
@@ -64,7 +64,7 @@ with c1:
     
 
 with c2:
-    st.markdown('### XRDs vs. in %')
+    st.markdown('### XRD patterns vs. in %')
     plost.donut_chart(
         data=stocks,
         #theta=donut_theta,
