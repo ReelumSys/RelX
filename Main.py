@@ -85,7 +85,7 @@ st.set_page_config(
 )
 
 
-
+st.logo("./images/favicon.png")
 image = Image.open('./images/favicon.png')
 new_img = image.resize((180, 100))
 st.image(new_img)
