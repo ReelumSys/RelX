@@ -21,12 +21,12 @@ from lmfit.lineshapes import gaussian, step
 #import sys
 #sys.path.insert(0, '/pages/')
 #from pages.07_Rietveld_Refinement import AtomAinX
-from pages import AtomAinX
-from pages import (
-    ClassRietveld,
+#from pages import AtomAinX
+#from pages import (
+#    ClassRietveld,
     
     
-)
+#)
 
 
 #from pages.Rietveld_Refinement import *
