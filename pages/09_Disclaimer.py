@@ -7,6 +7,7 @@ import base64
 import numpy as np
 import os
 from PIL import Image
+from streamlit_extras.app_logo import add_logo
 
 im = 'favicon2.png'
 st.set_page_config(
@@ -14,7 +15,7 @@ st.set_page_config(
     #page_icon=im,
     layout="wide",
 )
-
+add_logo("favicon3.png")
 with open('style.css') as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 

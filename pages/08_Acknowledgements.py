@@ -6,6 +6,8 @@ import plost
 import base64
 import numpy as np
 from PIL import Image
+from streamlit_extras.app_logo import add_logo
+
 
 im = 'favicon2.png'
 st.set_page_config(
@@ -14,6 +16,7 @@ st.set_page_config(
     layout="wide",
 )
 
+add_logo("favicon3.png")
 with open('style.css') as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
