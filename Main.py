@@ -83,7 +83,7 @@ st.set_page_config(
     page_icon=im,
     layout="wide",
 )
-st.sidebar.image("./images/favicon.png", width=150)
+#st.sidebar.image("./images/favicon.png", width=150)
 
 
 image = Image.open('./images/favicon.png')
