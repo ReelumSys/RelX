@@ -75,7 +75,7 @@ st.sidebar.header('')
 first_cake_angle = 120
 
 #file_path = pd.read_csv('../ksev1.csv', names=['Theta','Int'])
-file_path = "ksev1.csv"
+file_path = "RelX/ksev1.csv"
 file_path2 = "ksev1rand.csv"
 
 
