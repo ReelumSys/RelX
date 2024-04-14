@@ -61,6 +61,8 @@ from PyCrystallography.stereographic_projection import*
 import numpy as np
 from lattpy import Lattice
 from lattpy import simple_square
+from utils import logo
+
 
 
     # Clear values from *all* all in-memory and on-disk data caches:
@@ -85,7 +87,7 @@ st.set_page_config(
 )
 #st.sidebar.image("./images/favicon.png", width=150)
 
-
+logo()
 image = Image.open('./images/favicon.png')
 new_img = image.resize((180, 100))
 st.image(new_img)
