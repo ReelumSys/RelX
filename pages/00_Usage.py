@@ -18,7 +18,8 @@ st.set_page_config(
     page_title="RelX v0.9",
     page_icon=im,
     layout="wide",
-)add_logo("./images/favicon.png")
+)
+add_logo("./images/favicon.png")
 st.sidebar.image("./images/favicon.png", width=150)
 with open('style.css') as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
