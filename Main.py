@@ -204,8 +204,8 @@ st.image(new_img)
 st.sidebar.subheader('Heat map parameter')
 time_hist_color = st.sidebar.selectbox('Color by', '') 
 
-st.sidebar.subheader('Donut chart parameter')
-donut_theta = st.sidebar.selectbox('Select data', ('', ''))
+#st.sidebar.subheader('Donut chart parameter')
+#donut_theta = st.sidebar.selectbox('Select data', ('', ''))
 #donut_theta = st.sidebar.selectbox('Select data', ('Area'))
 
 st.sidebar.subheader('Line chart parameters')
