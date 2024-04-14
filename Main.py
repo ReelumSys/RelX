@@ -140,7 +140,7 @@ uploaded_file3 = st.file_uploader("Upload a .txt of the HKLs for Rietveld Refine
 st.text("")
 st.write("The HKL should be formatted with a space as delimiter.")
 st.text("")
-image = Image.open('./images/Unbenannt2.png')
+image = Image.open('./images/HKLinfo.png')
 new_img = image.resize((220, 220))
 st.image(new_img)
 st.text("")
