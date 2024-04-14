@@ -22,7 +22,7 @@ st.set_page_config(
 
 with open('style.css') as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
-st.logo("../images/favicon.png")
+st.logo("favicon.png")
 def set_background(png_file):
     bin_str = get_base64(png_file)
     page_bg_img = '''
