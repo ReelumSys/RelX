@@ -11,6 +11,7 @@ import openai
 import os
 from langchain.llms import OpenAI
 #from streamlit_extras.app_logo import add_logo
+from utils import logo
 
 im = 'favicon2.png'
 st.set_page_config(
@@ -19,7 +20,7 @@ st.set_page_config(
     page_icon=im,
     layout="wide",
 )
-
+logo()
 
 
 st.sidebar.image("./images/favicon.png", width=150)
