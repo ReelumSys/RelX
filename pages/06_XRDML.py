@@ -72,33 +72,22 @@ st.sidebar.header('')
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 first_cake_angle = 90
 
 #file_path = pd.read_csv('../ksev1.csv', names=['Theta','Int'])
-#file_path = "ksev1.csv"
-#file_path2 = "ksev1rand.csv"
+file_path = "ksev1.csv"
+file_path2 = "ksev1rand.csv"
 
 
 
 
-#print(file_path)
+print(file_path)
 
-#spectral_data = FitSpectrum(file_path, first_cake_angle, delimiter=',')
-#spectral_data2 = FitSpectrum(file_path2, first_cake_angle, delimiter=',')
-#print(spectral_data)
+spectral_data = FitSpectrum(file_path, first_cake_angle, delimiter=',')
+spectral_data2 = FitSpectrum(file_path2, first_cake_angle, delimiter=',')
+print(spectral_data)
 
-#spectral_data.plot_polar()
+spectral_data.plot_polar()
 
 #sd1 = pd.DataFrame(spectral_data)
 #sd2 = pd.DataFrame(spectral_data2)
@@ -107,8 +96,8 @@ first_cake_angle = 90
 #spectral_data_MC = sd1 - sd2
 
 
-#spectral_data.plot(1, log_scale=True)
-#spectral_data2.plot(1, log_scale=True)
+spectral_data.plot(1, log_scale=True)
+spectral_data2.plot(1, log_scale=True)
 #spectral_data_MC.plot(1, log_scale=True)
 
 
