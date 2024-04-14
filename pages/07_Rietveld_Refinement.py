@@ -64,6 +64,19 @@ global AP3
 #st.write('The current number is ', AP3)
 
 
+uploaded_file = st.file_uploader("Upload atomic coordinates as .txt like in the example", type=["txt"])
+
+name = uploaded_file
+if not name:
+  st.warning('Please input a .txt file.')
+  st.stop()
+st.success('Done.')
+
+
+
+
+
+
 
 st.markdown('### Main')
 x, y = xrd.Data('ksev1.xy').importfile()
