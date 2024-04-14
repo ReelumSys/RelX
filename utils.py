@@ -7,4 +7,4 @@ def draw_something_on_top_of_page_navigation():
     )
 
 def logo():
-    add_logo("favicon.png", width=200)
+    add_logo("favicon.png", height=150)
