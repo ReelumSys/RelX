@@ -141,7 +141,7 @@ st.text("")
 st.write("The HKL should be formatted with a space as delimiter.")
 st.text("")
 image = Image.open('./images/HKLinfo.png')
-new_img = image.resize((220, 150))
+new_img = image.resize((100, 250))
 st.image(new_img)
 st.text("")
 
