@@ -113,7 +113,7 @@ with cent_co:
 
 
 #new_img = image.resize((200, 220))
-#st.image(image)
+st.image(image)
 st.text("")
 st.markdown('###### Upload two .txt files separately and let them be calculated.')
 
