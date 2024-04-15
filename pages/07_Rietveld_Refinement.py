@@ -101,11 +101,8 @@ df.to_csv('AtomicDisplacement.csv', index=False)
 np.savetxt('AtomicDisplacement2.csv', df, fmt='%f', delimiter=',')
 
 
-name3 = st.text_area(
-    "Enter the Scale Factor",
-    "Start with 10e-5 to -7 values",
-    )
-
+name3 = st.number_input('Insert a number')
+st.write('The current number is ', number)
 
 
 
