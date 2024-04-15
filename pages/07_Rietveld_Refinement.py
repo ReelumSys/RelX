@@ -113,7 +113,7 @@ if not name3:
 st.success('Done.')
 
 #df = pd.read_fwf(name3)
-name3.to_csv('ScaleFactor.csv', index=False)
+#name3.to_csv('ScaleFactor.csv', index=False)
 np.savetxt('ScaleFactor2.csv', name3, fmt='%f', delimiter=',')
 
 st.markdown('### Main')
