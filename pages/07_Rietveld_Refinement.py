@@ -68,9 +68,15 @@ global AP3
 uploaded_file = st.file_uploader("Upload atomic coordinates as .txt like in the example with with space as delimiter.", type=["txt"])
 
 st.text("")
-image = Image.open('./images/AtomCoordexample.png')
+#image = Image.open('./images/AtomCoordexample.png')
 #new_img = image.resize((250, 150))
-st.image(image)
+#st.image(image)
+background = Image.open("./images/AtomCoordexample.png")
+col1, col2, col3 = st.columns([2, 5, 0.2])
+col2.image(background, use_column_width=False)
+
+
+
 st.text("")
 
 name = uploaded_file
