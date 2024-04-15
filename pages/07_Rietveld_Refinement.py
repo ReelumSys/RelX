@@ -92,9 +92,15 @@ np.savetxt('AtomicCoordinates2.csv', df, fmt='%f', delimiter=',')
 uploaded_file2 = st.file_uploader("Upload Atomic Displacement values if needed as .txt like in the example.", type=["txt"])
 #Atomic_Displacement1 = st.number_input(label="Atomic Displacement",format="%.2f") 
 st.text("")
-image = Image.open('./images/AtomDis.png')
+#image = Image.open('./images/AtomDis.png')
 #new_img = image.resize((180, 120))
-st.image(image)
+#st.image(image)
+
+background = Image.open("./images/AtomDis.png")
+col1, col2, col3 = st.columns([2, 5, 0.2])
+col2.image(background, use_column_width=False)
+
+
 st.text("")
 
 name2 = uploaded_file2
