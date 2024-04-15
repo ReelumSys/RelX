@@ -109,7 +109,7 @@ st.text("")
 image = Image.open('./images/Unbenannt.png')
 background = Image.open("./images/Unbenannt.png")
 col1, col2, col3 = st.columns([0.2, 5, 0.2])
-col2.image(background, use_column_width=True)
+col2.image(background, use_column_width=false)
 
 
 
