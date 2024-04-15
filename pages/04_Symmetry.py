@@ -47,9 +47,15 @@ except FileNotFoundError:
     st.text("")
     st.write("The HKL should be formatted with a space as delimiter.")
     st.text("")
-    image = Image.open('./images/HKLinfo.png')
-    new_img = image.resize((125, 250))
-    st.image(new_img)
+    #image = Image.open('./images/HKLinfo.png')
+    #new_img = image.resize((125, 250))
+    #st.image(new_img)
+
+    background = Image.open("./images/HKLinfo.png")
+    col1, col2, col3 = st.columns([2, 5, 0.2])
+    col2.image(background, use_column_width=False)
+
+
     st.text("")
 
 
