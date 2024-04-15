@@ -9,6 +9,7 @@ from WH import d
 from WH import*
 from PIL import Image
 from powerxrd import main
+from pathlib import Path
 
 
 
@@ -100,7 +101,7 @@ df = pd.read_fwf(name2)
 df.to_csv('AtomicDisplacement.csv', index=False)
 np.savetxt('AtomicDisplacement2.csv', df, fmt='%f', delimiter=',')
 
-
+my_file = Path("HKL.csv")
 try:
     my_abs_path = my_file.resolve(strict=True)
 except FileNotFoundError:
