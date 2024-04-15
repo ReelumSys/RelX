@@ -103,9 +103,17 @@ st.markdown("#### Upload XRD files and calculate")
 st.text("")
 st.write("Like in this example, the sample should be delimited with a space. Decimals do not matter.")
 st.text("")
+
+
+
 image = Image.open('./images/Unbenannt.png')
+left_co, cent_co,last_co = st.columns(3)
+with cent_co:
+    st.image(image)
+
+
 #new_img = image.resize((200, 220))
-st.image(image)
+#st.image(image)
 st.text("")
 st.markdown('###### Upload two .txt files separately and let them be calculated.')
 
