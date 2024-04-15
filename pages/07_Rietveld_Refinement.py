@@ -100,30 +100,30 @@ df = pd.read_fwf(name2)
 df.to_csv('AtomicDisplacement.csv', index=False)
 np.savetxt('AtomicDisplacement2.csv', df, fmt='%f', delimiter=',')
 
-'''
-name3 = st.number_input("Insert a number", value=None, placeholder="Start with 10e-5 to -7")
-st.write('The current number is ', name3)
+
+#name3 = st.number_input("Insert a number", value=None, placeholder="Start with 10e-5 to -7")
+#st.write('The current number is ', name3)
 
 
 
 #name3 = title = st.text_input('Movie title', 'Life of Brian')
-if not name3:
-  st.warning('Please input a number.')
-  st.stop()
-st.success('Done.')
+#if not name3:
+#  st.warning('Please input a number.')
+#  st.stop()
+#st.success('Done.')
 
 
-df = pd.DataFrame({'value': [name3]
+#df = pd.DataFrame({'value': [name3]
 
-                  })
+#                  })
 
-df.to_csv('ScaleFactor.csv', index=False) 
+#df.to_csv('ScaleFactor.csv', index=False) 
 
 #name3 = pd.to_csv('ScaleFactor.csv', index=False)
 #df = pd.read_fwf(name3)
 #name3.to_csv('ScaleFactor.csv', index=False)
-np.savetxt('ScaleFactor2.csv', df, fmt='%f', delimiter=',')
-'''
+#np.savetxt('ScaleFactor2.csv', df, fmt='%f', delimiter=',')
+
 
 
 st.markdown('### Main')
