@@ -139,27 +139,27 @@ df = pd.read_fwf(name2)
 df.to_csv('ksev1rand.csv', index=False)
 np.savetxt('ksev1rand.csv', df, fmt='%f', delimiter=',')
 
-uploaded_file3 = st.file_uploader("Upload a .txt of the HKLs for Rietveld Refinement and Bravais calculations", type=["txt"])
-st.text("")
-st.write("The HKL should be formatted with a space as delimiter.")
-st.text("")
-image = Image.open('./images/HKLinfo.png')
-new_img = image.resize((125, 250))
-st.image(new_img)
-st.text("")
+#uploaded_file3 = st.file_uploader("Upload a .txt of the HKLs for Rietveld Refinement and Bravais calculations", type=["txt"])
+#st.text("")
+#st.write("The HKL should be formatted with a space as delimiter.")
+#st.text("")
+#image = Image.open('./images/HKLinfo.png')
+#new_img = image.resize((125, 250))
+#st.image(new_img)
+#st.text("")
 
 
 
-name3 = uploaded_file3
-if not name3:
-  st.warning('Please input a .txt file.')
-  st.stop()
-st.success('Done.')
+#name3 = uploaded_file3
+#if not name3:
+#  st.warning('Please input a .txt file.')
+#  st.stop()
+#st.success('Done.')
 
-df = pd.read_fwf(name3)
+#df = pd.read_fwf(name3)
 #df.to_csv('HKL.csv', index=None)
-np.savetxt('HKL.csv', df, fmt='%i', delimiter=',')
-np.savetxt('HKL.txt', df, fmt='%i', delimiter=' ')
+#np.savetxt('HKL.csv', df, fmt='%i', delimiter=',')
+#np.savetxt('HKL.txt', df, fmt='%i', delimiter=' ')
 
 
 #c = np.array(name3)
