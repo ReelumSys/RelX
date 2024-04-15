@@ -87,8 +87,8 @@ uploaded_file2 = st.file_uploader("Upload Atomic Displacement values if needed a
 #Atomic_Displacement1 = st.number_input(label="Atomic Displacement",format="%.2f") 
 st.text("")
 image = Image.open('./images/AtomDis.png')
-new_img = image.resize((180, 120))
-st.image(new_img)
+#new_img = image.resize((180, 120))
+st.image(image)
 st.text("")
 
 name2 = uploaded_file2
