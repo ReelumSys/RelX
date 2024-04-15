@@ -101,6 +101,34 @@ df.to_csv('AtomicDisplacement.csv', index=False)
 np.savetxt('AtomicDisplacement2.csv', df, fmt='%f', delimiter=',')
 
 
+try:
+    my_abs_path = my_file.resolve(strict=True)
+except FileNotFoundError:
+    uploaded_file3 = st.file_uploader("Upload a .txt of the HKLs for Rietveld Refinement and Bravais calculations", type=["txt"])
+    st.text("")
+    st.write("The HKL should be formatted with a space as delimiter.")
+    st.text("")
+    image = Image.open('./images/HKLinfo.png')
+    new_img = image.resize((125, 250))
+    st.image(new_img)
+    st.text("")
+
+
+
+    name3 = uploaded_file3
+    if not name3:
+    st.warning('Please input a .txt file.')
+    st.stop()
+    st.success('Done.')
+
+    df = pd.read_fwf(name3)
+    #df.to_csv('HKL.csv', index=None)
+    np.savetxt('HKL.csv', df, fmt='%i', delimiter=',')
+    np.savetxt('HKL.txt', df, fmt='%i', delimiter=' ')
+else:
+    # exists
+
+
 #name3 = st.number_input("Insert a number", value=None, placeholder="Start with 10e-5 to -7")
 #st.write('The current number is ', name3)
 
