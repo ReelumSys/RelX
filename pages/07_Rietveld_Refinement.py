@@ -90,7 +90,7 @@ new_img = image.resize((180, 120))
 st.image(new_img)
 st.text("")
 
-
+name2 = uploaded_file2
 if not name2:
   st.warning('Please input a .txt file.')
   st.stop()
