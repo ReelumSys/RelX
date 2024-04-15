@@ -65,7 +65,7 @@ global AP3
 #st.write('The current number is ', AP3)
 
 
-uploaded_file = st.file_uploader("Upload atomic coordinates as .txt like in the example with with space as delimiter.", type=["txt"])
+uploaded_file = st.file_uploader("Upload atomic coordinates as .txt like in the example with space as delimiter.", type=["txt"])
 
 st.text("")
 #image = Image.open('./images/AtomCoordexample.png')
