@@ -100,7 +100,20 @@ df = pd.read_fwf(name2)
 df.to_csv('AtomicDisplacement.csv', index=False)
 np.savetxt('AtomicDisplacement2.csv', df, fmt='%f', delimiter=',')
 
-name3 = st.number_input(label="Scale Factor",step=0.0000000001,format="%f") 
+
+name3 = st.text_area(
+    "Text to analyze",
+    "It was the best of times, it was the worst of times, it was the age of "
+    "wisdom, it was the age of foolishness, it was the epoch of belief, it "
+    "was the epoch of incredulity, it was the season of Light, it was the "
+    "season of Darkness, it was the spring of hope, it was the winter of "
+    "despair, (...)",
+    )
+
+
+
+
+#name3 = title = st.text_input('Movie title', 'Life of Brian')
 if not name3:
   st.warning('Please input a number.')
   st.stop()
