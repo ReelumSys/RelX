@@ -37,6 +37,8 @@ def set_background(png_file):
 #st.write("###### Thanks to PowerXRD's work by Andrew Garcia Ph.D (https://github.com/andrewrgarcia/powerxrd) a Williamson-Hall-Plot and other functions were formulated. The Williamson-Hall-Plot is based on the same gaussian FWHM values as the Scherrer calculation. Furthermore a Halder and Wagner-Plot with derived gaussian FWHM values is made with modifications possible from the Literature. The plots should serve as a direct comparison between the three methods.")
 st.markdown('<div style="text-align: justify;">A Williamson-Hall-Plot, Scherrer-Formula and Halder and Wagner-Plot and other functions were formulated. The Scherrer calculation is based on gaussian FWHM values. Furthermore a Halder and Wagner-Plot is made with modifications possible from the Literature. The plots should serve as a direct comparison between the three methods.</div>', unsafe_allow_html=True)
 st.text("")
+#st.markdown('<div style="text-align: justify;"> Rietveld Equation was modified. </div>', unsafe_allow_html=True)
+#st.text("")
 
 
 
