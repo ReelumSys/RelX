@@ -102,7 +102,7 @@ np.savetxt('AtomicDisplacement2.csv', df, fmt='%f', delimiter=',')
 
 
 name3 = st.number_input("Insert a number", value=None, placeholder="Start with 10e-5 to -7")
-st.write('The current number is ', number)
+st.write('The current number is ', name3)
 
 
 
