@@ -106,10 +106,10 @@ st.text("")
 
 
 
-image10 = Image.open('./images/Unbenannt.png')
+image = Image.open('./images/Unbenannt.png')
 left_co, cent_co,last_co = st.columns(3)
 with cent_co:
-    st.image(image10)
+    st.image(image)
 
 
 #new_img = image.resize((200, 220))
