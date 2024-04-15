@@ -68,7 +68,7 @@ uploaded_file = st.file_uploader("Upload atomic coordinates as .txt like in the 
 
 
 st.text("")
-image = Image.open('./images/Unbenannt4.png')
+image = Image.open('./images/AtomCoordexample.png')
 new_img = image.resize((220, 220))
 st.image(new_img)
 st.text("")
