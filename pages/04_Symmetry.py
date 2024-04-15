@@ -66,17 +66,17 @@ except FileNotFoundError:
 else:
     # exists
 
-st.markdown('##### Basic Cells')
-uploaded_file2 = st.image("Bravais.png")
-st.markdown('##### Bravais & Reciprocal')
-uploaded_file3 = st.image("Bravais2.png")
-st.markdown('##### 2D Lattice')
-uploaded_file6 = st.image("Bravais5.png")
-st.markdown('##### 3D Lattice')
+    st.markdown('##### Basic Cells')
+    uploaded_file2 = st.image("Bravais.png")
+    st.markdown('##### Bravais & Reciprocal')
+    uploaded_file3 = st.image("Bravais2.png")
+    st.markdown('##### 2D Lattice')
+    uploaded_file6 = st.image("Bravais5.png")
+    st.markdown('##### 3D Lattice')
 
-uploaded_file4 = st.image("Bravais3.png")
-st.markdown('##### Cuboid')
-uploaded_file5 = st.image("Bravais4.png")
+    uploaded_file4 = st.image("Bravais3.png")
+    st.markdown('##### Cuboid')
+    uploaded_file5 = st.image("Bravais4.png")
 
 
 
