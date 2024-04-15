@@ -115,7 +115,7 @@ if not name3:
   st.stop()
 st.success('Done.')
 
-df = name3
+df = pd.read_fwf(name3)
 df.to_csv('ScaleFactor.csv', index=False)
 np.savetxt('ScaleFactor2.csv', df, fmt='%f', delimiter=',')
 
