@@ -154,21 +154,21 @@ else:
 
 
 
-st.markdown('### Main')
-x, y = xrd.Data('ksev1.xy').importfile()
-model = xrd.Rietveld(x, y)
-model.refine()
+    st.markdown('### Main')
+    x, y = xrd.Data('ksev1.xy').importfile()
+    model = xrd.Rietveld(x, y)
+    model.refine()
 
 
-uploaded_file5 = st.image("RietveldRef.png")
+    uploaded_file5 = st.image("RietveldRef.png")
 
 #df = pd.read_fwf('HKL.csv')
 
 #dfHKL = pd.read_fwf('HKL.csv', header=False)
-global dfHKL
-dfHKL = pd.read_csv('HKL.csv', names=['H','K','L'], sep=',', index_col=None)
+    global dfHKL
+    dfHKL = pd.read_csv('HKL.csv', names=['H','K','L'], sep=',', index_col=None)
 
 #dfHKL['index1'] = dfHKL.index
  
 
-st.dataframe(dfHKL)
+    st.dataframe(dfHKL)
