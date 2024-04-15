@@ -66,13 +66,11 @@ global AP3
 
 uploaded_file = st.file_uploader("Upload atomic coordinates as .txt like in the example", type=["txt"])
 
-
 st.text("")
 image = Image.open('./images/AtomCoordexample.png')
-new_img = image.resize((220, 220))
+new_img = image.resize((300, 220))
 st.image(new_img)
 st.text("")
-
 
 name = uploaded_file
 if not name:
@@ -82,8 +80,25 @@ st.success('Done.')
 
 df = pd.read_fwf(name)
 df.to_csv('AtomicCoordinates.csv', index=False)
-np.savetxt('ksev1rand.csv', df, fmt='%f', delimiter=',')
+np.savetxt('AtomicCoordinates2.csv', df, fmt='%f', delimiter=',')
 
+uploaded_file = st.file_uploader("Upload Atomic Displacement values if needed as .txt like in the example", type=["txt"])
+#Atomic_Displacement1 = st.number_input(label="Atomic Displacement",format="%.2f") 
+st.text("")
+image = Image.open('./images/AtomDis.png')
+new_img = image.resize((220, 220))
+st.image(new_img)
+st.text("")
+
+AtmDis = Atomic_Displacement
+if not name:
+  st.warning('Please input a .txt file.')
+  st.stop()
+st.success('Done.')
+
+df = pd.read_fwf(name)
+df.to_csv('AtomicDisplacement.csv', index=False)
+np.savetxt('AtomicDisplacement2.csv', df, fmt='%f', delimiter=',')
 
 
 

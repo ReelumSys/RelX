@@ -350,7 +350,7 @@ class Rietveld:
             HKL =              dfHKL
                                 
 
-            """
+            '''
                                [[1,0,1],      
                                [1,1,0],         
                                [0,1,2],     
@@ -363,7 +363,7 @@ class Rietveld:
                                [2,1,3], 
                                [2,2,1], 
                                [1,1,4]]
-            """
+            '''
             self.pars[i].vary = False
 
         # fit this model to data array y
