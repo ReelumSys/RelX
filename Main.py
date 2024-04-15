@@ -113,13 +113,13 @@ col2.image(background, use_column_width=False)
 
 
 
-left_co, cent_co,last_co = st.columns(3)
-with cent_co:
-    st.image(image)
+#left_co, cent_co,last_co = st.columns(3)
+#with cent_co:
+#    st.image(image)
 
 
 #new_img = image.resize((200, 220))
-st.image(image)
+#st.image(image)
 st.text("")
 st.markdown('###### Upload two .txt files separately and let them be calculated.')
 
