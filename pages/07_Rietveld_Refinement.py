@@ -100,7 +100,7 @@ df = pd.read_fwf(name2)
 df.to_csv('AtomicDisplacement.csv', index=False)
 np.savetxt('AtomicDisplacement2.csv', df, fmt='%f', delimiter=',')
 
-name3 = st.number_input(label="Scale Factor",step=0.0000000001,format="%.2f") 
+name3 = st.number_input(label="Scale Factor",step=0.0000000001,format="%f") 
 if not name3:
   st.warning('Please input a number.')
   st.stop()
