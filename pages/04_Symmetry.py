@@ -38,6 +38,34 @@ with open('style.css') as f:
 st.sidebar.header('')
 
 
+my_file = Path("HKL.csv")
+try:
+    my_abs_path = my_file.resolve(strict=True)
+except FileNotFoundError:
+    uploaded_file3 = st.file_uploader("Upload a .txt of the HKLs for Rietveld Refinement and Bravais calculations", type=["txt"])
+    st.text("")
+    st.write("The HKL should be formatted with a space as delimiter.")
+    st.text("")
+    image = Image.open('./images/HKLinfo.png')
+    new_img = image.resize((125, 250))
+    st.image(new_img)
+    st.text("")
+
+
+
+    name3 = uploaded_file3
+    if not name3:
+      st.warning('Please input a .txt file.')
+      st.stop()
+    st.success('Done.')
+
+    df = pd.read_fwf(name3)
+    #df.to_csv('HKL.csv', index=None)
+    np.savetxt('HKL.csv', df, fmt='%i', delimiter=',')
+    np.savetxt('HKL.txt', df, fmt='%i', delimiter=' ')
+else:
+    # exists
+
 st.markdown('##### Basic Cells')
 uploaded_file2 = st.image("Bravais.png")
 st.markdown('##### Bravais & Reciprocal')
