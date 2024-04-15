@@ -112,10 +112,17 @@ if not name3:
   st.stop()
 st.success('Done.')
 
-name3 = pd.name3.to_csv('ScaleFactor.csv', index=False)
+
+df = pd.DataFrame({'value': [name3]
+
+                  })
+
+df.to_csv('ScaleFactor.csv', index=False) 
+
+#name3 = pd.to_csv('ScaleFactor.csv', index=False)
 #df = pd.read_fwf(name3)
 #name3.to_csv('ScaleFactor.csv', index=False)
-np.savetxt('ScaleFactor2.csv', name3, fmt='%f', delimiter=',')
+np.savetxt('ScaleFactor2.csv', df, fmt='%f', delimiter=',')
 
 st.markdown('### Main')
 x, y = xrd.Data('ksev1.xy').importfile()
