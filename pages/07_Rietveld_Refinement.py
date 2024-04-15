@@ -66,13 +66,23 @@ global AP3
 
 uploaded_file = st.file_uploader("Upload atomic coordinates as .txt like in the example", type=["txt"])
 
+
+st.text("")
+image = Image.open('./images/Unbenannt4.png')
+new_img = image.resize((220, 220))
+st.image(new_img)
+st.text("")
+
+
 name = uploaded_file
 if not name:
   st.warning('Please input a .txt file.')
   st.stop()
 st.success('Done.')
 
-
+df = pd.read_fwf(name)
+df.to_csv('AtomicCoordinates.csv', index=False)
+np.savetxt('ksev1rand.csv', df, fmt='%f', delimiter=',')
 
 
 
