@@ -42,7 +42,7 @@ def set_background(png_file):
 
 
 st.text("")
-st.markdown('<div style="text-align: justify;"> <font size="+3"><b> With this app it is possible to do some work on XRD patterns with only minimal amounts of data needed. For the Symmetry depicition HKL values are required. Hence for the Rietveld Refinement also Atomic Coordinates and Atomic Dislocation is mandatory. <b></font> </div>', unsafe_allow_html=True)
+st.markdown('<div style="text-align: justify;"> <font size="+3"><b> With this app it is possible to do some work on XRD patterns with only minimal amounts of data needed. For the Symmetry depicition HKL values are required. Hence for Rietveld Refinement also Atomic Coordinates and Atomic Dislocation are mandatory. <b></font> </div>', unsafe_allow_html=True)
 
 st.text("")
 st.markdown('<div style="text-align: justify;"> <font size="+3"> First you can upload two XRD charts. They need not to have the same °2Theta values as you can set a beginning value. However the patterns have to be recorded at same diffraction settings. The main runs Crystal Size and Rietveld Refinement. After uploading, first you see a heatmap plus identified and binned values. This should help with the data conformity. Beside the heatmap you can find an analysis of data in the donut chart. Here is the Main vs. the Comparing pattern plottet. In the Charts section is an overview of the plotted patterns. A subtraction from the Main XRD and the Comparison XRD is shown. The same procedure is done with logarithmic scale for the intensity. Publication ready plots may be included with easy access. </font> </div>', unsafe_allow_html=True)
