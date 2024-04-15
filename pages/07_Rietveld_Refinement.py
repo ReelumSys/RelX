@@ -82,7 +82,7 @@ df = pd.read_fwf(name)
 df.to_csv('AtomicCoordinates.csv', index=False)
 np.savetxt('AtomicCoordinates2.csv', df, fmt='%f', delimiter=',')
 
-uploaded_file = st.file_uploader("Upload Atomic Displacement values if needed as .txt like in the example.", type=["txt"])
+uploaded_file2 = st.file_uploader("Upload Atomic Displacement values if needed as .txt like in the example.", type=["txt"])
 #Atomic_Displacement1 = st.number_input(label="Atomic Displacement",format="%.2f") 
 st.text("")
 image = Image.open('./images/AtomDis.png')
@@ -91,12 +91,12 @@ st.image(new_img)
 st.text("")
 
 
-if not name:
+if not name2:
   st.warning('Please input a .txt file.')
   st.stop()
 st.success('Done.')
 
-df = pd.read_fwf(name)
+df = pd.read_fwf(name2)
 df.to_csv('AtomicDisplacement.csv', index=False)
 np.savetxt('AtomicDisplacement2.csv', df, fmt='%f', delimiter=',')
 
