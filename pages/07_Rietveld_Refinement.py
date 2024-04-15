@@ -117,8 +117,8 @@ except FileNotFoundError:
 
     name3 = uploaded_file3
     if not name3:
-    st.warning('Please input a .txt file.')
-    st.stop()
+      st.warning('Please input a .txt file.')
+      st.stop()
     st.success('Done.')
 
     df = pd.read_fwf(name3)
