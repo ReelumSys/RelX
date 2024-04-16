@@ -99,7 +99,7 @@ with cent_co:
 #new_img = image.resize((200, 100))
 #st.image(new_img)
 #st.sidebar.markdown("# Main page")
-st.markdown("#### Upload XRD files and calculate")
+st.markdown("#### Upload XRD patterns and calculate")
 st.text("")
 st.write("Like in this example, the sample should be delimited with a space. Decimals do not matter.")
 st.text("")
