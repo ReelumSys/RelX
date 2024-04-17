@@ -121,7 +121,7 @@ col2.image(background, use_column_width=False)
 #new_img = image.resize((200, 220))
 #st.image(image)
 st.text("")
-st.markdown('###### Upload two .txt files separately and let them be calculated.')
+st.markdown('###### Upload two .txt patterns separately and let them be calculated.')
 
 # Allow only .csv and .xlsx files to be uploaded
 uploaded_file = st.file_uploader("Upload Main XRD Pattern", type=["txt"])
