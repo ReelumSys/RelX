@@ -54,7 +54,7 @@ st.text("")
 st.markdown('<div style="text-align: justify;"> <font size="+3"> A Discord server has been set up for possible further development. <a href="https://discord.gg/gFjuBQd4">Click here</a> </font> </div>', unsafe_allow_html=True)
 
 st.text("")
-st.markdown('<div style="text-align: justify;"> <font size="+3">Below is a Chatbot, where you can post questions about XRD and life. It is based on OpenAIs work. Soon it will have knowledge about this programm. </font> </div>', unsafe_allow_html=True)
+st.markdown('<div style="text-align: justify;"> <font size="+3">In the Chatbot below, you can post questions about XRD and life. It is based on OpenAIs work. Soon it will have knowledge about this programm. </font> </div>', unsafe_allow_html=True)
 
 
 #st.title("XRDGPT")
