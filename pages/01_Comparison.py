@@ -36,7 +36,7 @@ stocks = pd.read_csv('Area.csv')
 
 c1, c2 = st.columns((3,1))
 with c1:
-    st.markdown('#### Main XRD pattern')
+    #st.markdown('#### Main XRD pattern')
     plost.scatter_hist(
         data=dfheat,
         x='\u00b0 2Theta',
