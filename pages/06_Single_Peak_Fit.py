@@ -69,15 +69,17 @@ st.sidebar.header('')
 
 #xf = xu.io.XRDMLFile('data/rsm_1.xrdml.bz2')
 
+file_path = pd.read_csv('ksev1.csv')
+file_path2 = pd.read_csv('ksev1rand.csv')
 
+
+
+
+#file_path = "ksev1.csv"
+#file_path2 = "ksev1rand.csv"
 
 
 first_cake_angle = 120
-
-#file_path = pd.read_csv('../ksev1.csv', names=['Theta','Int'])
-file_path = "ksev1.csv"
-file_path2 = "ksev1rand.csv"
-
 
 
 
