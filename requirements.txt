@@ -7,7 +7,8 @@ tqdm
 numpy
 altair
 #openai==0.27.7
-openai[all]
+openai
+openai[embeddings]
 plotly==5.11.0
 matplotlib
 urllib3
