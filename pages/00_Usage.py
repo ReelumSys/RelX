@@ -27,6 +27,7 @@ import os
 import time
 #import scikit-learn
 import scipy
+import openai
 from openai.embeddings_utils import get_embedding, cosine_similarity
 import pandas
 import openai
