@@ -34,7 +34,7 @@ donut_theta = st.sidebar.selectbox('Select data', ('Theta', 'Area2'))
 dfheat = pd.read_csv('ksev1.csv', names=['\u00b0 2Theta','Int'])
 stocks = pd.read_csv('Area.csv')
 
-c1, c2 = st.columns((2,1))
+c1, c2 = st.columns((3,1))
 with c1:
     st.markdown('#### Main XRD pattern')
     plost.scatter_hist(
@@ -57,8 +57,8 @@ with c1:
     #    data=dfheat,
     #    x='\u00b0 2Theta',
     #    y='Int',
-        #x_bin=100,
-        #y_bin='Int2',
+    #    #x_bin=100,
+    #    #y_bin='Int2',
     #    use_container_width=True,
     #)
     
