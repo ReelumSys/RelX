@@ -8,6 +8,7 @@ numpy
 altair
 #openai==0.27.7
 openai
+plotly==5.11.0
 matplotlib
 urllib3
 lattpy
