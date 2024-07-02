@@ -30,7 +30,7 @@ scikit-learn-intelex
 streamlit
 sympy
 langchain[all]
-langchain==0.0.274
+langchain
 PyCrystallography
 xrayutilities
 xrdfit
