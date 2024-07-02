@@ -28,7 +28,7 @@ st.sidebar.markdown("# ")
 
 #st.sidebar.subheader('Heat map parameter')
 #time_hist_color = st.sidebar.selectbox('Color by', '')
-st.sidebar.subheader('Donut chart parameter')
+#st.sidebar.subheader('Donut chart parameter')
 donut_theta = st.sidebar.selectbox('Select data', ('Theta', 'Area2'))
 
 dfheat = pd.read_csv('ksev1.csv', names=['\u00b0 2Theta','Int'])
