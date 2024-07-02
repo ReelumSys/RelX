@@ -35,3 +35,4 @@ PyCrystallography
 xrayutilities
 xrdfit
 streamlit_extras
+flask
