@@ -18,7 +18,8 @@ from flask import Flask, render_template, request, url_for
 
 
 
-from llama_index.core import SimpleDirectoryReader, GPTListIndex, LLMPredictor, PromptHelper
+from llama_index.core import SimpleDirectoryReader, GPTListIndex, PromptHelper
+from llama_index import LLMPredictor
 from langchain.chat_models import ChatOpenAI
 import gradio as gr
 import sys
