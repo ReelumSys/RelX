@@ -36,6 +36,4 @@ xrayutilities
 xrdfit
 streamlit_extras
 flask
-glob
-gradio
 llama-index
