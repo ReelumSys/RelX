@@ -51,16 +51,16 @@ with c1:
         use_container_width=True
     )
     
-    #st.markdown('#### Data Main XRD')
-    #st.markdown('###### Check if all fields match')
-    #plost.xy_hist(
-    #    data=dfheat,
-    #    x='\u00b0 2Theta',
-    #    y='Int',
-    #    #x_bin=100,
-    #    #y_bin='Int2',
-    #    use_container_width=True,
-    #)
+    st.markdown('#### Data Main XRD')
+    st.markdown('###### Check if all fields match')
+    plost.xy_hist(
+        data=dfheat,
+        x='\u00b0 2Theta',
+        y='Int',
+        #x_bin=100,
+        #y_bin='Int2',
+        use_container_width=True,
+    )
     
 
 with c2:
