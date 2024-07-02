@@ -6,7 +6,8 @@ dill
 tqdm
 numpy
 altair
-openai
+openai==0.27.7
+#openai
 matplotlib
 urllib3
 lattpy
