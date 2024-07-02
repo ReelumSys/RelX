@@ -10,7 +10,7 @@ import time
 import openai
 import os
 #from langchain.llms import OpenAI
-from langchain.llms import ChatOpenAI
+from langchain_openai import OpenAI
 #from streamlit_extras.app_logo import add_logo
 from utils import logo
 from streamlit_extras.app_logo import add_logo
