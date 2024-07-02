@@ -69,8 +69,8 @@ st.sidebar.header('')
 
 #xf = xu.io.XRDMLFile('data/rsm_1.xrdml.bz2')
 
-file_path = pd.read_csv('ksev1.csv')
-file_path2 = pd.read_csv('ksev1rand.csv')
+#file_path = pd.read_csv('ksev1.csv')
+#file_path2 = pd.read_csv('ksev1rand.csv')
 
 
 
