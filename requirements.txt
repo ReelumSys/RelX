@@ -36,3 +36,7 @@ xrayutilities
 xrdfit
 streamlit_extras
 flask
+glob
+datetime
+gradio
+llama-index
