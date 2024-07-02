@@ -36,5 +36,4 @@ xrayutilities
 xrdfit
 streamlit_extras
 flask
-llama-index#
-GPTVectorStoreIndex
+llama-index
