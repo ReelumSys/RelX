@@ -9,8 +9,6 @@ altair
 #openai==0.27.7
 openai
 openai[embeddings]
-
-scikit
 sklearn
 
 plotly==5.11.0
