@@ -30,7 +30,7 @@ scikit-learn-intelex
 streamlit
 sympy
 langchain[all]
-langchain-communitiy
+langchain-community
 PyCrystallography
 xrayutilities
 xrdfit
