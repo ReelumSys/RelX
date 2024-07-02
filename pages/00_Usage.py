@@ -9,9 +9,10 @@ import random
 import time
 import openai
 import os
-#from langchain.llms import OpenAI
-from langchain_openai import OpenAI
-#from streamlit_extras.app_logo import add_logo
+
+from langchain.llms import OpenAI
+#from langchain_openai import OpenAI
+
 from utils import logo
 from streamlit_extras.app_logo import add_logo
 
