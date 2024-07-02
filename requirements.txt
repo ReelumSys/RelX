@@ -37,3 +37,4 @@ xrdfit
 streamlit_extras
 flask
 llama-index
+gradio
