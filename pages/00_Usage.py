@@ -25,7 +25,7 @@ import gradio as gr
 import sys
 import os
 import time
-import scikit-learn
+#import scikit-learn
 import scipy
 from openai.embeddings_utils import get_embedding, cosine_similarity
 import pandas

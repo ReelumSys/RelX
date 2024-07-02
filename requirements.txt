@@ -10,7 +10,6 @@ altair
 openai
 openai[embeddings]
 scikit-learn
-
 plotly==5.11.0
 matplotlib
 urllib3
