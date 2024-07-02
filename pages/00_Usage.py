@@ -25,7 +25,7 @@ import gradio as gr
 import sys
 import os
 import time
-from openai.embeddings_utils import get_embedding, cosine_similarity
+from utils.embeddings_utils import get_embedding, cosine_similarity
 import pandas
 import openai
 import numpy as np
