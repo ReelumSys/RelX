@@ -7,9 +7,6 @@ tqdm
 numpy
 altair
 #openai==0.27.7
-openai
-openai[embeddings]
-scikit-learn
 plotly==5.11.0
 matplotlib
 urllib3
@@ -42,3 +39,5 @@ streamlit_extras
 flask
 llama-index
 gradio
+openai
+openai[embeddings]
