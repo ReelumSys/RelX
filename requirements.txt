@@ -39,5 +39,6 @@ streamlit_extras
 flask
 llama-index
 gradio
-openai
+#openai
 openai[embeddings]
+openai==0.27.7
