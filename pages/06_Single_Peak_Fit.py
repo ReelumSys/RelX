@@ -38,7 +38,7 @@ with open('style.css') as f:
     
 
 st.text("")
-st.markdown('<div style="text-align: justify;"> <font size="+3"><b> Detects the most prominent peak in the region of selected °2Theta values. <b></font> </div>', unsafe_allow_html=True)
+st.markdown('<div style="text-align: justify;"> <font size="+3"><b> Detects the most prominent peak in the range of selected °2Theta values. <b></font> </div>', unsafe_allow_html=True)
 
 
 values = st.slider(
