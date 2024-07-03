@@ -107,7 +107,7 @@ spectral_data2.plot(1, log_scale=True)
 
 
 
-peak_params = PeakParams((2.75, 50), '(10-10)')
+peak_params = PeakParams((40, 50), '(10-10)')
 
 
 spectral_data.fit_peaks(peak_params, 1)
