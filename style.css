@@ -7,6 +7,10 @@
     background-position: 4px 20px;
 }
 
+body .page-id-47 .header-image-class-name { 
+  display: none;
+  }
+
 
 /* Card */
 /* Adapted from https://startbootstrap.com/theme/sb-admin-2 */
