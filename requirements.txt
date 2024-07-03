@@ -29,6 +29,7 @@ scikit-image
 scikit-learn
 scikit-learn-intelex
 streamlit
+streamlit_chat
 sympy
 langchain[all]
 langchain-community
