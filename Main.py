@@ -211,7 +211,7 @@ def set_background(png_file):
 with open('style.css') as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
-show_pages([Page(Main.py), Page(Usage.py)])
+    show_pages([Page(Main.py), Page(Usage.py)])
 
     st.sidebar.title("Explore")
 
