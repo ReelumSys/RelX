@@ -62,7 +62,7 @@ import numpy as np
 from lattpy import Lattice
 from lattpy import simple_square
 from utils import logo
-from st_pages import show_pages, hide_pages, Page
+#from st_pages import show_pages, hide_pages, Page
 
 
 
