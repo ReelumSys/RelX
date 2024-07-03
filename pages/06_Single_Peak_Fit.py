@@ -36,7 +36,10 @@ st.set_page_config(
 with open('style.css') as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
     
-#plot_width = st.sidebar.slider('Specify °2Theta region', 1, 180, 25)
+values = st.slider(
+     'Select a range of values',
+     0.0, 100.0, (25.0, 75.0))
+st.write('Values:', values)
 
 st.sidebar.header('')
 
