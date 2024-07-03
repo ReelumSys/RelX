@@ -161,7 +161,7 @@ with st.form('my_form'):
 st.title("XRDGPT - Personal Assitant")
 st.divider()
 
-data_file = "./RelX/pages/data.txt"
+data_file = "./pages/data.txt"
 data_persist = False
 prompt = None
 
