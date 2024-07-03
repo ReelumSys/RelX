@@ -18,9 +18,9 @@ from langchain.llms import OpenAI
 #from flask import Flask, render_template, request, url_for
 
 
-import os
+
 import sys
-import streamlit as st
+
 from streamlit_chat import message
 from langchain.indexes import VectorstoreIndexCreator
 from langchain.chains import ConversationalRetrievalChain
@@ -144,7 +144,7 @@ st.title('XRDGPT')
 openai_api_key = st.sidebar.text_input('OpenAI API Key', type='password')
 
 def generate_response(input_text):
-    llm = OpenAI(temperature=0.7, openai_api_key=openai_api_key)
+    llm = OpenAI(temperature=0.1, openai_api_key=openai_api_key)
     st.info(llm(input_text))
 
 with st.form('my_form'):
