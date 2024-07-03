@@ -158,7 +158,7 @@ with st.form('my_form'):
 
 
 
-st.title("📖 XYZ Books - Personal Assitant")
+st.title("XRDGPT - Personal Assitant")
 st.divider()
 
 data_file = "data.txt"
