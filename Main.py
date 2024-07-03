@@ -219,7 +219,7 @@ def set_background(png_file):
 st.sidebar.header('')
 
 
-show_pages(
+st.show_pages(
     [
         Page("Main.py", "Home"), 
         Page("./pages/Usage.py", "Usage"),
@@ -234,7 +234,7 @@ show_pages(
     ]
 )
 
-hide_pages(["Home"])
+st.hide_pages(["Home"])
 
 #ut.draw_something_on_top_of_page_navigation()
 
