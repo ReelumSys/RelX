@@ -68,7 +68,7 @@ def set_background(png_file):
 
 
 st.text("")
-st.markdown('<div style="text-align: justify;"> <font size="+1"><b> Introduction <b></font> </div>', unsafe_allow_html=True)
+st.markdown('<div style="text-align: justify;"> <font size="+2"><b> Introduction <b></font> </div>', unsafe_allow_html=True)
 
 
 st.text("")
