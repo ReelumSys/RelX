@@ -33,6 +33,9 @@ streamlit_chat
 sympy
 langchain[all]
 langchain-community
+langchain-core
+tiktoken
+docarray
 PyCrystallography
 xrayutilities
 xrdfit
