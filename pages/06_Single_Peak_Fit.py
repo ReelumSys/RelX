@@ -39,7 +39,7 @@ with open('style.css') as f:
 values = st.slider(
      'Select a range of values',
      0.0, 180.0, (25.0, 75.0))
-st.write('Values:', values)
+#st.write('Values:', values)
 
 #st.write('Values2:', values[1])
 
