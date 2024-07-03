@@ -209,7 +209,16 @@ def set_background(png_file):
 
 with open('style.css') as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
+    
+def hide_pages(pages_to_hide):
+    for page in pages_to_hide:
+        st.sidebar.markdown(f"## {page}")
+        st.sidebar.markdown("This page is hidden.")
+
+
     st.sidebar.title("Explore")
+
+
 st.sidebar.header('')
 
 #ut.draw_something_on_top_of_page_navigation()
