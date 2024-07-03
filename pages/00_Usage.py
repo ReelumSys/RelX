@@ -68,6 +68,10 @@ def set_background(png_file):
 
 
 st.text("")
+st.markdown('<div style="text-align: justify;"> <font size="+3"> First you can upload two XRD charts. They need not to have the same °2Theta values as you can set a beginning value. However the patterns have to be recorded at same diffraction settings. After uploading, first you see a heatmap plus identified and binned values. This should help with the data conformity. Beside the heatmap you can find an analysis of data in the donut chart. Here is the Main vs. the Comparing pattern plottet. In the pattern section is an overview of the plotted patterns. A subtraction from the Main XRD and the Comparison XRD is shown. The same procedure is done for the intensity in logarithmic scale. Publication ready plots may be included with easy access. </font> </div>', unsafe_allow_html=True)
+
+
+st.text("")
 st.markdown('<div style="text-align: justify;"> <font size="+2"><b> Introduction <b></font> </div>', unsafe_allow_html=True)
 
 
