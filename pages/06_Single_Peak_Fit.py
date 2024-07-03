@@ -36,6 +36,8 @@ st.set_page_config(
 with open('style.css') as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
     
+#plot_width = st.sidebar.slider('Specify °2Theta region', 1, 180, 25)
+
 st.sidebar.header('')
 
 
@@ -51,6 +53,9 @@ st.sidebar.header('')
 #chpdeg = 340.0002
 #nchannel = 3000
 #datapath = os.path.join("KSeV1Rand")
+
+
+
 
 
 
