@@ -9,8 +9,11 @@
 
 body .page-id-47 .header-image-class-name { 
   display: none;
-  }
+}
 
+#Main .det_price {
+    display: none;
+}
 
 /* Card */
 /* Adapted from https://startbootstrap.com/theme/sb-admin-2 */
