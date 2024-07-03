@@ -36,6 +36,11 @@ st.set_page_config(
 with open('style.css') as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
     
+
+st.text("")
+st.markdown('<div style="text-align: justify;"> <font size="+3"><b> Detects the most prominent peak in the region of selected °2Theta values. <b></font> </div>', unsafe_allow_html=True)
+
+
 values = st.slider(
      'Select a range of °2 Theta values',
      0.0, 180.0, (25.0, 75.0))
@@ -47,8 +52,7 @@ values = st.slider(
 
 st.sidebar.header('')
 
-st.text("")
-st.markdown('<div style="text-align: justify;"> <font size="+3"><b> Detecs the most prominent peak in the region of selected °2Theta values. <b></font> </div>', unsafe_allow_html=True)
+
 
 
 #mpl.rcParams['font.size'] = 16.0
