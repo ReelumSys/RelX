@@ -69,7 +69,7 @@ def set_background(png_file):
 
 
 st.text("")
-st.markdown('<div style="text-align: justify;"> <font size="+5"><b> Introduction <b></font> </div>', unsafe_allow_html=True)
+st.markdown('<div style="text-align: justify;"> <font size="+6"><b> Introduction <b></font> </div>', unsafe_allow_html=True)
 
 st.text("")
 st.markdown('<div style="text-align: justify;"> <font size="+3"><b> With this app it is possible to do some work on XRD patterns with only minimal amounts of data needed. For the Symmetry depicition HKL values are required. Hence for Rietveld Refinement also Atomic Coordinates and Atomic Dislocation are mandatory. <b></font> </div>', unsafe_allow_html=True)
