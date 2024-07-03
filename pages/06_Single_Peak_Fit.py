@@ -47,6 +47,8 @@ values = st.slider(
 
 st.sidebar.header('')
 
+st.text("")
+st.markdown('<div style="text-align: justify;"> <font size="+3"><b> Detecs the most prominent peak in the region of selected °2Theta values. <b></font> </div>', unsafe_allow_html=True)
 
 
 #mpl.rcParams['font.size'] = 16.0
