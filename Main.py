@@ -211,12 +211,30 @@ def set_background(png_file):
 with open('style.css') as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
-    #show_pages([Page(Main.py), Page(Usage.py)])
+
 
     st.sidebar.title("Explore")
 
 
 st.sidebar.header('')
+
+
+show_pages(
+    [
+        Page("Main.py", "Home"), 
+        Page("./pages/Usage.py", "Usage"),
+        Page("./pages/Comparison.py", "Comparison"),
+        Page("./pages/Patterns", "Patterns"),
+        Page("./pages/Symmery", "Symmetry"),
+        Page("./pages/Crystal_Size_&_Strain", "Crystal Size & Strain"),
+        Page("./pages/Single_Peak_Fit", "Single Peak Fit"),
+        Page("./pages/Rietveld_Refinement", "Rietveld Refinement"),
+        Page("./pages/Acknowledgement", "Acknowledgement"),
+        Page("./pages/Disclaimer", "Disclaimer")           
+    ]
+)
+
+hide_pages(["Home"])
 
 #ut.draw_something_on_top_of_page_navigation()
 
