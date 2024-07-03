@@ -208,7 +208,7 @@ def set_background(png_file):
 #st.set_page_config(layout='wide', initial_sidebar_state='expanded')
 
 
-with open('style.css') as f:
+#with open('style.css') as f:
     #st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
 
@@ -222,7 +222,7 @@ st.sidebar.header('')
 show_pages(
     [
         Page("Main.py", "Home"), 
-        Page(".ages/Usage.py", "Usage"),
+        Page("./pages/Usage.py", "Usage"),
         Page("./pages/Comparison.py", "Comparison"),
         Page("./pages/Patterns", "Patterns"),
         Page("./pages/Symmery", "Symmetry"),
