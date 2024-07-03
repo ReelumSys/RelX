@@ -222,7 +222,7 @@ st.sidebar.header('')
 show_pages(
     [
         Page("Main.py", "Home"), 
-        Page("./pages/Usage.py", "Usage"),
+        Page(".ages/Usage.py", "Usage"),
         Page("./pages/Comparison.py", "Comparison"),
         Page("./pages/Patterns", "Patterns"),
         Page("./pages/Symmery", "Symmetry"),
