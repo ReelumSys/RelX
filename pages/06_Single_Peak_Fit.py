@@ -41,7 +41,7 @@ values = st.slider(
      0.0, 180.0, (25.0, 75.0))
 st.write('Values:', values)
 
-st.write('Values2:', values[1])
+#st.write('Values2:', values[1])
 
 
 
@@ -121,7 +121,7 @@ spectral_data2.plot(1, log_scale=True)
 
 
 
-peak_params = PeakParams((40, 50), '(10-10)')
+peak_params = PeakParams((values[0], values[1]), '(10-10)')
 
 
 spectral_data.fit_peaks(peak_params, 1)
