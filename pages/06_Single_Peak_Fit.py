@@ -49,7 +49,6 @@ st.sidebar.header('')
 
 
 
-
 #mpl.rcParams['font.size'] = 16.0
 #mpl.rcParams['lines.linewidth'] = 2.0
 
@@ -92,6 +91,9 @@ first_cake_angle = 120
 file_path = "ksev1.csv"
 file_path2 = "ksev1rand.csv"
 
+
+st.markdown('##### Main')
+st.line_chart(file_path, x = '\u00b0 2Theta', y = 'Int', height = 250)
 
 
 
