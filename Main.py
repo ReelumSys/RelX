@@ -62,6 +62,7 @@ import numpy as np
 from lattpy import Lattice
 from lattpy import simple_square
 from utils import logo
+from st_pages import show_pages, hide_pages, Page
 
 
 
@@ -210,13 +211,7 @@ def set_background(png_file):
 with open('style.css') as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
-
-page = Main
-def hide_pages(pages_to_hide):
-    for page in pages_to_hide:
-        st.sidebar.markdown(f"## {page}")
-        st.sidebar.markdown("This page is hidden.")
-
+show_pages([Page(Main.py), Page(Usage.py)])
 
     st.sidebar.title("Explore")
 
