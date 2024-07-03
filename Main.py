@@ -212,7 +212,7 @@ with open('style.css') as f:
     
 def hide_pages(pages_to_hide):
     for page in pages_to_hide:
-        st.sidebar.markdown(f"## {page}")
+        st.sidebar.markdown(f"## {Main}")
         st.sidebar.markdown("This page is hidden.")
 
 
