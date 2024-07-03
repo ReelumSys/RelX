@@ -37,7 +37,7 @@ with open('style.css') as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
     
 values = st.slider(
-     'Select a range of values',
+     'Select a range of °2 Theta values',
      0.0, 180.0, (25.0, 75.0))
 #st.write('Values:', values)
 
