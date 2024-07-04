@@ -144,7 +144,7 @@ st.title('XRDGPT')
 openai_api_key = st.sidebar.text_input('OpenAI API Key', type='password')
 
 def generate_response(input_text):
-    llm = OpenAI(temperature=0.1, openai_api_key=openai_api_key)
+    llm = OpenAI(temperature=0.01, openai_api_key=openai_api_key)
     st.info(llm(input_text))
 
 with st.form('my_form'):
