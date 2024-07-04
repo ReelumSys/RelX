@@ -178,8 +178,8 @@ else:
     loader.load()
     if data_persist:
         index = VectorstoreIndexCreator(vectorstore_kwargs={"persist_directory":"persist"}).from_loaders([loader])
-    #else:
-        #index = VectorstoreIndexCreator().from_loaders([loader])
+    else:
+        index = VectorstoreIndexCreator().from_loaders([loader])
 
 chain = ConversationalRetrievalChain.from_llm(llm=ChatOpenAI(model="gpt-3.5-turbo"), retriever=index.vectorstore.as_retriever(search_kwargs={"k": 1}))
 
