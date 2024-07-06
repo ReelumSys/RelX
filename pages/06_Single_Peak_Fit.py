@@ -169,8 +169,8 @@ spectral_data.fit_peaks(peak_params, 1)
 
 #print(spectral_data.fitted_peaks)
 
-for fit in spectral_data.fitted_peaks:
-    fit.plot()
+#for fit in spectral_data.fitted_peaks:
+#    fit.plot()
 
 
 
