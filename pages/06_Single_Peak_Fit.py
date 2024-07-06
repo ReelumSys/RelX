@@ -21,7 +21,6 @@ from xrdfit.spectrum_fitting import PeakParams, FitSpectrum
 
 
 # Set the matplotlib backend and make the plots a bit bigger
-
 import matplotlib
 matplotlib.rcParams['figure.figsize'] = [8, 6]
 
@@ -137,7 +136,7 @@ spectral_data.fit_peaks(peak_params, 1)
 
 
 
-spectral_data.fitted_peaks[0].result.values
+spectral_data.fitted_peaks[2].result.values
 
 spectral_data.get_fit("(10-10)")
 
