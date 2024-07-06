@@ -146,7 +146,7 @@ spectral_data.get_fit("(10-10)")
 
 spectral_data.get_fit("(10-10)").result
 
-
+spectral_data.get_fit("(10-10)").fit_report
 
 #spectral_data.get_fit("(10-10)").result.values
 
