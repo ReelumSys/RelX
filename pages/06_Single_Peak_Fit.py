@@ -137,7 +137,7 @@ spectral_data.fit_peaks(peak_params, 1)
 
 
 
-#spectral_data.fitted_peaks[0].result.values
+spectral_data.fitted_peaks[0].result.values
 
 spectral_data.get_fit("(10-10)")
 
@@ -167,7 +167,7 @@ spectral_data.plot_peak_params(peak_params, 1, x_range=(2.7, 60), show_points=Tr
 
 spectral_data.fit_peaks(peak_params, 1)
 
-print(spectral_data.fitted_peaks)
+#print(spectral_data.fitted_peaks)
 
 for fit in spectral_data.fitted_peaks:
     fit.plot()
