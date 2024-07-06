@@ -112,7 +112,7 @@ spectral_data = FitSpectrum(file_path, first_cake_angle, delimiter=',')
 spectral_data2 = FitSpectrum(file_path2, first_cake_angle, delimiter=',')
 print(spectral_data)
 
-spectral_data.plot_polar()
+#spectral_data.plot_polar()
 
 #sd1 = pd.DataFrame(spectral_data)
 #sd2 = pd.DataFrame(spectral_data2)
