@@ -141,7 +141,7 @@ spectral_data.fitted_peaks[0].result.values
 
 spectral_data.get_fit("(10-10)")
 
-spectral_data.get_fit("(20-20)").result
+#spectral_data.get_fit("(20-20)").result
 
 
 spectral_data.get_fit("(10-10)").result
