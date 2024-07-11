@@ -231,7 +231,7 @@ st.header('Home')
 #st.sidebar.page_link("pages/Acknowledgement", label = "Acknowledgement"),
 #st.sidebar.page_link("pages/Disclaimer", label = "Disclaimer")           
 
-st.hide_pages(["Home"])
+#st.hide_pages(["Home"])
 
 #ut.draw_something_on_top_of_page_navigation()
 
