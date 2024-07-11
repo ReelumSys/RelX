@@ -213,7 +213,7 @@ with open('style.css') as f:
 
 
 
-    #st.sidebar.title("Explore")
+    st.sidebar.title("Explore")
 
 
 st.sidebar.header('')
