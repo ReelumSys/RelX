@@ -221,15 +221,15 @@ st.header('Home')
 
 
 #st.sidebar.page_link("Main.py", label = "Home") 
-st.sidebar.page_link("pages/Usage.py", label = "Usage")
-st.sidebar.page_link("pages/Comparison.py", label = "Comparison")
-st.sidebar.page_link("pages/Patterns", label = "Patterns")
-st.sidebar.page_link("pages/Symmery", label = "Symmetry"),
-st.sidebar.page_link("pages/Crystal_Size_&_Strain", label = "Crystal Size & Strain"),
-st.sidebar.page_link("pages/Single_Peak_Fit", label = "Single Peak Fit"),
-st.sidebar.page_link("pages/Rietveld_Refinement", label = "Rietveld Refinement"),
-st.sidebar.page_link("pages/Acknowledgement", label = "Acknowledgement"),
-st.sidebar.page_link("pages/Disclaimer", label = "Disclaimer")           
+#st.sidebar.page_link("pages/Usage.py", label = "Usage")
+#st.sidebar.page_link("pages/Comparison.py", label = "Comparison")
+#st.sidebar.page_link("pages/Patterns", label = "Patterns")
+#st.sidebar.page_link("pages/Symmery", label = "Symmetry"),
+#st.sidebar.page_link("pages/Crystal_Size_&_Strain", label = "Crystal Size & Strain"),
+#st.sidebar.page_link("pages/Single_Peak_Fit", label = "Single Peak Fit"),
+#st.sidebar.page_link("pages/Rietveld_Refinement", label = "Rietveld Refinement"),
+#st.sidebar.page_link("pages/Acknowledgement", label = "Acknowledgement"),
+#st.sidebar.page_link("pages/Disclaimer", label = "Disclaimer")           
 
 st.hide_pages(["Home"])
 
