@@ -96,6 +96,15 @@ left_co, cent_co,last_co = st.columns(3)
 with cent_co:
     st.image(new_img)
 
+
+
+st.header('Home')
+
+# Sidebar navigation
+st.sidebar.page_link('Main.py', label='Home')
+st.sidebar.page_link('pages/00_Usage.py', label='Basketball')
+
+
 #image = Image.open('./images/favicon.png')
 #new_img = image.resize((200, 100))
 #st.image(new_img)
