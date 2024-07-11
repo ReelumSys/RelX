@@ -213,26 +213,23 @@ with open('style.css') as f:
 
 
 
-    st.sidebar.title("Explore")
+    #st.sidebar.title("Explore")
 
 
-st.sidebar.header('')
+st.header('Home')
 
 
-st.show_pages(
-    [
-        Page("Main.py", "Home"), 
-        Page("pages/Usage.py", "Usage"),
-        Page("pages/Comparison.py", "Comparison"),
-        Page("pages/Patterns", "Patterns"),
-        Page("pages/Symmery", "Symmetry"),
-        Page("pages/Crystal_Size_&_Strain", "Crystal Size & Strain"),
-        Page("pages/Single_Peak_Fit", "Single Peak Fit"),
-        Page("pages/Rietveld_Refinement", "Rietveld Refinement"),
-        Page("pages/Acknowledgement", "Acknowledgement"),
-        Page("pages/Disclaimer", "Disclaimer")           
-    ]
-)
+
+st.sidebar.page_link("Main.py", label = "Home") 
+st.sidebar.page_link("pages/Usage.py", label = "Usage")
+st.sidebar.page_link("pages/Comparison.py", label = "Comparison")
+st.sidebar.page_link("pages/Patterns", label = "Patterns")
+st.sidebar.page_link("pages/Symmery", label = "Symmetry"),
+st.sidebar.page_link("pages/Crystal_Size_&_Strain", label = "Crystal Size & Strain"),
+st.sidebar.page_link("pages/Single_Peak_Fit", label = "Single Peak Fit"),
+st.sidebar.page_link("pages/Rietveld_Refinement", label = "Rietveld Refinement"),
+st.sidebar.page_link("pages/Acknowledgement", label = "Acknowledgement"),
+st.sidebar.page_link("pages/Disclaimer", label = "Disclaimer")           
 
 st.hide_pages(["Home"])
 
