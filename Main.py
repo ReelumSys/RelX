@@ -190,6 +190,12 @@ np.savetxt('ksev1rand.csv', df, fmt='%f', delimiter=',')
 
 os.system("WH.py")
 
+st.header('Home')
+
+# Sidebar navigation
+st.sidebar.page_link('Main.py', label='Home')
+st.sidebar.page_link('pages/00_Usage.py', label='Basketball')
+
 
 
 def get_base64(bin_file):
@@ -222,11 +228,6 @@ with open('style.css') as f:
 
 st.sidebar.header('')
 
-st.header('Home')
-
-# Sidebar navigation
-st.sidebar.page_link('Main.py', label='Home')
-st.sidebar.page_link('pages/00_Usage.py', label='Basketball')
 
 
 
