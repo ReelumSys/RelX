@@ -103,6 +103,7 @@ with cent_co:
 # Sidebar navigation
 #st.sidebar.page_link('Main.py', label='Home')
 st.sidebar.page_link('pages/00_Usage.py', label='Usage')
+st.sidebar.page_link('pages/01_Comparison.py', label='Comparison')
 st.sidebar.page_link('pages/02_Patterns.py', label='Patterns')
 st.sidebar.page_link('pages/04_Symmetry.py', label='Symmetry')
 st.sidebar.page_link('pages/05_Crystal_Size_&_Strain.py', label='Crystal Size & Strain')
