@@ -154,15 +154,44 @@ df = pd.read_fwf(name2)
 df.to_csv('ksev1rand.csv', index=False)
 np.savetxt('ksev1rand.csv', df, fmt='%f', delimiter=',')
 
+#uploaded_file3 = st.file_uploader("Upload a .txt of the HKLs for Rietveld Refinement and Bravais calculations", type=["txt"])
+#st.text("")
+#st.write("The HKL should be formatted with a space as delimiter.")
+#st.text("")
+#image = Image.open('./images/HKLinfo.png')
+#new_img = image.resize((125, 250))
+#st.image(new_img)
+#st.text("")
+
+
+
+#name3 = uploaded_file3
+#if not name3:
+#  st.warning('Please input a .txt file.')
+#  st.stop()
+#st.success('Done.')
+
+#df = pd.read_fwf(name3)
+#df.to_csv('HKL.csv', index=None)
+#np.savetxt('HKL.csv', df, fmt='%i', delimiter=',')
+#np.savetxt('HKL.txt', df, fmt='%i', delimiter=' ')
+
+
+#c = np.array(name3)
+#na = c.reshape(1)
+
+#np.savetxt('HKL.csv', na, fmt='%s', delimiter=',')
+#print(name3)
+#ut.draw_something_on_top_of_page_navigation()
 
 os.system("WH.py")
 
 
 
-#def get_base64(bin_file):
-#    with open(bin_file, 'rb') as f:
-#        data = f.read()
-#    return base64.b64encode(data).decode()
+def get_base64(bin_file):
+    with open(bin_file, 'rb') as f:
+        data = f.read()
+    return base64.b64encode(data).decode()
 
 def set_background(png_file):
     bin_str = get_base64(png_file)
@@ -179,8 +208,8 @@ def set_background(png_file):
 #st.set_page_config(layout='wide', initial_sidebar_state='expanded')
 
 
-#with open('style.css') as f:
-#    st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
+with open('style.css') as f:
+    st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
 
 
@@ -217,13 +246,20 @@ with cent_co:
     st.image(new_img)
 
 
-#st.sidebar.subheader('Line chart parameters')
-#plot_height = st.sidebar.slider('Specify plot height', 200, 1000, 250)
+#st.sidebar.subheader('Heat map parameter')
+#time_hist_color = st.sidebar.selectbox('Color by', '') 
 
-#st.sidebar.markdown('''
-#---
+#st.sidebar.subheader('Donut chart parameter')
+#donut_theta = st.sidebar.selectbox('Select data', ('', ''))
+#donut_theta = st.sidebar.selectbox('Select data', ('Area'))
 
-#''')
+st.sidebar.subheader('Line chart parameters')
+plot_height = st.sidebar.slider('Specify plot height', 200, 1000, 250)
+
+st.sidebar.markdown('''
+---
+
+''')
 
 
 # Row B
