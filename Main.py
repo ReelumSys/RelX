@@ -108,7 +108,7 @@ st.sidebar.page_link('pages/04_Symmetry.py', label='Symmetry')
 st.sidebar.page_link('pages/05_Crystal_Size_&_Strain.py', label='Crystal Size & Strain')
 st.sidebar.page_link('pages/06_Single_Peak_Fit.py', label='Single Peak Fit')
 st.sidebar.page_link('pages/07_Rietveld_Refinement.py', label='Rietveld Refinement')
-st.sidebar.page_link('pages/08_Acknowledgement.py', label='Acknowledgement')
+st.sidebar.page_link('pages/08_Acknowledgements.py', label='Acknowledgements')
 st.sidebar.page_link('pages/09_Disclaimer.py', label='Disclaimer')
 
 #image = Image.open('./images/favicon.png')
