@@ -220,7 +220,7 @@ st.header('Home')
 
 
 
-st.sidebar.page_link("Main.py", label = "Home") 
+#st.sidebar.page_link("Main.py", label = "Home") 
 st.sidebar.page_link("pages/Usage.py", label = "Usage")
 st.sidebar.page_link("pages/Comparison.py", label = "Comparison")
 st.sidebar.page_link("pages/Patterns", label = "Patterns")
