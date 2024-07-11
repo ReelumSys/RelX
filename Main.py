@@ -98,13 +98,18 @@ with cent_co:
     st.image(new_img)
 
 
-st.header('Home')
+#st.header('Home')
 
 # Sidebar navigation
 st.sidebar.page_link('Main.py', label='Home')
-st.sidebar.page_link('pages/00_Usage.py', label='Basketball')
-
-
+st.sidebar.page_link('pages/00_Usage.py', label='Usage')
+st.sidebar.page_link('pages/02_Patterns.py', label='Patterns')
+st.sidebar.page_link('pages/04_Symmetry.py', label='Symmetry')
+st.sidebar.page_link('pages/05_Crystal_Size_&_Strain.py', label='Crystal Size & Strain')
+st.sidebar.page_link('pages/06_Single_Peak_Fit.py', label='Single Peak Fit')
+st.sidebar.page_link('pages/07_Rietveld_Refinement.py', label='Rietveld Refinement')
+st.sidebar.page_link('pages/08_Acknowledgement.py', label='Acknowledgement')
+st.sidebar.page_link('pages/09_Disclaimer.py', label='Disclaimer')
 
 #image = Image.open('./images/favicon.png')
 #new_img = image.resize((200, 100))
