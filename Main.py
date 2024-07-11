@@ -78,6 +78,12 @@ from utils import logo
 #global StValv
 StartingValue = 10
 
+st.header('Home')
+
+# Sidebar navigation
+st.sidebar.page_link('Main.py', label='Home')
+st.sidebar.page_link('pages/00_Usage.py', label='Basketball')
+
 
 
 im = Image.open("favicon2.png")
@@ -189,12 +195,6 @@ np.savetxt('ksev1rand.csv', df, fmt='%f', delimiter=',')
 #ut.draw_something_on_top_of_page_navigation()
 
 os.system("WH.py")
-
-st.header('Home')
-
-# Sidebar navigation
-st.sidebar.page_link('Main.py', label='Home')
-st.sidebar.page_link('pages/00_Usage.py', label='Basketball')
 
 
 
