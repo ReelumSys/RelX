@@ -98,11 +98,6 @@ with cent_co:
 
 
 
-st.header('Home')
-
-# Sidebar navigation
-st.sidebar.page_link('Main.py', label='Home')
-st.sidebar.page_link('pages/00_Usage.py', label='Basketball')
 
 
 #image = Image.open('./images/favicon.png')
@@ -226,6 +221,14 @@ with open('style.css') as f:
 
 
 st.sidebar.header('')
+
+st.header('Home')
+
+# Sidebar navigation
+st.sidebar.page_link('Main.py', label='Home')
+st.sidebar.page_link('pages/00_Usage.py', label='Basketball')
+
+
 
 
 #st.show_pages(
