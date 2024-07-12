@@ -141,7 +141,7 @@ st.text("")
 st.markdown('###### Upload two .txt patterns separately and let them be calculated.')
 
 # Allow only .csv and .xlsx files to be uploaded
-uploaded_file = st.file_uploader("Upload Main XRD Pattern", type=["txt"])
+uploaded_file = st.fgit ile_uploader("Upload Main XRD Pattern", type=["txt"])
 
 name = uploaded_file
 if not name:
