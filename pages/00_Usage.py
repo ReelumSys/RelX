@@ -70,7 +70,7 @@ st.set_page_config(
 )
 #logo()
 
-add_logo("favicon3.png")
+#add_logo("favicon3.png")
 #st.sidebar.image("./images/favicon.png", width=150)
 with open('style.css') as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
