@@ -14,6 +14,7 @@ import time
 from numpy import arange, inf
 from matplotlib.pylab import (figure, legend, semilogy, tight_layout, xlabel,
                               ylabel)
+import xrdfit.pv_fit
 
 import xrayutilities as xu
 
@@ -148,7 +149,7 @@ spectral_data.get_fit("(10-10)").result
 
 spectral_data.plot_peak_params
 
-
+xrdfit.pv_fit.do_pv_fit(peak_data=file_path, peak_param=peak_params)
 
 #spectral_data.plot_fit("(10-10)").__module__.
 
