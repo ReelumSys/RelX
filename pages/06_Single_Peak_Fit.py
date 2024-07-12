@@ -145,6 +145,16 @@ spectral_data.get_fit("(10-10)")
 
 spectral_data.get_fit("(10-10)").result
 
+spectral_data.highlight_cakes("(10-10)")
+
+
+
+
+
+#spectral_data.plot_fit("(10-10)").__module__.
+
+
+
 #spectral_data.get_fit("(10-10)").result
 
 #spectral_data.get_fit("(10-10)").result.values
