@@ -147,7 +147,7 @@ spectral_data.get_fit("(10-10)")
 spectral_data.get_fit("(10-10)").result
 
 
-spectral_data.plot_peak_params
+#spectral_data.plot_peak_params
 
 #xrdfit.pv_fit.do_pv_fit(peak_data=spectral_data, peak_param=peak_params)
 
@@ -155,45 +155,6 @@ spectral_data.plot_peak_params
 
 
 
-#spectral_data.get_fit("(10-10)").result
-
-#spectral_data.get_fit("(10-10)").result.values
-
-
-
-#spectral_data.get_fit("(10-10)").result.values['maximum_0_center']
-
-#spectral_data.get_fit("(10-10)").plot()
-
-
-
-
-
-#peak_params = [#PeakParams((2.75, 20.95), '1'),
-               #PeakParams((20.02, 30.15), '2'),
-               #PeakParams((30.15, 40.35), '3'),
-#               PeakParams((18, 26), '4')]
-
-#spectral_data.plot_peak_params(peak_params, 1, x_range=(2.7, 60), show_points=True)
-
-#spectral_data.fit_peaks(peak_params, 1)
-
-#print(spectral_data.fitted_peaks)
-
-#for fit in spectral_data.fitted_peaks:
-#    fit.plot()
-
-
-
-
-
-#peak_params = [PeakParams((3.02, 30.27), '(10-10)'),
-#               PeakParams((30.3, 50.75), ['(0002)', '(110)', '(10-11)'], [(3.4, 3.44), (3.52, 3.56), (3.57, 3.61)])]
-
-#spectral_data.plot_peak_params(peak_params, 1, show_points=True, label_angle=60)
-
-spectral_data.plot_fit('(10-10)')
-#spectral_data.plot_fit('(0002)')
 
 
 
