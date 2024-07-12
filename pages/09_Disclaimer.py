@@ -7,14 +7,15 @@ import base64
 import numpy as np
 import os
 from PIL import Image
+from streamlit_extras.app_logo import add_logo
 
-im = Image.open("../Relx/favicon2.png")
+im = 'favicon2.png'
 st.set_page_config(
     page_title="RelX v0.9",
-    page_icon=im,
+    #page_icon=im,
     layout="wide",
 )
-
+add_logo("favicon3.png")
 with open('style.css') as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
@@ -30,7 +31,7 @@ def set_background(png_file):
     ''' % bin_str
     st.markdown(page_bg_img, unsafe_allow_html=True)
 
-st.markdown("## Imprint")
+#st.markdown("## Imprint")
 st.sidebar.markdown("# ")
 st.write("###### \n Impressum (Legal Notice) ff") 
 st.write('''"Information according to § 5 TMG: "''') 

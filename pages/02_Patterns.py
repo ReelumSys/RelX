@@ -9,16 +9,14 @@ import Main as StValv
 from PIL import Image
 import altair as alt
 
-global weather1
-global weather2
-global weather3
-
-im = Image.open("../Relx/favicon2.png")
+im = 'favicon2.png'
 st.set_page_config(
     page_title="RelX v0.9",
     page_icon=im,
     layout="wide",
 )
+
+#st.image("../RelX/favicon2.png")
 #global StValv
 #StValv =20
 #print(StValv)
@@ -36,7 +34,7 @@ st.sidebar.markdown('''
 
 ''')
 #st.markdown('### XRD Charts')
-user_input = st.number_input("Please enter a starting number for 2Theta. Minimun should be at least the first higher number 2Theta data point of the two diffraction patterns, so they can adjust.")
+user_input = st.number_input("Please enter a starting number for  \u00b0 2Theta. Minimum should be at least the first higher number \u00b0 2Theta data point of the two diffraction patterns, so they can adjust.")
 
 
 df1 = pd.read_csv('ksev1.csv', names=['Theta','Int'])#, skiprows = 80
@@ -65,6 +63,10 @@ print(failure_count2)
 
 
 df1 = pd.read_csv('ksev1.csv', names=['Theta','Int'], skiprows = failure_count)
+
+global dfSize
+#df1 = dfSize
+
 df2 = pd.read_csv('ksev1rand.csv', names=['Theta2','Int2'], skiprows = failure_count2)
 #print(df1)
 
@@ -104,9 +106,11 @@ np.savetxt('testTheta10.txt', df_merged, fmt='%f', delimiter=',')
 df_merged.dropna(how='any', inplace=True)
 np.savetxt('testTheta2.txt', df_merged, fmt='%f', delimiter=',')
 
-weather1 = pd.read_csv('ksev1.csv', names=['2Theta','Int'], skiprows=failure_count)
-weather2 = pd.read_csv('ksev1rand.csv', names=['2Theta','Int2'], skiprows=failure_count2)
-weather3 = pd.read_csv('testTheta2.txt', names=['2Theta','Diff'])
+
+global weather1
+weather1 = pd.read_csv('ksev1.csv', names=['\u00b0 2Theta','Int'], skiprows=failure_count)
+weather2 = pd.read_csv('ksev1rand.csv', names=['\u00b0 2Theta','Int'], skiprows=failure_count2)
+weather3 = pd.read_csv('testTheta2.txt', names=['\u00b0 2Theta','Int'])
 
 
 
@@ -114,7 +118,7 @@ weatherTheta = dfTheta['Theta']
 #weatherTheta = dfTheta['Theta']
 #print(weatherTheta)
 weahter5 = weather1['Int']
-weahter6 = weather2['Int2']
+weahter6 = weather2['Int']
 
 
 weatherlog1 = np.log(weahter5)
@@ -126,9 +130,9 @@ np.savetxt('testThetaLog.txt', weatherTheta, fmt='%f', delimiter=',')
 np.savetxt('testThetaLog2.txt', weatherTheta2, fmt='%f', delimiter=',')
 
 weatherLogXX = pd.read_csv('testLog.txt', names=['Int'])
-weatherLogYY = pd.read_csv('testLogComp.txt', names=['Int2'])
-weatherThetaXX = pd.read_csv('testThetaLog.txt', names=['2Theta'])
-weatherThetaYY = pd.read_csv('testThetaLog2.txt', names=['2Theta'])
+weatherLogYY = pd.read_csv('testLogComp.txt', names=['Int'])
+weatherThetaXX = pd.read_csv('testThetaLog.txt', names=['\u00b0 2Theta'])
+weatherThetaYY = pd.read_csv('testThetaLog2.txt', names=['\u00b0 2Theta'])
 
 
 weatherMerge = weatherThetaXX.join(weatherLogXX)
@@ -139,7 +143,7 @@ df1 = pd.DataFrame(weatherLogXX)
 df2 = pd.DataFrame(weatherLogYY)
 print(weatherLogXX)
 print(weatherLogYY)
-weatherLogDiff10 = weatherLogXX['Int'] - weatherLogYY['Int2']
+weatherLogDiff10 = weatherLogXX['Int'] - weatherLogYY['Int']
 
 weatherLogDiff10.columns = ['Int']
 print(weatherLogDiff10)
@@ -156,18 +160,18 @@ print(weatherThetaXX)
 
 
 st.markdown('##### Main')
-st.line_chart(weather1, x = '2Theta', y = 'Int', height = plot_height)
+st.line_chart(weather1, x = '\u00b0 2Theta', y = 'Int', height = plot_height)
 st.markdown('##### Comparing')
-st.line_chart(weather2, x = '2Theta', y = 'Int2', height = plot_height)
+st.line_chart(weather2, x = '\u00b0 2Theta', y = 'Int', height = plot_height)
 st.markdown('##### Main - Comparing')
-st.line_chart(weather3, x = '2Theta', y = 'Diff', height = plot_height)
+st.line_chart(weather3, x = '\u00b0 2Theta', y = 'Int', height = plot_height)
 
 st.markdown('##### Main - Log Scale')
-st.line_chart(weatherMerge, x = '2Theta', y = 'Int', height = plot_height)
+st.line_chart(weatherMerge, x = '\u00b0 2Theta', y = 'Int', height = plot_height)
 st.markdown('##### Comp - Log Scale')
-st.line_chart(weatherMerge2, x = '2Theta', y = 'Int2', height = plot_height)
+st.line_chart(weatherMerge2, x = '\u00b0 2Theta', y = 'Int', height = plot_height)
 st.markdown('##### Main - Comp - Log Scale')
-st.line_chart(weatherThetaXX, x = '2Theta', y = 'Int', height = plot_height)
+st.line_chart(weatherThetaXX, x = '\u00b0 2Theta', y = 'Int', height = plot_height)
 
 chart_data = pd.DataFrame(
     weatherThetaXX,

@@ -3,6 +3,7 @@ import os
 import matplotlib.pyplot as plt
 import scipy.optimize as optimize
 import pandas
+import pandas as pd
 import csv
 
 from numpy import*
@@ -13,7 +14,22 @@ from scipy.optimize import curve_fit
 
 from lmfit import CompositeModel, Model
 from lmfit.lineshapes import gaussian, step
+#from pages import Rietveld_Refinement*
+#rom pages.07 import AtomAinX
+#from Rietveld_Refinement import AtomAinY
+#from Rietveld_Refinement import AtomAinZ
+#import sys
+#sys.path.insert(0, '/pages/')
+#from pages.07_Rietveld_Refinement import AtomAinX
+#from pages import AtomAinX
+#from pages import (
+#    ClassRietveld,
+    
+    
+#)
 
+
+#from pages.Rietveld_Refinement import *
 
 def braggs(twotheta,lmda=1.54):
     '''interplanar spacing "d_hkl" from Braggs law'''
@@ -101,7 +117,44 @@ def Rietveld_func(x, HKL, atomic_positions, s, m_K, TwoTheta_M, K, N_j, f_j, M_j
             Background.
         """
         
-        h,k,l =                [1,1,0,1,1,0,3,2,1,2,2,1],[0,1,1,0,0,3,0,2,2,1,2,1],[1,0,2,2,4,2,2,0,3,3,1,4],      
+        #h,k,l =                [1,1,0,1,1,0,3,2,1,2,2,1],[0,1,1,0,0,3,0,2,2,1,2,1],[1,0,2,2,4,2,2,0,3,3,1,4],      
+
+        #HKL = pd.read_csv('HKL.csv', names=['H', 'K', 'L'], index_col=0)
+        #dfHKL = [HKL]
+        #print(dfHKL)
+        
+        #dfHKL = pd.read_csv('HKL.csv', names=['H', 'K', 'L'], index_col=False)
+
+        
+        #print(dfhkl)
+        #df1HKL = dfHKL(np.float64)
+        #dfHKL = np.asarray(dfHKL, dtype = 'int')
+            
+
+        #print(dfHKL)
+        #dfHKL = pd.read_excel("HKL.txt", dtype = {(np.float)}) 
+        
+        
+        """
+        uploaded_file = ("HKL.csv")
+        data = pd.read_csv(uploaded_file, sep=" ", names=['H','K','L'])
+
+        
+        
+
+
+        #dfHKL = np.loadtxt("HKL.txt")
+        #dfHKL = np.array(dfHKL)
+        #np.savetxt('HKL1.txt', dfHKL, fmt='%i', delimiter=' ')
+
+       
+        #print(dfHKL)
+        
+        HKL =                  data        
+        """
+
+
+        
         HKL =                  [[1,0,1],      
                                [1,1,0],         
                                [0,1,2],     
@@ -115,9 +168,15 @@ def Rietveld_func(x, HKL, atomic_positions, s, m_K, TwoTheta_M, K, N_j, f_j, M_j
                                [2,2,1], 
                                [1,1,4]]
         
-
+        #AP1 = S1
+        #AP2 = S2
+        #s = 0.0004
+        #atomic_positions = [[S1,S2,0.33330],[0.43868,0.31187,0.14752]]                       
         atomic_positions = [[0.48764,0.00000,0.33330],[0.43868,0.31187,0.14752]]                       
-        Mj = [[0.5],[0.1]]             
+        print(atomic_positions)
+        Mj = [[0.5],[0.1]]
+        
+         
 
         def LorentzPol_Factor(Theta, TwoTheta_M = 1,K=1 ):
             'Lorentz-Polarization factor (this is complex)'
@@ -140,8 +199,8 @@ def Rietveld_func(x, HKL, atomic_positions, s, m_K, TwoTheta_M, K, N_j, f_j, M_j
             'Structure Factor'
             imag_i = 1j
             u_s = 1
-            lmbda = 1
-           
+            lmbda = 1.4
+        
            
 
             h,k,l = Miller_indices_K
@@ -219,7 +278,11 @@ class Rietveld:
         fixed : list(str)
             list of Rietveld function parameters to fix in Rietveld refinement (default: only 's' is fixed)
         '''
-        HKL =                  [[1,0,1],      
+        
+        dfHKL = pd.read_csv('HKL.csv', names=['H', 'K', 'L'], index_col=False)
+        HKL =                  dfHKL
+        """
+                               [[1,0,1],      
                                [1,1,0],         
                                [0,1,2],     
                                [1,0,2],
@@ -231,7 +294,8 @@ class Rietveld:
                                [2,1,3], 
                                [2,2,1], 
                                [1,1,4]]
-        
+        """
+
         atompos = [[0.48764,0.00000,0.33330],[0.43868,0.31187,0.14752]]                       
         Mj = [[0.5],[0.1]]  
 
@@ -274,10 +338,20 @@ class Rietveld:
         '''
 
 
-
+        # params to fix
         # params to fix
         for i in self.fixed:
-            HKL =              [[1,0,1],      
+            
+            dfHKL = pandas.read_csv('HKL.csv', names=['H', 'K', 'L'], index_col=False)
+            #dfHKL['index1'] = dfHKL.index
+            #st.dataframe(dfHKL)
+        
+            global HKL
+            HKL =              dfHKL
+                                
+
+            '''
+                               [[1,0,1],      
                                [1,1,0],         
                                [0,1,2],     
                                [1,0,2],
@@ -289,6 +363,7 @@ class Rietveld:
                                [2,1,3], 
                                [2,2,1], 
                                [1,1,4]]
+            '''
             self.pars[i].vary = False
 
         # fit this model to data array y
@@ -365,24 +440,27 @@ class Rietveld:
         my_int_list2 = [float(i) for i in lines2]
 
        
-        #a = ''.join(str(my_int_list).split(','))
+         #a = ''.join(str(my_int_list).split(','))
         #b = ''.join(str(my_int_list2).split(','))
 
         list_1 = selfxtrans.tolist()
         
-
+ 
         #print(list_1)
         #print(my_int_list)
 
         axes[1].plot(self.x_exp, self.y_exp, 'bo', label='bo', )
+        plt.xlabel('2Theta', fontsize = 14)
+        plt.ylabel('Int', fontsize = 14)
+
         axes[0].plot(self.x_exp, self.y_exp, 'bo', label='bo', )
 
         #print(self.x_exp)
         #axes[0].plot(list_1, my_int_list, 'k', label='initial fit')
         axes[0].plot(list_1, my_int_list2, 'r', label='best fit')
         axes[0].legend()
-        plt.xlabel(r'$2Theta$',fontsize = 14)
-        plt.ylabel(r'$Int$',fontsize = 14)
+        plt.xlabel('2Theta', fontsize = 14)
+        plt.ylabel('Int', fontsize = 14)
         #plt.show()
         plt.savefig('RietveldRef.png')
         #plt.show()
@@ -623,7 +701,7 @@ class Chart:
                
          
         #with open('myfile.txt') as sorting
-        np.sort(max_x, axis=None)
+        #np.sort(max_x, axis=None)
         
 
         print('\nFWHM == ln(2)): {} degrees'.\

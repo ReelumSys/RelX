@@ -1,5 +1,4 @@
 import streamlit as st
-import streamlit as st
 import pandas as pd
 import plost
 import base64
@@ -13,7 +12,7 @@ from PIL import Image
 
 
 
-im = Image.open("../Relx/favicon2.png")
+im = 'favicon2.png'
 st.set_page_config(
     page_title="RelX v0.9",
     page_icon=im,
@@ -28,18 +27,18 @@ st.sidebar.markdown("# ")
 
 #st.sidebar.subheader('Heat map parameter')
 #time_hist_color = st.sidebar.selectbox('Color by', '')
-st.sidebar.subheader('Donut chart parameter')
-donut_theta = st.sidebar.selectbox('Select data', ('Theta', 'Area2'))
+#st.sidebar.subheader('Donut chart parameter')
+#donut_theta = st.sidebar.selectbox('Select data', ('Theta', 'Area2'))
 
-dfheat = pd.read_csv('ksev1.csv', names=['2Theta','Int'])
+dfheat = pd.read_csv('ksev1.csv', names=['\u00b0 2Theta','Int'])
 stocks = pd.read_csv('Area.csv')
 
-c1, c2 = st.columns((2,1))
+c1, c2 = st.columns((3,1))
 with c1:
-    st.markdown('#### Main vs. Comp XRD')
+    #st.markdown('#### Main XRD pattern')
     plost.scatter_hist(
         data=dfheat,
-        x='2Theta',
+        x='\u00b0 2Theta',
         y='Int',
         size='Int',
         color='Int',
@@ -55,7 +54,7 @@ with c1:
     st.markdown('###### Check if all fields match')
     plost.xy_hist(
         data=dfheat,
-        x='2Theta',
+        x='\u00b0 2Theta',
         y='Int',
         #x_bin=100,
         #y_bin='Int2',
@@ -64,7 +63,7 @@ with c1:
     
 
 with c2:
-    st.markdown('### XRDs vs. in %')
+    st.markdown('### XRD patterns vs. in %')
     plost.donut_chart(
         data=stocks,
         #theta=donut_theta,

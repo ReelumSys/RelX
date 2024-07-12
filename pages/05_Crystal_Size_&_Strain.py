@@ -11,9 +11,12 @@ from WH import*
 from PIL import Image
 from WH import Ee2
 from WH import r
+import urllib
+import urllib3
 
 
-im = Image.open("../Relx/favicon2.png")
+
+im = 'favicon2.png'
 st.set_page_config(
     page_title="RelX v0.9",
     page_icon=im,
@@ -25,20 +28,21 @@ with open('style.css') as f:
     
 st.sidebar.header('')
 
+uploaded_file = ('FHWMFirstSecond.csv')
 
-data = pd.read_csv('../RelX/FHWMFirstSecond.csv', sep=" ", names=['Int','Scherrer'])
+data = pd.read_csv(uploaded_file, sep=" ", names=['Int','Scherrer'])
 Cryst5 = data['Scherrer'].mean()
 
-
+st.write("Scherrer's crystal size and strain are calculated with a gaussian refinement.")
 
 Cryst = pd.DataFrame({
                       
                       'Scherrer Size [nm]': [Cryst5],
                       'W-H Size [nm]': [d],
-                      'W-H Strain with Gauss [%%]': [m],
+                      'W-H Strain [%%]': [m],
                       
                       'H-W Size [nm]': [Ee2],
-                      'H-W Strain with Gauss [%%]': [r],
+                      'H-W Strain [%%]': [r],
                     })
 
 hide_table_row_index = """

@@ -7,14 +7,13 @@ import base64
 import numpy as np
 from scipy.integrate import simpson
 from numpy import trapz
-import cv2
 from PIL import Image
 import matplotlib
 matplotlib.use('Agg')
 from matplotlib import pyplot
-
 from PyCrystallography import unit_cell
 from PyCrystallography import lattice
+import WH
 
 import powerxrd as xrd
 import numpy as np
@@ -29,6 +28,13 @@ import csv
 from itertools import repeat
 import os
 import time
+#sys.path.append("path to the xrayutilities package")
+import xrayutilities as xu
+
+import utils as ut
+
+
+
 
 
 from numpy import*
@@ -55,23 +61,23 @@ from PyCrystallography.stereographic_projection import*
 import numpy as np
 from lattpy import Lattice
 from lattpy import simple_square
+from utils import logo
+#from st_pages import show_pages, hide_pages, Page
 
 
 
-
-
-
-
+    # Clear values from *all* all in-memory and on-disk data caches:
+    # i.e. clear values from both square and cube
+#st.cache_data.clear()
 
 #from ... import Charts as weather1
 #from ... import Charts as weather2
 #from ... import Charts as weather3
 
-import main
-
 #StValv = 20
 #global StValv
 StartingValue = 10
+
 
 
 
@@ -81,22 +87,61 @@ st.set_page_config(
     page_icon=im,
     layout="wide",
 )
+#st.sidebar.image("./images/favicon.png", width=150)
 
 
+image = Image.open('./images/favicon.png')
+new_img = image.resize((180, 100))
+#st.image(new_img)
+left_co, cent_co,last_co = st.columns(3)
+with cent_co:
+    st.image(new_img)
+
+
+#st.header('Home')
+
+# Sidebar navigation
+#st.sidebar.page_link('Main.py', label='Home')
+st.sidebar.page_link('pages/00_Usage.py', label='Usage')
+st.sidebar.page_link('pages/01_Comparison.py', label='Comparison')
+st.sidebar.page_link('pages/02_Patterns.py', label='Patterns')
+st.sidebar.page_link('pages/04_Symmetry.py', label='Symmetry')
+st.sidebar.page_link('pages/05_Crystal_Size_&_Strain.py', label='Crystal Size & Strain')
+st.sidebar.page_link('pages/06_Single_Peak_Fit.py', label='Single Peak Fit')
+st.sidebar.page_link('pages/07_Rietveld_Refinement.py', label='Rietveld Refinement')
+st.sidebar.page_link('pages/08_Acknowledgements.py', label='Acknowledgements')
+st.sidebar.page_link('pages/09_Disclaimer.py', label='Disclaimer')
 
 #image = Image.open('./images/favicon.png')
 #new_img = image.resize((200, 100))
 #st.image(new_img)
 #st.sidebar.markdown("# Main page")
-st.markdown("#### Upload XRD files and calculate")
-st.write("Like this example the sample should be delimited with a space. The digits do not matter, as long as there is a point.")
+st.markdown("#### Upload XRD patterns and calculate")
+st.text("")
+st.write("Like in this example, the sample should be delimited with a space. Decimals do not matter.")
+st.text("")
+
+
+
 image = Image.open('./images/Unbenannt.png')
-new_img = image.resize((220, 220))
-st.image(new_img)
-st.markdown('###### First upload two .txt files and let them be calculated.')
+background = Image.open("./images/Unbenannt.png")
+col1, col2, col3 = st.columns([2, 5, 0.2])
+col2.image(background, use_column_width=False)
+
+
+
+#left_co, cent_co,last_co = st.columns(3)
+#with cent_co:
+#    st.image(image)
+
+
+#new_img = image.resize((200, 220))
+#st.image(image)
+st.text("")
+st.markdown('###### Upload two .txt patterns separately and let them be calculated.')
 
 # Allow only .csv and .xlsx files to be uploaded
-uploaded_file = st.file_uploader("Upload Main XRD", type=["txt"])
+uploaded_file = st.file_uploader("Upload Main XRD Pattern", type=["txt"])
 
 name = uploaded_file
 if not name:
@@ -106,11 +151,11 @@ st.success('Done.')
 
 
 
-uploaded_file2 = st.file_uploader("Upload Compairing XRD", type=["txt"])
+uploaded_file2 = st.file_uploader("Upload Compairing XRD Pattern", type=["txt"])
 
 name2 = uploaded_file2
 if not name2:
-  st.warning('Please input a .csv .txt file.')
+  st.warning('Please input a .txt file.')
 
   st.stop()
 st.success('Done.')
@@ -118,12 +163,44 @@ st.success('Done.')
 df = pd.read_fwf(name)
 df.to_csv('ksev1.csv', index=False)
 
+np.savetxt('ksev1.xy', df, fmt='%f', delimiter='\t')
+np.savetxt('ksev1.csv', df, fmt='%f', delimiter=',')
+
 df = pd.read_fwf(name2)
 df.to_csv('ksev1rand.csv', index=False)
+np.savetxt('ksev1rand.csv', df, fmt='%f', delimiter=',')
+
+#uploaded_file3 = st.file_uploader("Upload a .txt of the HKLs for Rietveld Refinement and Bravais calculations", type=["txt"])
+#st.text("")
+#st.write("The HKL should be formatted with a space as delimiter.")
+#st.text("")
+#image = Image.open('./images/HKLinfo.png')
+#new_img = image.resize((125, 250))
+#st.image(new_img)
+#st.text("")
 
 
 
-os.system("WH.py 1")
+#name3 = uploaded_file3
+#if not name3:
+#  st.warning('Please input a .txt file.')
+#  st.stop()
+#st.success('Done.')
+
+#df = pd.read_fwf(name3)
+#df.to_csv('HKL.csv', index=None)
+#np.savetxt('HKL.csv', df, fmt='%i', delimiter=',')
+#np.savetxt('HKL.txt', df, fmt='%i', delimiter=' ')
+
+
+#c = np.array(name3)
+#na = c.reshape(1)
+
+#np.savetxt('HKL.csv', na, fmt='%s', delimiter=',')
+#print(name3)
+#ut.draw_something_on_top_of_page_navigation()
+
+os.system("WH.py")
 
 
 
@@ -149,18 +226,53 @@ def set_background(png_file):
 
 with open('style.css') as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
-    
+
+
+
+    st.sidebar.title("Explore")
+
+
 st.sidebar.header('')
+
+
+
+
+
+#st.show_pages(
+#    [
+#        Page("Main.py", "Home"), 
+#        Page("pages/Usage.py", "Usage"),
+#        Page("pages/Comparison.py", "Comparison"),
+#        Page("pages/Patterns", "Patterns"),
+#        Page("pages/Symmery", "Symmetry"),
+#        Page("pages/Crystal_Size_&_Strain", "Crystal Size & Strain"),
+#        Page("pages/Single_Peak_Fit", "Single Peak Fit"),
+#        Page("pages/Rietveld_Refinement", "Rietveld Refinement"),
+#        Page("pages/Acknowledgement", "Acknowledgement"),
+#        Page("pages/Disclaimer", "Disclaimer")           
+#    ]
+#)
+
+#st.hide_pages(["Home"])
+
+#ut.draw_something_on_top_of_page_navigation()
 
 #image = Image.open('./images/favicon.png')
 #new_img = image.resize((200, 100))
 #st.image(new_img)
+image = Image.open('./images/favicon.png')
+new_img = image.resize((180, 100))
+#st.image(new_img)
+left_co, cent_co,last_co = st.columns(3)
+with cent_co:
+    st.image(new_img)
 
-st.sidebar.subheader('Heat map parameter')
-time_hist_color = st.sidebar.selectbox('Color by', '') 
 
-st.sidebar.subheader('Donut chart parameter')
-donut_theta = st.sidebar.selectbox('Select data', ('', ''))
+#st.sidebar.subheader('Heat map parameter')
+#time_hist_color = st.sidebar.selectbox('Color by', '') 
+
+#st.sidebar.subheader('Donut chart parameter')
+#donut_theta = st.sidebar.selectbox('Select data', ('', ''))
 #donut_theta = st.sidebar.selectbox('Select data', ('Area'))
 
 st.sidebar.subheader('Line chart parameters')
