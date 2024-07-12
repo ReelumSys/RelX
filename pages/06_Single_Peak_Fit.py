@@ -145,7 +145,7 @@ spectral_data.get_fit("(10-10)")
 
 spectral_data.get_fit("(10-10)").result
 
-spectral_data.highlight_cakes("(10-10)")
+spectral_data.highlight_cakes("(10-10)").result
 
 
 
