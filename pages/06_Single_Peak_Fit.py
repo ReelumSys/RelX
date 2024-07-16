@@ -147,6 +147,8 @@ spectral_data.get_fit("(10-10)")
 spectral_data.get_fit("(10-10)").result
 
 
+xrdfit.plotting.plot_parameter(data=file_path, fit_parameter="Int", log_scale=False)
+
 #spectral_data.plot_peak_params
 
 #xrdfit.pv_fit.do_pv_fit(peak_data=spectral_data, peak_param=peak_params)
