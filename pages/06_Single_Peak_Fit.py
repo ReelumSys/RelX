@@ -52,46 +52,6 @@ values = st.slider(
 
 st.sidebar.header('')
 
-
-
-
-#mpl.rcParams['font.size'] = 16.0
-#mpl.rcParams['lines.linewidth'] = 2.0
-
-#xf = xu.io.XRDMLFile('./pages/KSeV1Rand.xrdml')
-
-
-#sample = "KSeV1Rand"
-#energy = 50000
-#center_ch = 700.0002
-#chpdeg = 340.0002
-#nchannel = 3000
-#datapath = os.path.join("KSeV1Rand")
-
-
-
-
-
-
-#om, tt, psd = xu.io.getxrdml_map('KSeV1Rand.xrdml', path='data')
-
-#tt, om, psd = xu.io.getxrdml_scan('rsm_%d.xrdml.bz2', 'Omega', scannrs=[1, 2, 3, 4, 5], path='data')
-
-#first_cake_angle = 90
-
-#file_path = pd.read_csv('../ksev1.csv', names=['Theta','Int'])
-#spectral_data = FitSpectrum(file_path, first_cake_angle, delimiter=',')
-
-
-
-
-
-#xf = xu.io.XRDMLFile('data/rsm_1.xrdml.bz2')
-
-#file_path = pd.read_csv('ksev1.csv')
-#file_path2 = pd.read_csv('ksev1rand.csv')
-
-
 first_cake_angle = 120
 
 file_path = "ksev1.csv"
@@ -114,38 +74,20 @@ print(spectral_data)
 
 spectral_data.plot_polar()
 
-#sd1 = pd.DataFrame(spectral_data)
-#sd2 = pd.DataFrame(spectral_data2)
-#spectral_data.plot(1)
-
-#spectral_data_MC = sd1 - sd2
-
-
 spectral_data.plot(1, log_scale=True)
 spectral_data2.plot(1, log_scale=True)
-#spectral_data_MC.plot(1, log_scale=True)
-
-
-#spectral_data.plot(1, x_range=(2.7, 50), show_points=True)
-
-
 
 peak_params = PeakParams((values[0], values[1]), '(10-10)')
 
-
 spectral_data.fit_peaks(peak_params, 1)
-
-
 
 spectral_data.fitted_peaks[0].result.values
 
 spectral_data.get_fit("(10-10)")
 
-#spectral_data.get_fit("(20-20)").result
-
-
 spectral_data.get_fit("(10-10)").result
 
+print(file_path)
 
 xrdfit.plotting.plot_parameter(data=file_path, fit_parameter="Int",show_points=True, show_error=True, log_scale=False)
 
