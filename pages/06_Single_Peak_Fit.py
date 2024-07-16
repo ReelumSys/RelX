@@ -147,7 +147,7 @@ spectral_data.get_fit("(10-10)")
 spectral_data.get_fit("(10-10)").result
 
 
-xrdfit.plotting.plot_parameter(data=file_path, fit_parameter="Int",shoow_points=True, show_error=True, log_scale=False)
+xrdfit.plotting.plot_parameter(data=file_path, fit_parameter="Int",show_points=True, show_error=True, log_scale=False)
 
 #spectral_data.plot_peak_params
 
