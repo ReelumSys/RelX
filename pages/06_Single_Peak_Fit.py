@@ -18,7 +18,7 @@ import xrdfit.pv_fit
 
 import xrayutilities as xu
 
-from xrdfit.spectrum_fitting import PeakParams, FitSpectrum
+from xrdfit.spectrum_fitting import PeakParams, FitSpectrum, FitReport
 from xrdfit.plotting import plot_polar_heat_map
 
 # Set the matplotlib backend and make the plots a bit bigger
@@ -86,7 +86,6 @@ spectral_data.fitted_peaks[0].result.values
 spectral_data.get_fit("(10-10)")
 
 spectral_data.get_fit("(10-10)").result
-
 
 #xrdfit.plotting.plot_polar_heat_map(num_cakes=6, rad=list[1,2,3,4],z_data=(10,20,30,40), first_cake_angle, cake_order="clockwise")
 
