@@ -59,7 +59,7 @@ st.markdown('<div style="text-align: justify;">Izumi, F., Ikeda, T. (2014) Imple
 st.text("")
 st.markdown('<div style="text-align: justify;">Williamson, G. K., Hall, W. H. (1953) X-ray Line Broadening from Filed Aluminium and Wolfram. Acta Metall., Vol. 1, 1953, pp. 22-31. </div>', unsafe_allow_html=True)
 st.text("")
-st.markdown('<div style="text-align: justify;">The Rietveld Refinement Method: Half of a Century Anniversary Tomče Runčevski and Craig M. Brown Crystal Growth & Design (2021) 21 (9), 4821-4822. DOI: 10.1021/acs.cgd.1c00854. </div>', unsafe_allow_html=True)
+st.markdown('<div style="text-align: justify;">The Rietveld Refinement Method: Half of a Century Anniversary Tomče Runčevski and Craig M. Brown Crystal Growth & Design (2021) 21 (9), 4821-4822. DOI: 10.1021/acs.cgd.1c00854, https://pubs.acs.org/doi/10.1021/acs.cgd.1c00854. </div>', unsafe_allow_html=True)
 st.text("")
 st.markdown('<div style="text-align: justify;">Thanks to Andy Garcia for Rietveld <a href="https://doi.org/10.1107/S0021889869006558r">https://doi.org/10.1107/S0021889869006558r</a> </div>', unsafe_allow_html=True)
 st.text("")
