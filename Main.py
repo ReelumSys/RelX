@@ -161,14 +161,14 @@ if not name2:
 st.success('Done.')
 
 df = pd.read_fwf(name)
-df.to_csv('ksev1.csv', index=False)
+df.to_csv('crash1.csv', index=False)
 
-np.savetxt('ksev1.xy', df, fmt='%f', delimiter='\t')
-np.savetxt('ksev1.csv', df, fmt='%f', delimiter=',')
+np.savetxt('crash1.xy', df, fmt='%f', delimiter='\t')
+np.savetxt('crash1.csv', df, fmt='%f', delimiter=',')
 
 df = pd.read_fwf(name2)
-df.to_csv('ksev1rand.csv', index=False)
-np.savetxt('ksev1rand.csv', df, fmt='%f', delimiter=',')
+df.to_csv('crash2.csv', index=False)
+np.savetxt('crash2.csv', df, fmt='%f', delimiter=',')
 
 #uploaded_file3 = st.file_uploader("Upload a .txt of the HKLs for Rietveld Refinement and Bravais calculations", type=["txt"])
 #st.text("")
@@ -238,28 +238,6 @@ st.sidebar.header('')
 
 
 
-#st.show_pages(
-#    [
-#        Page("Main.py", "Home"), 
-#        Page("pages/Usage.py", "Usage"),
-#        Page("pages/Comparison.py", "Comparison"),
-#        Page("pages/Patterns", "Patterns"),
-#        Page("pages/Symmery", "Symmetry"),
-#        Page("pages/Crystal_Size_&_Strain", "Crystal Size & Strain"),
-#        Page("pages/Single_Peak_Fit", "Single Peak Fit"),
-#        Page("pages/Rietveld_Refinement", "Rietveld Refinement"),
-#        Page("pages/Acknowledgement", "Acknowledgement"),
-#        Page("pages/Disclaimer", "Disclaimer")           
-#    ]
-#)
-
-#st.hide_pages(["Home"])
-
-#ut.draw_something_on_top_of_page_navigation()
-
-#image = Image.open('./images/favicon.png')
-#new_img = image.resize((200, 100))
-#st.image(new_img)
 image = Image.open('./images/favicon.png')
 new_img = image.resize((180, 100))
 #st.image(new_img)
@@ -268,12 +246,6 @@ with cent_co:
     st.image(new_img)
 
 
-#st.sidebar.subheader('Heat map parameter')
-#time_hist_color = st.sidebar.selectbox('Color by', '') 
-
-#st.sidebar.subheader('Donut chart parameter')
-#donut_theta = st.sidebar.selectbox('Select data', ('', ''))
-#donut_theta = st.sidebar.selectbox('Select data', ('Area'))
 
 st.sidebar.subheader('Line chart parameters')
 plot_height = st.sidebar.slider('Specify plot height', 200, 1000, 250)
@@ -289,8 +261,8 @@ global weather1
 global weather2
 global weather3
 
-weather1 = pd.read_csv('ksev1.csv', names=['2Theta','Int'])
-weather2 = pd.read_csv('ksev1rand.csv', names=['2Theta','Int2'])
+weather1 = pd.read_csv('crash1.csv', names=['2Theta','Int'])
+weather2 = pd.read_csv('crash2.csv', names=['2Theta','Int2'])
 weather3 = pd.read_csv('testTheta2.txt', names=['2Theta','Diff'])
 weather5 = pd.read_csv('WH-realx.txt', names=['sinTheta'])
 weather6 = pd.read_csv('WH-realy.txt', names=['BetaCosTheta'])
@@ -317,7 +289,7 @@ for col in weather2.columns[1:]:
     integral2 = np.append(integral2,temp)
 
 
-df_app = 'ksev1', 'ksev1rand'
+df_app = 'crash1', 'crash2'
 #df_app2 = pd.DataFrame({'Theta': df_app})
 #print(df_app)
 
@@ -345,8 +317,8 @@ stocks.to_csv("Area.csv", index=False)
 #Inte = trapz(df.iloc[:, 'Theta'], df.iloc[:, 'Int'])
 #print(Inte)
 #np.savetxt('area.txt', Inte, fmt='%f', delimiter=',')
-dfheat = pd.read_csv('ksev1.csv', names=['2Theta','Int'])
-df2heat = pd.read_csv('ksev1rand.csv', names=['2Theta','Int2'])
+dfheat = pd.read_csv('crash1.csv', names=['2Theta','Int'])
+df2heat = pd.read_csv('crash2.csv', names=['2Theta','Int2'])
 dfheat['Int2'] = df2heat['Int2']
 
 df = pd.read_fwf('FWHMFirst.txt', header=None)
@@ -440,188 +412,4 @@ plt.savefig("Bravais5.png")
 plt.close()
 
 
-
-#dfheat=dfheat.values
-#df['Int2'] = df['Int' + 'Int2']
-#ax = df.plot.hist(bins=10, alpha=0.5)
-#print(dfheat)
-#c1, c2 = st.columns((2,1))
-#with c1:
-#    st.markdown('### XRD Heatmap')
-#    plost.scatter_hist(
-#        data=dfheat,
-#        x='2Theta',
-#        y='Int',
- #       size='Int',
-  #      color='Int',
-   #     opacity=0.5,
-    #    aggregate='count',
-      #  width=200,
-     #   height=200,
-     #   legend='bottom',
-    #    use_container_width=True
-    #)
-    
-    
-#    plost.xy_hist(
-#        data=dfheat,
- #       x='2Theta',
-  #      y='Int',
-   #     #x_bin=100,
-    #    #y_bin='Int2',
-     #   use_container_width=True,
-    #)
-    
-    
-    #plost.time_hist(
-    #data=stocks,
-    #date='date',
-    #x_unit='Area',
-    #y_unit='Area2',
-    #color=time_hist_color,
-    #aggregate='median',
-    #legend=None,
-    #height=345,
-    #use_container_width=True)
-#with c2:
-    #st.markdown('### XRDs vs. in %')
-#    plost.donut_chart(
- #       data=stocks,
-  #      #theta=donut_theta,
-   #     theta='Area',
-    #    color='Sample',
-     #   legend='bottom', 
-      #  use_container_width=True)
-
-# Row C
-#st.markdown('### XRD Charts')
-#st.markdown('##### Main')
-#st.line_chart(weather1, x = '2Theta', y = 'Int', height = plot_height)
-#st.markdown('##### Comparing')
-#st.line_chart(weather2, x = '2Theta', y = 'Int2', height = plot_height)
-#st.markdown('##### Main - Comparing')
-#st.line_chart(weather3, x = '2Theta', y = 'Diff', height = plot_height)
-
-# Row D
-#st.markdown('### Crystal Size and Strain')
-#df = pd.read_fwf('myfilesize.txt')
-
-#df.to_csv('myfilesize.csv')
-
-
-#print(data)
-
-#f=open(df,'rb') # opens file for reading
-#reader = csv.reader(f)
-#for line in reader:
-#    print(line)
-
-#Cryst3 = open('FWHMFirst.txt', 'r')
-#Cryst3 = pd.DataFrame({'Theta': Cryst3[:, 0], 'Int': Cryst3[:, 1], 'Scherrer': Cryst3[:,2]})
-
-#df =pd.DataFrame(df)
-#del data[data.columns[0]]
-#del data[data.columns[0]]
-#df.to_csv('FHWMFirstSecond.csv')
-#print(data)
-#df =pd.DataFrame(df)
-#df.columns =['Scherrer']
-#print(df)
-#del df[df.columns[0]]
-
-#df.to_csv('FHWMFirstSecond2.csv')
-#Cryst5 = data['Scherrer'].mean()
-
-#df1 = pd.read_csv('FHWMFirstSecond.csv', names=['Int','Int2' , 'Scherrer'])
-
-#del df1[df1.columns[0]]
-#my_column = df1["Scherrer"]
-#print(df1)
-#df1.pop(df1.columns[0])
-#df1 = pd.read_csv(df1, names=['Int','Scherrer'])
-
-#Cryst5 = pd.read_fwf(Cryst4)
-#Cryst6 = Cryst5.iloc[:,1:]
-#df1.drop(columns=df1.columns[0], axis=1, inplace=True)
-#np.savetxt('FHWMFirstSecond.txt', df1, fmt='%s', delimiter=' ')
-#df2 = pd.DataFrame(df1, columns=['Scherrer'])
-
-#print(my_column)
-#df1.columns=['Scherrer']
-#df2.rename(index = {0: 'feature_rank'},{1: 'feature_rank'})
-#print(df1)
-
-
-#for col in df1.columns:
-#    if (df1.columns[0]) in col:
-#        del df1[col]
-
-
-
-#df2 = pd.read_csv('FHWMFirstSecond.txt', names=['Int', 'Scherrer'], index_col=False)
-#df2 = df.drop(df.columns[0], axis=1, inplace=True)
-
-
-
-#Trans = np.transpose(data)
-#df5 = np.array([*dfopen])
-
-#Cryst5 = Cryst3[:, 2].mean()
-
-
-
-#print(df1)
-
-#Cryst4 = df.reset_index(drop=True)
-#print(Cryst4)
-
-
-
-#Cryst['Type'] = ['Crystal Strain', 'Crystal Size after WH' ]
-#st.markdown('##### Main')
-#st.table(data=Cryst)
-
-#print(Cryst)
-
-#st.markdown('##### Main W-H')
-#st.line_chart(weather3, x = 'Theta', y = 'Diff', height = plot_height)
-#st.line_chart(weather_WH, x = 'sinTheta', y = 'BetaCosTheta', height = plot_height)
-
-#
-#data = xrd.Data('ksev1.xy').importfile()
-#charts = xrd.Chart(*data)
-
-#charts.backsub(tol=1,show=False)
-#charts.allpeaks(tols=(0.0922,0.8), verbose=False, show=True)
-    #Printfunc2 = xrd.Chart.Printfunc(chart)
-    #np.savetxt('FWHMfinal.xy', Printfunc2, fmt='%f', delimiter='\t')
-#plt.xlabel('2 $\\theta$')
-#plt.suptitle('backsub & Automated Scherrer width calculation of all peaks*')
-#plt.show()
-#uploaded_file = st.image("WH-PLOT.png")
-
-#if uploaded_file is not None:
-#    # Convert the file to an opencv image.
-#    file_bytes = np.asarray(bytearray(uploaded_file.read()), dtype=np.uint8)
-#    opencv_image = cv2.imdecode(file_bytes, 1)
-
-    # Now do something with the image! For example, let's display it:
-#    st.image(opencv_image, channels="BGR")
-
-
-
-#x, y = xrd.Data('ksev1.xy').importfile()
-#model = xrd.Rietveld(x, y)
-#model.refine()
-
-
-
-
-#uploaded_file2 = st.image("RietveldRef.png")
-#uploaded_file = st.file_uploader("Choose Main File")
-#dataframe = pd.read_csv(uploaded_file)
-
-#uploaded_file2 = st.image("RietveldRef.png")
-#uploaded_file = st.file_uploader("Choose Main File")
-#dataframe = pd.read_csv(uploaded_file)
 

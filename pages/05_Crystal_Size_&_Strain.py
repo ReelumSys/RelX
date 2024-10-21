@@ -32,7 +32,7 @@ uploaded_file = ('FHWMFirstSecond.csv')
 data = pd.read_csv(uploaded_file, sep=" ", names=['Int','Scherrer'])
 Cryst5 = data['Scherrer'].mean()
 
-st.write("Scherrer's crystal size and strain are calculated with a gaussian refinement.")
+
 
 Cryst = pd.DataFrame({
                       
