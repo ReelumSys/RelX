@@ -48,9 +48,10 @@ hide_table_row_index = """
             </style>
             """
 st.markdown(hide_table_row_index, unsafe_allow_html=True)
-#Cryst['Type'] = ['Crystal Strain', 'Crystal Size after WH' ]
-st.markdown('##### Main')
-st.table(data=Cryst)
+
+
+
+
 
 
 st.markdown('###### H-W Plot')

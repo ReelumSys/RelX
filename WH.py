@@ -83,6 +83,11 @@ def reel_Williamson_Hall():
     y = (data)
     wl = 0.15406 # Ang 
 
+
+
+    theta2 = np.radians(x/4)
+
+
     theta  =  np.radians(x/2)
 
     x = sin(theta)
@@ -90,13 +95,14 @@ def reel_Williamson_Hall():
     y1= np.radians(y)
     
     y = y1*cos(theta) 
-
+    y2 = y1*cos(theta2)
 
 
     def func(x,m,c):
         return m * x + c
     
     popt,pcov= curve_fit(func,x,y)
+    popt,pcov=curve_fit()
     #print(popt)
 
     m = popt[0]
