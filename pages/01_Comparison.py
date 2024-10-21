@@ -29,8 +29,6 @@ st.sidebar.markdown("# ")
 #time_hist_color = st.sidebar.selectbox('Color by', '')
 #st.sidebar.subheader('Donut chart parameter')
 #donut_theta = st.sidebar.selectbox('Select data', ('Theta', 'Area2'))
-
-dfheat = pd.read_csv('crash.csv', names=['\u00b0 2Theta','Int'])
 stocks = pd.read_csv('Area.csv')
 
 c1, c2 = st.columns((3,1))

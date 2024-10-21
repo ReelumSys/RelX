@@ -72,7 +72,6 @@ df2 = pd.read_csv('crash2.csv', names=['Theta2','Int2'], skiprows = failure_coun
 
 weatherTheta2 = df2['Theta2']
 
-
 df1zone = df1['Int']
 df2zone = df2['Int2']
 np.savetxt('test1zone.txt', df1zone, fmt='%f', delimiter=',')
