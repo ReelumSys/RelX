@@ -29,16 +29,13 @@ st.sidebar.header('')
 
 uploaded_file = ('FHWMFirstSecond.csv')
 
-data = pd.read_csv(uploaded_file, sep=" ", names=['Int','Scherrer'])
-Cryst5 = data['Scherrer'].mean()
-
 
 
 Cryst = pd.DataFrame({
                       
-                      'Scherrer Size [nm]': [Cryst5],
-                      'W-H Size [nm]': [d],
-                      'W-H Strain [%%]': [m],
+                      
+                      
+                      
                       
                       'H-W Size [nm]': [Ee2],
                       'H-W Strain [%%]': [r],
@@ -55,8 +52,7 @@ st.markdown(hide_table_row_index, unsafe_allow_html=True)
 st.markdown('##### Main')
 st.table(data=Cryst)
 
-st.markdown('###### W-H Plot')
-uploaded_file = st.image("WH-PLOT.png")
+
 st.markdown('###### H-W Plot')
 uploaded_file = st.image("HW-PLOT.png")
 
