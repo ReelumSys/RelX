@@ -30,7 +30,7 @@ st.sidebar.markdown("# ")
 #st.sidebar.subheader('Donut chart parameter')
 #donut_theta = st.sidebar.selectbox('Select data', ('Theta', 'Area2'))
 
-dfheat = pd.read_csv('ksev1.csv', names=['\u00b0 2Theta','Int'])
+dfheat = pd.read_csv('crash.csv', names=['\u00b0 2Theta','Int'])
 stocks = pd.read_csv('Area.csv')
 
 c1, c2 = st.columns((3,1))

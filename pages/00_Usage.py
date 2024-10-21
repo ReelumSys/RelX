@@ -1,4 +1,7 @@
-﻿import streamlit as st
+﻿
+
+
+import streamlit as st
 import pandas as pd
 import plost
 import base64
@@ -89,23 +92,23 @@ def set_background(png_file):
     st.markdown(page_bg_img, unsafe_allow_html=True)
 
 
-st.text("")
-st.markdown('<div style="text-align: justify;"> <font size="+6"><b> Introduction <b></font> </div>', unsafe_allow_html=True)
+# st.text("")
+# st.markdown('<div style="text-align: justify;"> <font size="+6"><b> Introduction <b></font> </div>', unsafe_allow_html=True)
 
-st.text("")
-st.markdown('<div style="text-align: justify;"> <font size="+3"><b> With this app it is possible to do some work on XRD patterns with only minimal amounts of data needed. For the Symmetry depicition HKL values are required. Hence for Rietveld Refinement also Atomic Coordinates and Atomic Dislocation are mandatory. <b></font> </div>', unsafe_allow_html=True)
+# st.text("")
+# st.markdown('<div style="text-align: justify;"> <font size="+3"><b> With this app it is possible to do some work on XRD patterns with only minimal amounts of data needed. For the Symmetry depicition HKL values are required. Hence for Rietveld Refinement also Atomic Coordinates and Atomic Dislocation are mandatory. <b></font> </div>', unsafe_allow_html=True)
 
-st.text("")
-st.markdown('<div style="text-align: justify;"> <font size="+3"> First you can upload two XRD charts. They need not to have the same °2Theta values as you can set a beginning value. However the patterns have to be recorded at same diffraction settings. After uploading, first you see a heatmap plus identified and binned values. This should help with the data conformity. Beside the heatmap you can find an analysis of data in the donut chart. Here is the Main vs. the Comparing pattern plottet. In the pattern section is an overview of the plotted patterns. A subtraction from the Main XRD and the Comparison XRD is shown. The same procedure is done for the intensity in logarithmic scale. Publication ready plots may be included with easy access. </font> </div>', unsafe_allow_html=True)
+# st.text("")
+# st.markdown('<div style="text-align: justify;"> <font size="+3"> First you can upload two XRD charts. They need not to have the same °2Theta values as you can set a beginning value. However the patterns have to be recorded at same diffraction settings. After uploading, first you see a heatmap plus identified and binned values. This should help with the data conformity. Beside the heatmap you can find an analysis of data in the donut chart. Here is the Main vs. the Comparing pattern plottet. In the pattern section is an overview of the plotted patterns. A subtraction from the Main XRD and the Comparison XRD is shown. The same procedure is done for the intensity in logarithmic scale. Publication ready plots may be included with easy access. </font> </div>', unsafe_allow_html=True)
 
-st.text("")
-st.markdown('<div style="text-align: justify;"> <font size="+3"> The main runs Crystal Size and Rietveld Refinement. The Rietveld equation and the parameters were modified, only few additional values need to be set like the position of the atoms, or scale factor. These values need to be incorporated on the front-end. Ongoing work is done here. Maybe heading for a conversion to a line graph and still run all parameters. Or you are welcome to try with a very long diffraction time. </font> </div>', unsafe_allow_html=True)
+# st.text("")
+# st.markdown('<div style="text-align: justify;"> <font size="+3"> The main runs Crystal Size and Rietveld Refinement. The Rietveld equation and the parameters were modified, only few additional values need to be set like the position of the atoms, or scale factor. These values need to be incorporated on the front-end. Ongoing work is done here. Maybe heading for a conversion to a line graph and still run all parameters. Or you are welcome to try with a very long diffraction time. </font> </div>', unsafe_allow_html=True)
 
-st.text("")
-st.markdown('<div style="text-align: justify;"> <font size="+3"> A Discord server has been set up for possible further development. <a href="https://discord.gg/gFjuBQd4">Click here</a> </font> </div>', unsafe_allow_html=True)
+# st.text("")
+# st.markdown('<div style="text-align: justify;"> <font size="+3"> A Discord server has been set up for possible further development. <a href="https://discord.gg/gFjuBQd4">Click here</a> </font> </div>', unsafe_allow_html=True)
 
-st.text("")
-st.markdown('<div style="text-align: justify;"> <font size="+3">In the Chatbot below, you can post questions about XRD and life. It is based on OpenAIs work. Soon the Chatbot will have knowledge about this programm. </font> </div>', unsafe_allow_html=True)
+# st.text("")
+# st.markdown('<div style="text-align: justify;"> <font size="+3">In the Chatbot below, you can post questions about XRD and life. It is based on OpenAIs work. Soon the Chatbot will have knowledge about this programm. </font> </div>', unsafe_allow_html=True)
 
 
 #st.title("XRDGPT")
@@ -145,7 +148,7 @@ st.markdown('<div style="text-align: justify;"> <font size="+3">In the Chatbot b
 #        message_placeholder.markdown(full_response)
 #    st.session_state.messages.append({"role": "assistant", "content": full_response})
 
-st.title('XRDGPT')
+st.title('GPT')
 
 openai_api_key = st.sidebar.text_input('OpenAI API Key', type='password')
 
@@ -188,7 +191,7 @@ def generate_response(txt):
 
 
 
-st.title("XRDGPT - Personal Assitant")
+st.title("GPT - Personal Assitant")
 st.divider()
 
 data_file = "./pages/data.txt"

@@ -37,8 +37,8 @@ st.sidebar.markdown('''
 user_input = st.number_input("Please enter a starting number for  \u00b0 2Theta. Minimum should be at least the first higher number \u00b0 2Theta data point of the two diffraction patterns, so they can adjust.")
 
 
-df1 = pd.read_csv('ksev1.csv', names=['Theta','Int'])#, skiprows = 80
-df2 = pd.read_csv('ksev1rand.csv', names=['Theta2','Int2'])
+df1 = pd.read_csv('crash1.csv', names=['Theta','Int'])#, skiprows = 80
+df2 = pd.read_csv('crash2.csv', names=['Theta2','Int2'])
 
 
 #df1zone = df1['Int']
@@ -62,18 +62,17 @@ failure_count2 = ["fail" for x in values2 if x < StartingValue].count("fail")  #
 print(failure_count2)
 
 
-df1 = pd.read_csv('ksev1.csv', names=['Theta','Int'], skiprows = failure_count)
+df1 = pd.read_csv('crash.csv', names=['Theta','Int'], skiprows = failure_count)
 
 global dfSize
 #df1 = dfSize
 
-df2 = pd.read_csv('ksev1rand.csv', names=['Theta2','Int2'], skiprows = failure_count2)
+df2 = pd.read_csv('crash2.csv', names=['Theta2','Int2'], skiprows = failure_count2)
 #print(df1)
 
 weatherTheta2 = df2['Theta2']
 
-#np.savetxt('testksev1.txt', df1, fmt='%f', delimiter=',')
-#np.savetxt('testksev2.txt', df2, fmt='%f', delimiter=',')
+
 df1zone = df1['Int']
 df2zone = df2['Int2']
 np.savetxt('test1zone.txt', df1zone, fmt='%f', delimiter=',')
@@ -108,8 +107,8 @@ np.savetxt('testTheta2.txt', df_merged, fmt='%f', delimiter=',')
 
 
 global weather1
-weather1 = pd.read_csv('ksev1.csv', names=['\u00b0 2Theta','Int'], skiprows=failure_count)
-weather2 = pd.read_csv('ksev1rand.csv', names=['\u00b0 2Theta','Int'], skiprows=failure_count2)
+weather1 = pd.read_csv('crash.csv', names=['\u00b0 2Theta','Int'], skiprows=failure_count)
+weather2 = pd.read_csv('crash2.csv', names=['\u00b0 2Theta','Int'], skiprows=failure_count2)
 weather3 = pd.read_csv('testTheta2.txt', names=['\u00b0 2Theta','Int'])
 
 
@@ -153,10 +152,6 @@ weatherThetaXX['Int'] = weatherLogDiff12
 print(weatherThetaXX)
 
 
-
-#weather1 = pd.read_csv('../RelX/ksev1.csv', names=['2Theta','Int'])
-#weather2 = pd.read_csv('../RelX/ksev1rand.csv', names=['2Theta','Int2'])
-#weather3 = pd.read_csv('../RelX/testTheta2.txt', names=['2Theta','Diff'])
 
 
 st.markdown('##### Main')
