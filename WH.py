@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
-#import packages
-import powerxrd as xrd
+#import package
 import numpy as np
 import pandas as pd
 import io
@@ -20,8 +19,7 @@ from matplotlib import pylab as plt
 from scipy.optimize import fmin
 from scipy.optimize import curve_fit
 
-from powerxrd.main import scherrer as beta
-from powerxrd.main import Chart as SchPeak
+
 import contextlib
 
 
