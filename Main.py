@@ -13,9 +13,9 @@ matplotlib.use('Agg')
 from matplotlib import pyplot
 from PyCrystallography import unit_cell
 from PyCrystallography import lattice
-import WH
 
-import powerxrd as xrd
+
+
 import numpy as np
 import pandas as pd
 import io
@@ -44,13 +44,9 @@ import urllib
 from scipy.optimize import fmin
 from scipy.optimize import curve_fit
 
-from powerxrd.main import scherrer as beta
-from powerxrd.main import Chart as SchPeak
 
-from powerxrd.main import*
 import contextlib
-from WH import m
-from WH import d
+
 #from WH import*
 
 import matplotlib.pyplot as plt
