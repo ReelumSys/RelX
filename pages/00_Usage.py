@@ -71,11 +71,6 @@ def set_background(png_file):
     st.markdown(page_bg_img, unsafe_allow_html=True)
 
 
-<<<<<<< HEAD
-
-
-
-=======
 st.text("")
 st.markdown('<div style="text-align: justify;"> <font size="+6"><b> Introduction <b></font> </div>', unsafe_allow_html=True)
 
@@ -85,7 +80,6 @@ st.markdown('<div style="text-align: justify;"> <font size="+3"><b> With this ap
 
 
 
->>>>>>> RelXFork
 st.title('GPT')
 
 openai_api_key = st.sidebar.text_input('OpenAI API Key', type='password')
