@@ -24,8 +24,8 @@ from powerxrd.main import scherrer as beta
 from powerxrd.main import Chart as SchPeak
 import contextlib
 
-global ksev1
-ksev1 = 'ksev1.csv'
+
+crash1 = 'crash1.csv'
 
 global Ee2
 global r
@@ -45,13 +45,6 @@ myfiledel()
 
 def test_sch():
     
-    #Wurst = pd.read_csv(ksev1, names=['Theta','Int'])  
-    #np.savetxt('ksev1.xy', Wurst, fmt='%s', delimiter='\t')
-    #data = xrd.Data('ksev1.xy').importfile()
-    #chart = xrd.Chart(*data)
-
-    #chart.backsub(tol=1.0,show=True)
-    #chart.SchPeak(xrange=[10,50],verbose=True,show=True)
     plt.xlabel('2 $\\theta$')
     plt.title('backsub and Scherrer width calculation')
     #plt.show()
@@ -62,10 +55,9 @@ test_sch()
 
 
 def test_allpeaks():
-    #Wurst = pd.read_csv('ksev1.xy', names=['Theta','Int'])    
-    #np.savetxt('ksev1.xy', Wurst, fmt='%s', delimiter='\t')
+
     
-    data = xrd.Data('ksev1.csv').importfile()
+    data = xrd.Data('crash1.csv').importfile()
     chart = xrd.Chart(*data)
 
     chart.backsub(tol=1,show=False)
@@ -92,7 +84,20 @@ def reel_Williamson_Hall():
 
     x = (data2)
     y = (data)
-    wl = 0.15406 # Ang 
+    wl = 0.15406
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     theta  =  np.radians(x/2)
 
@@ -109,6 +114,7 @@ def reel_Williamson_Hall():
     
     popt,pcov= curve_fit(func,x,y)
     #print(popt)
+    #print(popt2)
 
     m = popt[0]
     c = popt[1]
@@ -232,161 +238,3 @@ def reel_Halder_Wagner():
     plt.close()
 
 reel_Halder_Wagner()
-
-
-
-
-#data = xrd.Data('myfile.txt').importfile()
-    #df1={'myfile.txt'}
-    #df2={'myfile2.txt'}
-    #df1 = open('myfile.txt')
-    #df2 = open('myfile2.txt') 
-    #Trans = np.transpose(df1)
-    
-
-    #datacrest = np.array([*df1])
-    #dataset = pd.DataFrame({df1})
-    #print(dataset)
-    #np.savetxt('FWHMdef_search.xy', dataset, fmt='%s', delimiter='')
-
-    #datacrest2 = np.array([*df2])
-    #dataset2 = pd.DataFrame({df2})
-    #print(dataset2)
-    
-  
-    #np.savetxt('FWHMdef1.xy', dataset2, fmt='%s', delimiter='')
-    #np.savetxt('FWHMstep.csv', dataset2, fmt='%s', delimiter='')
-    #np.savetxt('FWHMstep2.csv', dataset, fmt='%s', delimiter='')
-
-    #df1 = open('FWHMstep.csv')
-    #df2 = open('FWHMstep2.csv')
-    #colnames=['Theta']
-    #colnames2=['FEWHM']
-    #datanew2 = pd.read_csv('FWHMstep2.csv', skiprows=1, names=colnames2)
-    #datanew = pd.read_csv('FWHMstep.csv', skiprows=1, names=colnames)
-
-
-    #reader_file = csv.reader(datanew)
-    #value = len(list(datanew))
-    #print(datanew)
-
-    #reader_file = csv.reader(datanew2)
-    #value = len(list(datanew2))
-    #print(datanew2)
-    #value2=value/2
-
-    #datanew['FWHM'] = datanew2
-    #datanew.to_csv('FWHMStep10.csv')
-
-    #lines = list()
-    #remove= [value2]
-    
-    #datanew = pd.read_csv('FWHMStep10.csv')
-    #values = len(list(datanew))
-    #print(datanew)
-
-    #colnames=['No', 'Theta', 'FWHM'] 
-    #user1 = pd.read_csv('FWHMStep10.csv', header=None)
-    #print(user1)
-   
-
-
-    #datanew = datanew.astype(str)
-    #datasmo = '.'.join(datanew[i:i+2] for i in range(0, len(datanew), 2))
-    #a=datanew
-    #b=datanew2
-    #np.savetxt('FWHMstep3.csv', datasmo, fmt='%s', delimiter='')
-
-    #datanew[*datanew2] = datanew2
-    #datanew.shape[0]
-    #datanew.to_csv('FWHMStep4.txt')
-
-
-    #a = np.array([*df1])
-    #b = np.array([*df2])
-    #print(a)
-    #np.savetxt('FWHMstep3.csv', , fmt='%s', delimiter='')
-    #c = np.stack((a,b),axis=0)
-
-    #d = np.transpose(c)
-    
-
-
-    #np.savetxt('FWHMstep111.xy', a, fmt='%s', delimiter='')
-    #np.savetxt('FWHMstep222.xy', b, fmt='%s', delimiter='')
-    #np.savetxt('FWHMstep333.xy', d, fmt='%s', delimiter='')
-
-    #np.savetxt('FWHMstep.xy', df1, fmt='%s', delimiter='')
-
-    #dataset = pd.DataFrame({'Theta': df1})
-    #dataset2 = pd.DataFrame({'FWHM': df2})
-
-    
-    
-    #df6 = np.column_stack([dataset, dataset2])
-    #df6 = np.c_[dataset, dataset2]
-    
-    #df6 = np.hstack((dataset, dataset2))   #WORKING
-    #df6 = np.append(df1, dataset2, axis=1)
-    #np.savetxt('FWHMstep4.txt', df6, fmt='%s', delimiter='')
-    #print(df6)
-    
-
-    #dataset = pd.DataFrame({'Theta': df1})
-    #dataset2 = pd.DataFrame({'FWHM': df2})
-    #datasetx = np.transpose(dataset)
-    #dataset2y = np.transpose(dataset2)
-    #print(datasetx)
-
-    
-
-    #df3 = pd.concat([dataset, dataset2], axis=1)
-    #np.savetxt('FWHMstep3.txt', df3, fmt='%s')
-
-
-    
-    
-    
-
-    #df3 = dataset.assign(e=pd.Series(dataset2).values)
-    #df3 = dataset2y.join(datasetx, lsuffix='Theta', rsuffix='FWHM')
-    #Crackset = pd.DataFrame({'Theta': dataset, 'Int': dataset})
-   
-
-    #df3 = pd.concat([df1, df2],axis=1, ignore_index=True, sort=False)    
-    #fmt=['%s','%s']
-    #np.savetxt('FWHMdef2.txt', df3, fmt=fmt, delimiter=',')
-    #df3.to_csv('FWHMdef10.txt', header=None, index=None, sep='\t', mode='a')
-
-
-    #df4 = np.transpose(df3)
-    #np.savetxt('FWHMdef3.txt', dataset, fmt='%s')
-
-
-
-
-
-
-
-
-
-
-
-    #df_merged = pd.concat([df1, df2], ignore_index=True, sort=False)
-    #dataset = pd.DataFrame({'FWHM': df1[:, 0]})
-    #dataset2 = pd.DataFrame({'Theta': df2[:, 0]})
-    
-    #df_merged = pd.concat([df1, df2], ignore_index=True)
-   
-    
-    #data = xrd.Data('FWHMdef10.txt').importfile()
-    #data = loadtxt ('FWHMStep10.csv', usecols=(0,1))
-    #datanew.to_csv('FWHMStep19.csv')
-    #dfX = datanew[['Theta']]
-    #dfY = datanew[['FWHM']]
-    #dfX.Theta = datanew.Theta.astype(float64)
-    #dfY.FWHM = datanew.FWHM.astype(float64)
-    #np.savetxt('FWHMnew.txt', dataset, fmt='%')
-
-    #print(dfX)
-    #print(dfY)
