@@ -29,11 +29,8 @@ st.sidebar.markdown("# ")
 #time_hist_color = st.sidebar.selectbox('Color by', '')
 #st.sidebar.subheader('Donut chart parameter')
 #donut_theta = st.sidebar.selectbox('Select data', ('Theta', 'Area2'))
-<<<<<<< HEAD
-=======
 
 dfheat = pd.read_csv('crash1.csv', names=['\u00b0 2Theta','Int'])
->>>>>>> RelXFork
 stocks = pd.read_csv('Area.csv')
 
 c1, c2 = st.columns((3,1))

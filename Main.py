@@ -98,17 +98,6 @@ with cent_co:
 
 # Sidebar navigation
 #st.sidebar.page_link('Main.py', label='Home')
-<<<<<<< HEAD
-# st.sidebar.page_link('pages/00_Usage.py', label='Usage')
-# st.sidebar.page_link('pages/01_Comparison.py', label='Comparison')
-# st.sidebar.page_link('pages/02_Patterns.py', label='Patterns')
-# st.sidebar.page_link('pages/04_Symmetry.py', label='Symmetry')
-# st.sidebar.page_link('pages/05_Crystal_Size_&_Strain.py', label='Crystal Size & Strain')
-# st.sidebar.page_link('pages/06_Single_Peak_Fit.py', label='Single Peak Fit')
-# st.sidebar.page_link('pages/07_Rietveld_Refinement.py', label='Rietveld Refinement')
-# st.sidebar.page_link('pages/08_Acknowledgements.py', label='Acknowledgements')
-# st.sidebar.page_link('pages/09_Disclaimer.py', label='Disclaimer')
-=======
 st.sidebar.page_link('pages/00_Usage.py', label='Usage')
 st.sidebar.page_link('pages/01_Comparison.py', label='Comparison')
 st.sidebar.page_link('pages/02_Patterns.py', label='Patterns')
@@ -117,8 +106,7 @@ st.sidebar.page_link('pages/05_Crystal_Size_&_Strain.py', label='Crystal Size & 
 
 
 st.sidebar.page_link('pages/08_Acknowledgements.py', label='Acknowledgements')
-st.sidebar.page_link('pages/09_Disclaimer.py', label='Disclaimer')
->>>>>>> RelXFork
+
 
 #image = Image.open('./images/favicon.png')
 #new_img = image.resize((200, 100))
@@ -417,11 +405,4 @@ latt.build(shape=(5, 3))
 latt.set_periodic(axis=0)
 latt.plot()
 plt.savefig("Bravais5.png")
-<<<<<<< HEAD
 plt.close()
-
-
-
-=======
-plt.close()
->>>>>>> RelXFork
