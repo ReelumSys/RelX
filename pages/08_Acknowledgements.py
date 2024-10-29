@@ -37,8 +37,6 @@ def set_background(png_file):
 #st.write("###### Thanks to PowerXRD's work by Andrew Garcia Ph.D (https://github.com/andrewrgarcia/powerxrd) a Williamson-Hall-Plot and other functions were formulated. The Williamson-Hall-Plot is based on the same gaussian FWHM values as the Scherrer calculation. Furthermore a Halder and Wagner-Plot with derived gaussian FWHM values is made with modifications possible from the Literature. The plots should serve as a direct comparison between the three methods.")
 st.markdown('<div style="text-align: justify;">A Halder and Wagner-Plot was formulated. </div>', unsafe_allow_html=True)
 st.text("")
-#st.markdown('<div style="text-align: justify;"> Rietveld Equation was modified. </div>', unsafe_allow_html=True)
-#st.text("")
 
 
 
@@ -51,5 +49,6 @@ st.markdown('<div style="text-align: justify;">Halder, N. C., Wagner, C. N. J. (
 st.text("")
 st.markdown('<div style="text-align: justify;">Izumi, F., Ikeda, T. (2014) Implementation of the Williamson–Hall and Halder and Wagner Methods into RIETAN-FP. <a href="https://api.semanticscholar.org/CorpusID:123223412">https://api.semanticscholar.org/CorpusID:123223412</a> </div>', unsafe_allow_html=True)
 st.text("")
+st.markdown('<div style="text-align: justify;">Williamson, G. K., Hall, W. H. (1953) X-ray Line Broadening from Filed Aluminium and Wolfram. Acta Metall., Vol. 1, 1953, pp. 22-31. </div>', unsafe_allow_html=True)
 #st.sidebar.markdown("##### vladimirvopravil@hotmail.com")
 

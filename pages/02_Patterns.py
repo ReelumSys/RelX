@@ -62,7 +62,11 @@ failure_count2 = ["fail" for x in values2 if x < StartingValue].count("fail")  #
 print(failure_count2)
 
 
+<<<<<<< HEAD
 df1 = pd.read_csv('crash.csv', names=['Theta','Int'], skiprows = failure_count)
+=======
+df1 = pd.read_csv('crash1.csv', names=['Theta','Int'], skiprows = failure_count)
+>>>>>>> RelXFork
 
 global dfSize
 #df1 = dfSize
@@ -72,6 +76,10 @@ df2 = pd.read_csv('crash2.csv', names=['Theta2','Int2'], skiprows = failure_coun
 
 weatherTheta2 = df2['Theta2']
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> RelXFork
 df1zone = df1['Int']
 df2zone = df2['Int2']
 np.savetxt('test1zone.txt', df1zone, fmt='%f', delimiter=',')
@@ -106,7 +114,11 @@ np.savetxt('testTheta2.txt', df_merged, fmt='%f', delimiter=',')
 
 
 global weather1
+<<<<<<< HEAD
 weather1 = pd.read_csv('crash.csv', names=['\u00b0 2Theta','Int'], skiprows=failure_count)
+=======
+weather1 = pd.read_csv('crash1.csv', names=['\u00b0 2Theta','Int'], skiprows=failure_count)
+>>>>>>> RelXFork
 weather2 = pd.read_csv('crash2.csv', names=['\u00b0 2Theta','Int'], skiprows=failure_count2)
 weather3 = pd.read_csv('testTheta2.txt', names=['\u00b0 2Theta','Int'])
 
@@ -152,6 +164,11 @@ print(weatherThetaXX)
 
 
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> RelXFork
 
 st.markdown('##### Main')
 st.line_chart(weather1, x = '\u00b0 2Theta', y = 'Int', height = plot_height)

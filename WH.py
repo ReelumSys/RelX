@@ -22,6 +22,11 @@ from scipy.optimize import curve_fit
 
 import contextlib
 
+<<<<<<< HEAD
+=======
+
+crash1 = 'crash1.csv'
+>>>>>>> RelXFork
 
 global Ee2
 global r
@@ -40,7 +45,11 @@ def myfiledel():
 myfiledel()
 
 def test_sch():
+<<<<<<< HEAD
  
+=======
+    
+>>>>>>> RelXFork
     plt.xlabel('2 $\\theta$')
     plt.title('backsub and Scherrer width calculation')
     #plt.show()
@@ -52,6 +61,10 @@ test_sch()
 
 def test_allpeaks():
 
+<<<<<<< HEAD
+=======
+    
+>>>>>>> RelXFork
     data = xrd.Data('crash1.csv').importfile()
     chart = xrd.Chart(*data)
 
@@ -79,7 +92,20 @@ def reel_Williamson_Hall():
 
     x = (data2)
     y = (data)
-    wl = 0.15406 # Ang 
+    wl = 0.15406
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -102,6 +128,7 @@ def reel_Williamson_Hall():
     popt,pcov= curve_fit(func,x,y)
     popt,pcov=curve_fit()
     #print(popt)
+    #print(popt2)
 
     m = popt[0]
     c = popt[1]

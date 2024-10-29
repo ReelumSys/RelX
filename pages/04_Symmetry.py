@@ -43,7 +43,7 @@ my_file = Path("HKL.csv")
 try:
     my_abs_path = my_file.resolve(strict=True)
 except FileNotFoundError:
-    uploaded_file3 = st.file_uploader("Upload a .txt of the HKLs for Rietveld Refinement and Bravais calculations", type=["txt"])
+    uploaded_file3 = st.file_uploader("Upload HKL file for Bravais calculations", type=["txt"])
     st.text("")
     st.write("The HKL should be formatted with a space as delimiter.")
     st.text("")
@@ -58,7 +58,8 @@ except FileNotFoundError:
 
     st.text("")
 
-
+    st.markdown('<div style="text-align: justify;">At the moment not working.</div>', unsafe_allow_html=True)
+    st.text("")
 
     name3 = uploaded_file3
     if not name3:
@@ -71,6 +72,8 @@ except FileNotFoundError:
     np.savetxt('HKL.csv', df, fmt='%i', delimiter=',')
     np.savetxt('HKL.txt', df, fmt='%i', delimiter=' ')
 
+
+    
     
     
     #st.markdown('##### Basic Cells')

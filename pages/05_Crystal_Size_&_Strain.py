@@ -30,12 +30,22 @@ st.sidebar.header('')
 uploaded_file = ('FHWMFirstSecond.csv')
 
 
+<<<<<<< HEAD
 
 Cryst = pd.DataFrame({
                       
                       
                       
                       
+=======
+
+
+Cryst = pd.DataFrame({
+                      
+                      #'Scherrer Size [nm]': [Cryst5],
+                      'W-H Size [nm]': [d],
+                      'W-H Strain [%%]': [m],
+>>>>>>> RelXFork
                       
                       'H-W Size [nm]': [Ee2],
                       'H-W Strain [%%]': [r],

@@ -71,9 +71,21 @@ def set_background(png_file):
     st.markdown(page_bg_img, unsafe_allow_html=True)
 
 
+<<<<<<< HEAD
 
 
 
+=======
+st.text("")
+st.markdown('<div style="text-align: justify;"> <font size="+6"><b> Introduction <b></font> </div>', unsafe_allow_html=True)
+
+st.text("")
+st.markdown('<div style="text-align: justify;"> <font size="+3"><b> With this app it is possible to do some work on XRD patterns with only minimal amounts of data needed. For the Symmetry depicition HKL values are required. <b></font> </div>', unsafe_allow_html=True)
+
+
+
+
+>>>>>>> RelXFork
 st.title('GPT')
 
 openai_api_key = st.sidebar.text_input('OpenAI API Key', type='password')
@@ -83,7 +95,7 @@ def generate_response(input_text):
     st.info(llm(input_text))
 
 with st.form('my_form'):
-    text = st.text_area('Enter text:', 'What are the three key pieces of advice for learning how to do a Rietveld Refinement?')
+    text = st.text_area('Enter text:', '')
     submitted = st.form_submit_button('Submit')
     if not openai_api_key.startswith('sk-'):
         st.warning('Please enter your OpenAI API key!', icon='⚠')
