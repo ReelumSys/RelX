@@ -31,10 +31,7 @@ import urllib
 from scipy.optimize import fmin
 from scipy.optimize import curve_fit
 
-from powerxrd.main import scherrer as beta
-from powerxrd.main import Chart as SchPeak
-from powerxrd.main import Chart as SchPeak
-from powerxrd.main import*
+
 import contextlib
 
 
